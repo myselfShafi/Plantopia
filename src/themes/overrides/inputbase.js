@@ -27,6 +27,28 @@ const InputBase = () => {
         }),
       },
     },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: ({ ownerState, theme }) => ({
+          borderRadius: 0,
+          color: theme.palette.customColors.main,
+          fontSize: "1.5rem",
+          "&:hover.Mui-error .MuiOutlinedInput-notchedOutline": {
+            borderColor: theme.palette.error.main,
+          },
+          "& .MuiOutlinedInput-notchedOutline": {
+            borderColor: theme.palette.text.primary,
+          },
+          "&.Mui-disabled .MuiOutlinedInput-notchedOutline": {
+            borderColor: theme.palette.text.disabled,
+          },
+          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            border: `solid 1px ${theme.palette.grey[900]}`,
+            borderRadius: 8,
+          },
+        }),
+      },
+    },
   };
 };
 

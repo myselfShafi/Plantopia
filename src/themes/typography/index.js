@@ -1,33 +1,50 @@
 const Typography = {
-  fontFamily: "Campton",
-  fontWeightBold: 900,
-  fontWeightRegular: 500,
+  fontFamily: ["Merriweather"].join(","),
   h1: {
-    textTransform: "none",
-    fontSize: "2.5rem",
-    margin: ".5rem 1.5rem 0",
+    fontWeight: 700,
+    letterSpacing: "-1.5px",
   },
   h2: {
-    textTransform: "none",
-    fontSize: "2rem",
+    fontWeight: 500,
+    letterSpacing: "-0.5px",
   },
   h3: {
-    fontSize: "1.8rem",
-    textTransform: "none",
-    lineHeight: "4.5rem",
-    letterSpacing: ".2rem",
+    fontWeight: 500,
+    letterSpacing: 0,
+  },
+  h4: {
+    fontWeight: 500,
+    letterSpacing: "0.25px",
+  },
+  h5: {
+    fontWeight: 500,
+    letterSpacing: 0,
+  },
+  h6: {
+    letterSpacing: "0.15px",
+  },
+  subtitle1: {
+    letterSpacing: "0.15px",
+  },
+  subtitle2: {
+    letterSpacing: "0.1px",
   },
   body1: {
-    fontSize: "1.8rem",
-    textTransform: "none",
+    letterSpacing: "0.15px",
   },
-  body2: { fontSize: "1.6rem", textTransform: "none" },
-  subtitle1: { fontSize: "1.15rem", textTransform: "none" },
+  body2: {
+    lineHeight: 1.429,
+    letterSpacing: "0.15px",
+  },
+  button: {
+    letterSpacing: "0.4px",
+  },
+  caption: {
+    lineHeight: 1.25,
+    letterSpacing: "0.4px",
+  },
   overline: {
-    fontSize: "2rem",
-    textDecoration: "underline",
-    textUnderlineOffset: ".5rem",
-    textTransform: "none",
+    letterSpacing: "1px",
   },
 };
 

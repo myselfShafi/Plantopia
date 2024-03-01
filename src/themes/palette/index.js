@@ -1,56 +1,61 @@
 const Palette = () => {
+  const whiteColor = "#fff";
+  const darkColor = "34, 34, 34";
+  const mainColor = darkColor;
   return {
-    primary: {
-      main: "#2D7EDE",
-      light: "#408EFF",
-      shade: "#8EC2FF",
-      opaque: "#9CB6D4",
+    // mode: whiteColor,
+    customColors: {
+      light: whiteColor,
+      main: mainColor,
+      dark: darkColor,
     },
-    secondary: {
-      main: "#FF7D55",
-      light: "#FF9E80",
-      dark: "#FF7348",
-      opaque: "#FFDED4",
+    // primary: {
+    //   main: "#ff4",
+    // },
+    error: {
+      light: "#FF625F",
+      main: "#FF4D49",
+      dark: "#E04440",
+      contrastText: whiteColor,
     },
-    light: {
-      main: "#ffffff",
-      bg: "#ECF3FF",
-      stripe: "#EDEFF1",
-      bgshade: "#ECF5FF",
-      shade: "#E4EEFF",
-      border: "#F9FBFF",
-      dark: "#B9C6D9",
-      darker: "#8D9FB9",
-      light: "#F5F9FF",
-      shadow: "#D8E6FF",
+    warning: {
+      light: "#FDBE42",
+      main: "#FDB528",
+      dark: "#DF9F23",
+      contrastText: whiteColor,
     },
-    dark: { main: "#000" },
+    info: {
+      light: "#40CDFA",
+      main: "#26C6F9",
+      dark: "#21AEDB",
+      contrastText: whiteColor,
+    },
+    success: {
+      light: "#83E542",
+      main: "#72E128",
+      dark: "#64C623",
+      contrastText: whiteColor,
+    },
     grey: {
-      main: "#D8E6FF",
-      dark: "#627288",
-      darkBold: "#4D5E77",
-      light: "#F4F8FF",
-      lighter: "#F8FAFF",
-      title: "#546071",
-      bg: "#C3CEE1",
-      outline: "#C3C6D4",
-      underline: "#B4C2D9",
-      text: "#7E92AF",
-      shade: "#F2F2F2",
-      scroll: "#D9D9D9",
+      50: "#FAFAFA",
+      100: "#F5F5F5",
+      200: "#EEEEEE",
+      300: "#E0E0E0",
+      400: "#BDBDBD",
+      500: "#9E9E9E",
+      600: "#757575",
+      700: "#616161",
+      800: "#424242",
+      900: "#212121",
+      A100: "#F5F5F5",
+      A200: "#EEEEEE",
+      A400: "#BDBDBD",
+      A700: "#616161",
     },
-    fontBlue: {
-      main: "#001A72",
-      light: "#192757",
-      progress: "#8EC2FF",
-    },
-    fontRed: {
-      main: "#C82A2A",
-    },
-    green: {
-      main: "#63AD63",
-      opaque: "#E5EFE5",
-      bg: "#A0CF9B",
+    text: {
+      primary: `rgba(${mainColor}, 0.87)`,
+      secondary: `rgba(${mainColor}, 0.6)`,
+      disabled: `rgba(${mainColor}, 0.38)`,
     },
   };
 };
