@@ -1,4 +1,4 @@
-import { ThemeProvider, createTheme } from "@mui/material";
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { deepmerge } from "@mui/utils";
 import BreakPoints from "./breakpoints";
 import overrides from "./overrides";
@@ -18,7 +18,12 @@ const themeOption = (mode) => {
 
 export const ThemeComponent = ({ children, mode }) => {
   const theme = createTheme(themeOption(mode));
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
+  );
 };
 
 // ----------------------------------------testing purpose --------------------------------//
@@ -29,12 +34,5 @@ export const theme = createTheme({
   typography: Typography,
   components: {
     ...overrides,
-    MuiButton: {
-      styleOverrides: {
-        text: ({ theme }) => ({
-          color: theme.palette.background.default,
-        }),
-      },
-    },
   },
 });

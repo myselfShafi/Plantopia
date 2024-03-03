@@ -20,12 +20,7 @@ export const TopStrip = () => {
     <WaterDrop className="stripIcon" />,
   ];
   return (
-    <Box
-      p={"1rem"}
-      bgcolor={"customColors.main"}
-      display={"flex"}
-      flexWrap={"nowrap"}
-    >
+    <Box p={".8rem"} bgcolor={"customColors.main"} display={"flex"}>
       <Box columnGap={"5rem"} display={"flex"}>
         {Icons.map((icon, index) => {
           return <div key={index}>{icon}</div>;

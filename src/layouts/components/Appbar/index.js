@@ -31,7 +31,10 @@ export const Appbar = () => {
       <AppBar
         position="static"
         elevation={0}
-        sx={{ backgroundColor: "background.default", padding: "2rem" }}
+        sx={{
+          backgroundColor: "background.default",
+          padding: "2.5rem",
+        }}
         color="default"
       >
         <Toolbar

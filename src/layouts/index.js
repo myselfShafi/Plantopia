@@ -4,7 +4,7 @@ import { Menubar } from "./components/Menubar";
 
 const Index = ({ children }) => {
   return (
-    <Box height={"100vh"} bgcolor={"background.default"}>
+    <Box>
       <Appbar />
       <Menubar />
       {children}
