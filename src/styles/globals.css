@@ -37,7 +37,6 @@ html, body {
 }
 
 .swiper-pagination-bullet {
-  background: rgb(26, 9, 8) !important;
   height: 1rem !important;
   width: 2rem !important;
 }
