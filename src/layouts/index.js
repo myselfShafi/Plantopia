@@ -1,11 +1,14 @@
-import React from "react";
+import { Box } from "@mui/material";
 import { Appbar } from "./components/Appbar";
+import { Menubar } from "./components/Menubar";
 
-const Index = () => {
+const Index = ({ children }) => {
   return (
-    <React.Fragment>
+    <Box height={"100vh"} bgcolor={"background.default"}>
       <Appbar />
-    </React.Fragment>
+      <Menubar />
+      {children}
+    </Box>
   );
 };
 

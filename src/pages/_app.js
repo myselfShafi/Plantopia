@@ -1,6 +1,7 @@
+import { ContextProvider } from "@/contexts/contextProvider";
+import { ThemeConsumer } from "@/contexts/themeContext";
 import "@/styles/globals.css";
-import { theme } from "@/themes/theme";
-import { ThemeProvider } from "@mui/material";
+import { ThemeComponent } from "@/themes/theme";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
@@ -16,9 +17,17 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <ContextProvider>
+        <ThemeConsumer>
+          {({ lightMode }) => {
+            return (
+              <ThemeComponent mode={lightMode}>
+                <Component {...pageProps} />
+              </ThemeComponent>
+            );
+          }}
+        </ThemeConsumer>
+      </ContextProvider>
     </>
   );
 }

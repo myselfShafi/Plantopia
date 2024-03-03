@@ -1,17 +1,35 @@
-const Palette = () => {
+const Palette = (mode) => {
   const whiteColor = "#fff";
+  const lightColor = "255, 255, 255";
   const darkColor = "34, 34, 34";
-  const mainColor = darkColor;
+  const mainColor = mode ? `rgba(${lightColor},1.0)` : `rgba(${darkColor},1.0)`;
+  const defaultBgColor = () => {
+    if (mode) {
+      return `rgba(${darkColor}, 1.0)`;
+    } else {
+      return `rgba(${lightColor}, 1.0)`;
+    }
+  };
+
   return {
-    // mode: whiteColor,
+    // mode: mode && "light",
     customColors: {
-      light: whiteColor,
+      light: `rgba(${lightColor}, 1.0)`,
       main: mainColor,
-      dark: darkColor,
+      dark: `rgba(${darkColor}, 1.0)`,
     },
-    // primary: {
-    //   main: "#ff4",
-    // },
+    primary: {
+      light: "#787EFF",
+      main: "#666CFF",
+      dark: "#5A5FE0",
+      contrastText: whiteColor,
+    },
+    secondary: {
+      light: "#7F889B",
+      main: "#6D788D",
+      dark: "#606A7C",
+      contrastText: whiteColor,
+    },
     error: {
       light: "#FF625F",
       main: "#FF4D49",
@@ -56,6 +74,10 @@ const Palette = () => {
       primary: `rgba(${mainColor}, 0.87)`,
       secondary: `rgba(${mainColor}, 0.6)`,
       disabled: `rgba(${mainColor}, 0.38)`,
+    },
+    divider: defaultBgColor(),
+    background: {
+      default: defaultBgColor(),
     },
   };
 };
