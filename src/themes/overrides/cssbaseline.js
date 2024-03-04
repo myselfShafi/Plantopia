@@ -49,6 +49,19 @@ const Cssbaseline = () => {
             transform: "translateX(-100%)",
           },
         },
+
+        ".slider span": {
+          animation: "blink .7s infinite",
+        },
+
+        "@keyframes blink": {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        },
       }),
     },
   };

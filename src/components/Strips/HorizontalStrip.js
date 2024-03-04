@@ -8,10 +8,12 @@ export const HorizontalStrip = () => {
           <Typography
             variant="h1"
             p={"1.5rem"}
-            children={"FLASH SALE  💥 50% off 💥 SHOP NOW! 👜 "}
             color={"background.paper"}
             letterSpacing={"1rem"}
-          />
+          >
+            FLASH SALE <span children={"💥"} /> 50% off <span children={"💥"} />{" "}
+            SHOP NOW! 👜
+          </Typography>
         </Box>
       ))}
     </Box>
