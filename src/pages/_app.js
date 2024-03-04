@@ -1,5 +1,6 @@
 import { ContextProvider } from "@/contexts/contextProvider";
 import { ThemeConsumer } from "@/contexts/themeContext";
+import MainLayout from "@/layouts/index";
 import "@/styles/globals.css";
 import { ThemeComponent } from "@/themes/theme";
 import Head from "next/head";
@@ -22,7 +23,9 @@ export default function App({ Component, pageProps }) {
           {({ lightMode }) => {
             return (
               <ThemeComponent mode={lightMode}>
-                <Component {...pageProps} />
+                <MainLayout>
+                  <Component {...pageProps} />
+                </MainLayout>
               </ThemeComponent>
             );
           }}

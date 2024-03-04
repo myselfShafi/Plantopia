@@ -32,7 +32,7 @@ export const Appbar = () => {
         position="static"
         elevation={0}
         sx={{
-          backgroundColor: "background.default",
+          backgroundColor: "inherit",
           padding: "2.5rem",
         }}
         color="default"

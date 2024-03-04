@@ -2,7 +2,7 @@ const Palette = (mode) => {
   const whiteColor = "#fff";
   const lightColor = "255, 255, 255";
   const darkColor = "34, 34, 34";
-  const mainColor = mode ? `rgba(${lightColor},1.0)` : `rgba(${darkColor},1.0)`;
+  const mainColor = mode ? lightColor : darkColor;
   const defaultBgColor = () => {
     if (mode) {
       return `rgba(${darkColor}, 1.0)`;
@@ -15,7 +15,7 @@ const Palette = (mode) => {
     // mode: mode && "light",
     customColors: {
       light: `rgba(${lightColor}, 1.0)`,
-      main: mainColor,
+      main: `rgba(${mainColor}, 1.0)`,
       dark: `rgba(${darkColor}, 1.0)`,
     },
     primary: {
@@ -77,6 +77,7 @@ const Palette = (mode) => {
     },
     divider: defaultBgColor(),
     background: {
+      paper: mode ? "#30334E" : whiteColor,
       default: defaultBgColor(),
     },
   };
