@@ -3,6 +3,8 @@ const Palette = (mode) => {
   const lightColor = "255, 255, 255";
   const darkColor = "34, 34, 34";
   const mainColor = mode ? lightColor : darkColor;
+  const bgColor = mode ? darkColor : lightColor;
+
   const defaultBgColor = () => {
     if (mode) {
       return `rgba(${darkColor}, 1.0)`;
@@ -43,10 +45,10 @@ const Palette = (mode) => {
       contrastText: whiteColor,
     },
     info: {
-      light: "#40CDFA",
-      main: "#26C6F9",
-      dark: "#21AEDB",
-      contrastText: whiteColor,
+      light: `rgba(${bgColor}, .5)`,
+      main: `rgba(${bgColor}, .75)`,
+      dark: `rgba(${bgColor}, 1.0)`,
+      contrastText: `rgba(${mainColor}, 1.0)`,
     },
     success: {
       light: "#83E542",

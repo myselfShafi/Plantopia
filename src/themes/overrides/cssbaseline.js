@@ -75,6 +75,10 @@ const Cssbaseline = () => {
             opacity: 1,
           },
         },
+
+        ".category-img": {
+          transition: "transform .3s linear",
+        },
       }),
     },
   };

@@ -3,6 +3,7 @@ import Buttons from "./buttons";
 import Cssbaseline from "./cssbaseline";
 import Divider from "./divider";
 import Icons from "./icon";
+import Imagelist from "./imagelist";
 import InputBase from "./inputbase";
 
 export default {
@@ -12,4 +13,5 @@ export default {
   ...Badge(),
   ...Divider(),
   ...Cssbaseline(),
+  ...Imagelist(),
 };

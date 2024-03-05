@@ -18,7 +18,8 @@ const Typography = {
   },
   h5: {
     fontWeight: 500,
-    letterSpacing: 0,
+    letterSpacing: ".75px",
+    lineHeight: 1.8,
   },
   h6: {
     letterSpacing: "0.15px",
