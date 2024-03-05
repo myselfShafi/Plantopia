@@ -10,12 +10,15 @@ const Buttons = () => {
         disableRipple: true,
       },
       styleOverrides: {
-        root: ({ theme }) => ({
+        root: ({ ownerState, theme }) => ({
           fontSize: "1.2rem",
           fontWeight: 700,
-          "&.MuiButton-root:hover": {
-            scale: "1.1",
-          },
+          ...(ownerState.className?.slice("").includes("hover") && {
+            "&.MuiButton-root:hover": {
+              scale: "1.1",
+            },
+          }),
+
           whiteSpace: "nowrap",
           transition: "scale .5s ease",
         }),
@@ -25,6 +28,11 @@ const Buttons = () => {
             color: theme.palette.background.paper,
           }),
         }),
+        endIcon: {
+          "& *:nth-of-type(1)": {
+            fontSize: "unset",
+          },
+        },
       },
     },
   };

@@ -41,7 +41,7 @@ export const Menubar = () => {
   return (
     <Hidden mdDown>
       <StyledStack bgcolor={"secondary.dark"}>
-        <Menulist />
+        <Menulist className={"hover"} />
       </StyledStack>
     </Hidden>
   );

@@ -1,10 +1,12 @@
 import { Gridlist } from "@/components/GridList";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Paper, Typography } from "@mui/material";
 import img1 from "../../../public/assests/01.jpg";
 import img2 from "../../../public/assests/02.jpg";
 
 import img3 from "../../../public/assests/03.jpg";
 
+import { ExpandCircleDownOutlined } from "@mui/icons-material";
+import { useState } from "react";
 import img4 from "../../../public/assests/04.jpg";
 import img5 from "../../../public/assests/05.jpg";
 import img6 from "../../../public/assests/06.jpg";
@@ -37,11 +39,36 @@ const title = {
 };
 
 export const ContentGrid = () => {
+  const [dataArr, setDataArr] = useState(9);
+
+  const imgSliced = images.slice(0, dataArr);
   return (
-    <Box sx={{ maxWidth: "75%", width: "100%", margin: "0 auto" }}>
+    <Box
+      sx={{
+        maxWidth: "75%",
+        width: "100%",
+        margin: "0 auto",
+        position: "relative",
+      }}
+    >
       <Typography variant="h2" children={title.main} mb={"3rem"} />
       <Typography variant="h5" children={title.text} mb={"3rem"} />
-      <Gridlist itemData={images} />
+      <Gridlist itemData={imgSliced} />
+      {imgSliced.length !== images.length && (
+        <Paper elevation={0} className={"more-div"}>
+          <Button
+            children={"More"}
+            variant="text"
+            endIcon={<ExpandCircleDownOutlined />}
+            sx={{
+              fontSize: "3rem",
+              textTransform: "capitalize",
+              color: "customColors.main",
+            }}
+            onClick={() => setDataArr(dataArr + dataArr)}
+          />
+        </Paper>
+      )}
     </Box>
   );
 };
