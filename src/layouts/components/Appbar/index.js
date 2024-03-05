@@ -1,4 +1,4 @@
-import { useTheme } from "@/hooks/useTheme";
+import { useContextTheme } from "@/hooks/useContextTheme";
 import {
   FmdGood,
   LightMode,
@@ -15,12 +15,39 @@ import {
   OutlinedInput,
   Toolbar,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
+import { Sidebar } from "../Sidebar";
 import { TopStrip } from "../TopStrip";
 
 export const Appbar = () => {
-  const { lightMode, toggleTheme } = useTheme();
+  const { lightMode, toggleTheme } = useContextTheme();
+  const theme = useTheme();
+  const mobileView = useMediaQuery(theme.breakpoints.down("md"));
+
+  const navbtns = [
+    { id: 1, btn: <Login /> },
+    { id: 2, btn: <FmdGood /> },
+    {
+      id: 3,
+      btn: <Badge badgeContent={4} children={<ShoppingCartCheckout />} />,
+    },
+    {
+      id: 4,
+      btn: lightMode ? <NightsStay /> : <LightMode />,
+      onclick: () => toggleTheme(!lightMode),
+    },
+  ];
+
+  const cartbtn = [
+    {
+      id: 1,
+      btn: <ShoppingCartCheckout />,
+    },
+  ];
+
   return (
     <Box
       sx={{
@@ -41,30 +68,43 @@ export const Appbar = () => {
           disableGutters
           sx={{ display: "grid", gridTemplateColumns: "1fr auto 1fr" }}
         >
-          <OutlinedInput
-            placeholder={"Search plants..."}
-            sx={{ width: "40rem" }}
-            endAdornment={
-              <InputAdornment position="end">
-                <IconButton children={<SearchOutlined />} />
-              </InputAdornment>
-            }
-          />
+          {mobileView ? (
+            <Sidebar />
+          ) : (
+            <OutlinedInput
+              placeholder={"Search plants..."}
+              sx={{
+                width: "100%",
+                maxWidth: "40rem",
+              }}
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton children={<SearchOutlined />} />
+                </InputAdornment>
+              }
+            />
+          )}
           <Typography
             variant="h1"
+            mx={"1rem"}
             children={"Plantopia"}
             color={"customColors.main"}
           />
-          <Box display={"flex"} justifyContent={"flex-end"} columnGap={"5rem"}>
-            <IconButton children={<Login />} />
-            <IconButton children={<FmdGood />} />
-            <IconButton aria-label="cart">
-              <Badge badgeContent={4} children={<ShoppingCartCheckout />} />
-            </IconButton>
-            <IconButton
-              children={lightMode ? <NightsStay /> : <LightMode />}
-              onClick={() => toggleTheme(!lightMode)}
-            />
+          <Box
+            display={"flex"}
+            justifyContent={mobileView ? "flex-end" : "space-between"}
+            justifySelf={"flex-end"}
+            sx={{ width: "100%", maxWidth: "40rem" }}
+          >
+            {(mobileView ? cartbtn : navbtns).map((btn) => {
+              return (
+                <IconButton
+                  children={btn.btn}
+                  onClick={btn?.onclick}
+                  key={btn.id}
+                />
+              );
+            })}
           </Box>
         </Toolbar>
       </AppBar>

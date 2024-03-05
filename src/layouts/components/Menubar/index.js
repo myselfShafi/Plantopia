@@ -1,6 +1,7 @@
-import { Button, Stack } from "@mui/material";
+import styled from "@emotion/styled";
+import { Button, Hidden, Stack } from "@mui/material";
 
-export const Menubar = () => {
+export const Menulist = ({ ...other }) => {
   const menuItems = [
     { id: 1, title: "Indoor" },
     { id: 2, title: "Outdoor" },
@@ -13,19 +14,35 @@ export const Menubar = () => {
     { id: 9, title: "Rare/Exotic" },
   ];
   return (
-    <Stack
-      p={"1.5rem 15rem"}
-      bgcolor={"secondary.dark"}
-      flexDirection={"row"}
-      justifyContent={"space-between"}
-    >
+    <>
       {menuItems.map((item) => {
         return (
           <div key={item.id}>
-            <Button children={item.title} variant="text" />
+            <Button children={item.title} variant="text" {...other} />
           </div>
         );
       })}
-    </Stack>
+    </>
+  );
+};
+
+export const Menubar = () => {
+  const StyledStack = styled(Stack)(({ theme }) => ({
+    padding: "1.5rem",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    [theme.breakpoints.up("lg")]: {
+      paddingLeft: "15rem",
+      paddingRight: "15rem",
+      display: "flex",
+    },
+  }));
+
+  return (
+    <Hidden mdDown>
+      <StyledStack bgcolor={"secondary.dark"}>
+        <Menulist />
+      </StyledStack>
+    </Hidden>
   );
 };

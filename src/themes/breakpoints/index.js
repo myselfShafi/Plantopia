@@ -2,9 +2,9 @@ const BreakPoints = () => ({
   values: {
     xs: 0,
     sm: 600,
-    md: 1024,
-    lg: 1600,
-    xl: 1920,
+    md: 1094,
+    lg: 1300,
+    xl: 1820,
   },
 });
 

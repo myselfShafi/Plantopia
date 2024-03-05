@@ -20,14 +20,19 @@ export const TopStrip = () => {
     <WaterDrop className="stripIcon" />,
   ];
   return (
-    <Box p={".8rem"} bgcolor={"customColors.main"} display={"flex"}>
+    <Box
+      p={".8rem"}
+      bgcolor={"customColors.main"}
+      display={{ xs: "none", md: "flex" }}
+      justifyContent={"space-between"}
+    >
       <Box columnGap={"5rem"} display={"flex"}>
         {Icons.map((icon, index) => {
           return <div key={index}>{icon}</div>;
         })}
       </Box>
       <Divider
-        sx={{ flexGrow: 1 }}
+        sx={{ flexGrow: 1, display: { xs: "none", lg: "inherit" } }}
         textAlign="center"
         children={"Nature's Cart"}
         variant="middle"

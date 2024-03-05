@@ -1,4 +1,9 @@
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import {
+  CssBaseline,
+  ThemeProvider,
+  createTheme,
+  responsiveFontSizes,
+} from "@mui/material";
 import { deepmerge } from "@mui/utils";
 import BreakPoints from "./breakpoints";
 import overrides from "./overrides";
@@ -17,7 +22,8 @@ const themeOption = (mode) => {
 };
 
 export const ThemeComponent = ({ children, mode }) => {
-  const theme = createTheme(themeOption(mode));
+  let theme = createTheme(themeOption(mode));
+  theme = responsiveFontSizes(theme);
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -28,11 +34,11 @@ export const ThemeComponent = ({ children, mode }) => {
 
 // ----------------------------------------testing purpose --------------------------------//
 
-export const theme = createTheme({
-  palette: Palette(),
-  breakpoints: BreakPoints(),
-  typography: Typography,
-  components: {
-    ...overrides,
-  },
-});
+// export const theme = createTheme({
+//   palette: Palette(),
+//   breakpoints: BreakPoints(),
+//   typography: Typography,
+//   components: {
+//     ...overrides,
+//   },
+// });

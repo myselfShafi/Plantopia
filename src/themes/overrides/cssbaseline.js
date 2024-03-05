@@ -6,6 +6,19 @@ const Cssbaseline = () => {
           background: theme.palette.background.default,
           color: theme.palette.customColors.main,
         },
+        ".swiper": {
+          width: "100%",
+          height: "100vh",
+          [theme.breakpoints.between("md", "lg")]: {
+            height: "60vh",
+          },
+          [theme.breakpoints.between("sm", "md")]: {
+            height: "50vh",
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "25vh",
+          },
+        },
         ".swiper-pagination-bullet-active": {
           background: `${theme.palette.customColors.light} !important`,
         },

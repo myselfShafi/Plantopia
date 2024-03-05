@@ -19,8 +19,11 @@ const Buttons = () => {
           whiteSpace: "nowrap",
           transition: "scale .5s ease",
         }),
-        text: ({ theme }) => ({
+        text: ({ ownerState, theme }) => ({
           color: theme.palette.grey[200],
+          ...(ownerState.className?.slice("").includes("toggleColor") && {
+            color: theme.palette.background.paper,
+          }),
         }),
       },
     },
