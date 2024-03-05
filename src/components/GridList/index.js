@@ -7,7 +7,6 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import Image from "next/image";
 
 export const Gridlist = ({ itemData }) => {
   const theme = useTheme();
@@ -23,12 +22,10 @@ export const Gridlist = ({ itemData }) => {
       >
         {itemData.map((item, index) => (
           <ImageListItem key={item.id}>
-            <Image
+            <img
+              loading="lazy"
               alt={item?.title ?? `Plant-category-${index}`}
-              src={item?.src}
-              width={100}
-              height={100}
-              layout="responsive"
+              src={item?.src.src}
               className="category-img"
             />
             <ImageListItemBar

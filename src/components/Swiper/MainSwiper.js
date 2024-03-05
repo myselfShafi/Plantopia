@@ -24,7 +24,7 @@ export const MainSwiper = ({ data }) => {
     >
       {data.map((item, index) => (
         <SwiperSlide key={index}>
-          <Image src={item.src} alt={item.alt ?? `image-${index}`} />
+          <Image src={item.src} alt={item.alt ?? `image-${index}`} priority />
         </SwiperSlide>
       ))}
     </Swiper>
