@@ -18,6 +18,7 @@ import {
   useTheme,
 } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
+import Link from "next/link";
 import { Sidebar } from "../Sidebar";
 import { TopStrip } from "../TopStrip";
 import { CartDropdown } from "./CartDropdown";
@@ -94,10 +95,12 @@ export const Appbar = () => {
             />
           )}
           <Typography
+            component={Link}
             variant="h3"
             mx={"1rem"}
             children={"Plantopia"}
             color={"customColors.main"}
+            href={"/"}
           />
           <Box
             display={"flex"}

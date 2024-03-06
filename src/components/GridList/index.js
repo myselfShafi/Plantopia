@@ -7,8 +7,10 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import { useRouter } from "next/router";
 
 export const Gridlist = ({ itemData }) => {
+  const router = useRouter();
   const theme = useTheme();
   const tabView = useMediaQuery(theme.breakpoints.between("sm", "md"));
   const mobView = useMediaQuery(theme.breakpoints.down("sm"));
@@ -36,6 +38,7 @@ export const Gridlist = ({ itemData }) => {
                   variant="contained"
                   color="info"
                   size="medium"
+                  onClick={() => router.push(item?.href)}
                 />
               }
             />
