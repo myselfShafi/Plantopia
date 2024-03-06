@@ -5,7 +5,7 @@ const Badge = () => {
         root: ({ theme }) => ({
           "& .MuiBadge-badge": {
             color: theme.palette.customColors.main,
-            fontSize: "1.3rem",
+            fontSize: "1rem",
             fontWeight: 800,
             right: -10,
             top: "50%",

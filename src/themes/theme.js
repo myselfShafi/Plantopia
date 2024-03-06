@@ -34,16 +34,11 @@ export const ThemeComponent = ({ children, mode }) => {
 
 // ----------------------------------------testing purpose --------------------------------//
 
-export const theme = createTheme({
-  palette: Palette(),
-  breakpoints: BreakPoints(),
-  typography: Typography,
-  components: {
-    ...overrides,
-    MuiImageListItem: {
-      styleOverrides: {
-        root: {},
-      },
-    },
-  },
-});
+// export const theme = createTheme({
+//   palette: Palette(),
+//   breakpoints: BreakPoints(),
+//   typography: Typography,
+//   components: {
+//     ...overrides,
+//   },
+// });

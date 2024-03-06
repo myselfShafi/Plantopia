@@ -1,6 +1,5 @@
 import { useContextTheme } from "@/hooks/useContextTheme";
 import {
-  FmdGood,
   LightMode,
   Login,
   NightsStay,
@@ -8,12 +7,12 @@ import {
   ShoppingCartCheckout,
 } from "@mui/icons-material";
 import {
-  Badge,
   Box,
   IconButton,
   InputAdornment,
   OutlinedInput,
   Toolbar,
+  Tooltip,
   Typography,
   useMediaQuery,
   useTheme,
@@ -21,6 +20,8 @@ import {
 import AppBar from "@mui/material/AppBar";
 import { Sidebar } from "../Sidebar";
 import { TopStrip } from "../TopStrip";
+import { CartDropdown } from "./CartDropdown";
+import { LocationDropdown } from "./LocationDropdown";
 
 export const Appbar = () => {
   const { lightMode, toggleTheme } = useContextTheme();
@@ -28,16 +29,24 @@ export const Appbar = () => {
   const mobileView = useMediaQuery(theme.breakpoints.down("md"));
 
   const navbtns = [
-    { id: 1, btn: <Login /> },
-    { id: 2, btn: <FmdGood /> },
     {
-      id: 3,
-      btn: <Badge badgeContent={4} children={<ShoppingCartCheckout />} />,
+      id: 1,
+      btn: (
+        <Tooltip title={"Sign Up/Log In"} arrow placement="left">
+          <IconButton children={<Login />} />
+        </Tooltip>
+      ),
     },
+    { id: 2, btn: <LocationDropdown /> },
+    { id: 3, btn: <CartDropdown /> },
     {
       id: 4,
-      btn: lightMode ? <NightsStay /> : <LightMode />,
-      onclick: () => toggleTheme(!lightMode),
+      btn: (
+        <IconButton
+          children={lightMode ? <NightsStay /> : <LightMode />}
+          onClick={() => toggleTheme(!lightMode)}
+        />
+      ),
     },
   ];
 
@@ -97,13 +106,7 @@ export const Appbar = () => {
             sx={{ width: "100%", maxWidth: "30rem" }}
           >
             {(mobileView ? cartbtn : navbtns).map((btn) => {
-              return (
-                <IconButton
-                  children={btn.btn}
-                  onClick={btn?.onclick}
-                  key={btn.id}
-                />
-              );
+              return <div key={btn.id}>{btn.btn}</div>;
             })}
           </Box>
         </Toolbar>
