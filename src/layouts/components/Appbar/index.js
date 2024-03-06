@@ -72,10 +72,10 @@ export const Appbar = () => {
             <Sidebar />
           ) : (
             <OutlinedInput
-              placeholder={"Search plants..."}
+              placeholder={"Looking for something green?"}
               sx={{
                 width: "100%",
-                maxWidth: "40rem",
+                maxWidth: "30rem",
               }}
               endAdornment={
                 <InputAdornment position="end">
@@ -85,7 +85,7 @@ export const Appbar = () => {
             />
           )}
           <Typography
-            variant="h1"
+            variant="h3"
             mx={"1rem"}
             children={"Plantopia"}
             color={"customColors.main"}
@@ -94,7 +94,7 @@ export const Appbar = () => {
             display={"flex"}
             justifyContent={mobileView ? "flex-end" : "space-between"}
             justifySelf={"flex-end"}
-            sx={{ width: "100%", maxWidth: "40rem" }}
+            sx={{ width: "100%", maxWidth: "30rem" }}
           >
             {(mobileView ? cartbtn : navbtns).map((btn) => {
               return (

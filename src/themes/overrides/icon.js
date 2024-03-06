@@ -3,11 +3,11 @@ const Icons = () => {
     MuiSvgIcon: {
       styleOverrides: {
         root: ({ ownerState, theme }) => ({
-          fontSize: "3rem",
+          fontSize: "2rem",
           color: theme.palette.customColors.main,
           ...(ownerState.className?.slice("").includes("stripIcon") && {
             color: theme.palette.background.default,
-            fontSize: "2.5rem",
+            fontSize: "1.8rem",
           }),
         }),
       },

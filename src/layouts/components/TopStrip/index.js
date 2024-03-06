@@ -21,12 +21,12 @@ export const TopStrip = () => {
   ];
   return (
     <Box
-      p={".8rem"}
+      p={".5rem"}
       bgcolor={"customColors.main"}
       display={{ xs: "none", md: "flex" }}
       justifyContent={"space-between"}
     >
-      <Box columnGap={"5rem"} display={"flex"}>
+      <Box columnGap={"3rem"} display={"flex"} alignItems={"center"}>
         {Icons.map((icon, index) => {
           return <div key={index}>{icon}</div>;
         })}
@@ -37,7 +37,7 @@ export const TopStrip = () => {
         children={"Nature's Cart"}
         variant="middle"
       />
-      <Box columnGap={"5rem"} display={"flex"}>
+      <Box columnGap={"3rem"} display={"flex"} alignItems={"center"}>
         {Icons.reverse().map((icon, index) => {
           return <div key={index}>{icon}</div>;
         })}

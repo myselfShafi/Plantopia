@@ -6,7 +6,6 @@
 
 
 html, body {
-  font-size: 70%;
   min-height: 100%;
 }
 
@@ -26,16 +25,6 @@ html, body {
   position: absolute;
   left: 50%;
   top: 50%;
-}
-
-.swiper-pagination-bullet {
-  height: 1rem !important;
-  width: 2rem !important;
-}
-
-.swiper-pagination-bullet-active {
-  width: 5rem !important;
-  border-radius: 5rem !important;
 }
 
 

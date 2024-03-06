@@ -35,7 +35,7 @@ export const Gridlist = ({ itemData }) => {
                   children={"SHOP NOW"}
                   variant="contained"
                   color="info"
-                  size="large"
+                  size="medium"
                 />
               }
             />

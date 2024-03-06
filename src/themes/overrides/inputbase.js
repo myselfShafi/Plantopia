@@ -5,7 +5,6 @@ const InputBase = () => {
         root: ({ ownerState, theme }) => ({
           borderRadius: 0,
           color: theme.palette.customColors.main,
-          fontSize: "1.5rem",
           "&:hover.Mui-error .MuiOutlinedInput-notchedOutline": {
             borderColor: theme.palette.error.main,
           },

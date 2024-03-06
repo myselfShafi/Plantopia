@@ -1,12 +1,11 @@
 import { Gridlist } from "@/components/GridList";
-import { Box, Button, Paper, Typography } from "@mui/material";
+import { Viewbox } from "@/components/Viewbox";
+import { ExpandCircleDownOutlined } from "@mui/icons-material";
+import { Button, Paper, Typography } from "@mui/material";
+import { useState } from "react";
 import img1 from "../../../public/assests/01.jpg";
 import img2 from "../../../public/assests/02.jpg";
-
 import img3 from "../../../public/assests/03.jpg";
-
-import { ExpandCircleDownOutlined } from "@mui/icons-material";
-import { useState } from "react";
 import img4 from "../../../public/assests/04.jpg";
 import img5 from "../../../public/assests/05.jpg";
 import img6 from "../../../public/assests/06.jpg";
@@ -20,12 +19,9 @@ const images = [
   { id: 1, src: img1, title: "Indoor" },
   { id: 2, src: img2, title: "Outdoor" },
   { id: 3, src: img5, title: "Floral" },
-
   { id: 4, src: img4, title: "Hangers" },
   { id: 5, src: img3, title: "Potted" },
-
   { id: 6, src: img9, title: "Herbs" },
-
   { id: 7, src: img8, title: "Seasonal" },
   { id: 8, src: img6, title: "Seeds & Bulbs" },
   { id: 9, src: img7, title: "Accesories" },
@@ -43,16 +39,9 @@ export const ContentGrid = () => {
 
   const imgSliced = images.slice(0, dataArr);
   return (
-    <Box
-      sx={{
-        maxWidth: "75%",
-        width: "100%",
-        margin: "0 auto",
-        position: "relative",
-      }}
-    >
-      <Typography variant="h2" children={title.main} mb={"3rem"} />
-      <Typography variant="h5" children={title.text} mb={"3rem"} />
+    <Viewbox>
+      <Typography variant="h3" children={title.main} mb={"3rem"} />
+      <Typography variant="subtitle1" children={title.text} mb={"3rem"} />
       <Gridlist itemData={imgSliced} />
       {imgSliced.length !== images.length && (
         <Paper elevation={0} className={"more-div"}>
@@ -60,8 +49,8 @@ export const ContentGrid = () => {
             children={"More"}
             variant="text"
             endIcon={<ExpandCircleDownOutlined />}
+            size="large"
             sx={{
-              fontSize: "3rem",
               textTransform: "capitalize",
               color: "customColors.main",
             }}
@@ -69,6 +58,6 @@ export const ContentGrid = () => {
           />
         </Paper>
       )}
-    </Box>
+    </Viewbox>
   );
 };

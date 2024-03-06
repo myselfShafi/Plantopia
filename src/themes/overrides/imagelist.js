@@ -28,7 +28,7 @@ const Imagelist = () => {
           rowGap: "2rem",
         },
         title: {
-          fontSize: "4rem",
+          fontSize: "2.5rem",
           overflow: "visible",
         },
       },

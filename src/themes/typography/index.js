@@ -5,11 +5,11 @@ const Typography = {
     letterSpacing: "-1.5px",
   },
   h2: {
-    fontWeight: 500,
+    fontWeight: 700,
     letterSpacing: "-0.5px",
   },
   h3: {
-    fontWeight: 500,
+    fontWeight: 700,
     letterSpacing: 0,
   },
   h4: {
@@ -18,14 +18,15 @@ const Typography = {
   },
   h5: {
     fontWeight: 500,
-    letterSpacing: ".75px",
-    lineHeight: 1.8,
+    letterSpacing: ".20px",
   },
   h6: {
+    fontWeight: 300,
     letterSpacing: "0.15px",
   },
   subtitle1: {
-    letterSpacing: "0.15px",
+    letterSpacing: "0.5px",
+    lineHeight: 1.8,
   },
   subtitle2: {
     letterSpacing: "0.1px",

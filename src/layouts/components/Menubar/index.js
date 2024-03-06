@@ -18,7 +18,12 @@ export const Menulist = ({ ...other }) => {
       {menuItems.map((item) => {
         return (
           <div key={item.id}>
-            <Button children={item.title} variant="text" {...other} />
+            <Button
+              children={item.title}
+              variant="text"
+              {...other}
+              size="small"
+            />
           </div>
         );
       })}
@@ -28,12 +33,12 @@ export const Menulist = ({ ...other }) => {
 
 export const Menubar = () => {
   const StyledStack = styled(Stack)(({ theme }) => ({
-    padding: "1.5rem",
+    padding: "1rem",
     flexDirection: "row",
     justifyContent: "space-between",
     [theme.breakpoints.up("lg")]: {
-      paddingLeft: "15rem",
-      paddingRight: "15rem",
+      paddingLeft: "10%",
+      paddingRight: "10%",
       display: "flex",
     },
   }));

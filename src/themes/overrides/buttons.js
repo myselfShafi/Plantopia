@@ -11,14 +11,11 @@ const Buttons = () => {
       },
       styleOverrides: {
         root: ({ ownerState, theme }) => ({
-          fontSize: "1.2rem",
-          fontWeight: 700,
           ...(ownerState.className?.slice("").includes("hover") && {
             "&.MuiButton-root:hover": {
               scale: "1.1",
             },
           }),
-
           whiteSpace: "nowrap",
           transition: "scale .5s ease",
         }),
@@ -32,6 +29,12 @@ const Buttons = () => {
           "& *:nth-of-type(1)": {
             fontSize: "unset",
           },
+        },
+        sizeLarge: {
+          fontSize: "2.5rem",
+        },
+        sizeMedium: {
+          fontSize: "1rem",
         },
       },
     },

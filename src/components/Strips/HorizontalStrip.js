@@ -6,7 +6,7 @@ export const HorizontalStrip = () => {
       {[1, 2].map((num) => (
         <Box className={"slider"} key={num}>
           <Typography
-            variant="h1"
+            variant="h3"
             p={"1.5rem"}
             color={"background.paper"}
             letterSpacing={"1rem"}

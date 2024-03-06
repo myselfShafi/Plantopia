@@ -5,7 +5,7 @@ const Paper = () => {
         root: ({ ownerState, theme }) => ({
           ...(ownerState.className?.slice("").includes("more-div") && {
             position: "absolute",
-            padding: "4rem",
+            paddingTop: "8rem",
             bottom: 0,
             width: "100%",
             textAlign: "center",

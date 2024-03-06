@@ -16,11 +16,23 @@ const Cssbaseline = () => {
             height: "50vh",
           },
           [theme.breakpoints.down("sm")]: {
-            height: "25vh",
+            height: "30vh",
           },
         },
+        ".swiper-pagination-bullet": {
+          height: ".8rem !important",
+          width: "2rem !important",
+          borderRadius: "2rem !important",
+        },
         ".swiper-pagination-bullet-active": {
+          width: "5rem !important",
+          borderRadius: "5rem !important",
           background: `${theme.palette.customColors.light} !important`,
+          [theme.breakpoints.down("md")]: {
+            height: ".5rem !important",
+            width: "3rem !important",
+            borderRadius: "3rem !important",
+          },
         },
         ".strip-box": {
           display: "flex",

@@ -28,8 +28,8 @@ const Palette = (mode) => {
     },
     secondary: {
       light: "#7F889B",
-      main: "#6D788D",
-      dark: "#606A7C",
+      main: "#4a5161",
+      dark: "#333333",
       contrastText: whiteColor,
     },
     error: {
