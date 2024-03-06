@@ -5,6 +5,7 @@ import Divider from "./divider";
 import Icons from "./icon";
 import Imagelist from "./imagelist";
 import InputBase from "./inputbase";
+import Links from "./links";
 import Paper from "./paper";
 
 export default {
@@ -16,4 +17,5 @@ export default {
   ...Cssbaseline(),
   ...Imagelist(),
   ...Paper(),
+  ...Links(),
 };

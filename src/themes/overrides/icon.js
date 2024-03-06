@@ -9,6 +9,9 @@ const Icons = () => {
             color: theme.palette.background.default,
             fontSize: "1.8rem",
           }),
+          ...(ownerState.className?.slice("").includes("mono") && {
+            color: theme.palette.grey[300],
+          }),
         }),
       },
     },

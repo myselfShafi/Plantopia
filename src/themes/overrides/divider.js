@@ -6,6 +6,7 @@ const Divider = () => {
           fontWeight: 800,
           alignSelf: "center",
           color: theme.palette.background.default,
+          borderColor: theme.palette.grey[700],
         }),
       },
     },

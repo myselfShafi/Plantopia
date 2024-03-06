@@ -24,6 +24,9 @@ const images = [
   { id: 6, src: img9, title: "Herbs" },
   { id: 7, src: img8, title: "Seasonal" },
   { id: 8, src: img6, title: "Seeds & Bulbs" },
+];
+
+const images2 = [
   { id: 9, src: img7, title: "Accesories" },
   { id: 10, src: img10, title: "Soil & Fertilizers" },
   { id: 11, src: img11, title: "Edibles" },
@@ -35,15 +38,18 @@ const title = {
 };
 
 export const ContentGrid = () => {
-  const [dataArr, setDataArr] = useState(9);
+  const [dataArr, setDataArr] = useState(images);
 
-  const imgSliced = images.slice(0, dataArr);
+  const loadMore = () => {
+    setDataArr((prevArr) => [...prevArr, ...images2]);
+  };
+
   return (
     <Viewbox>
       <Typography variant="h3" children={title.main} mb={"3rem"} />
       <Typography variant="subtitle1" children={title.text} mb={"3rem"} />
-      <Gridlist itemData={imgSliced} />
-      {imgSliced.length !== images.length && (
+      <Gridlist itemData={dataArr} />
+      {dataArr.length !== images.length + images2.length && (
         <Paper elevation={0} className={"more-div"}>
           <Button
             children={"More"}
@@ -54,7 +60,7 @@ export const ContentGrid = () => {
               textTransform: "capitalize",
               color: "customColors.main",
             }}
-            onClick={() => setDataArr(dataArr + dataArr)}
+            onClick={loadMore}
           />
         </Paper>
       )}
