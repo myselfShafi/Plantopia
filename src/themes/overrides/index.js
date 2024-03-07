@@ -1,5 +1,6 @@
 import Badge from "./badge";
 import Buttons from "./buttons";
+import Chip from "./chips";
 import Cssbaseline from "./cssbaseline";
 import Divider from "./divider";
 import Dropdowns from "./dropdowns";
@@ -22,4 +23,5 @@ export default {
   ...Links(),
   ...Dropdowns(),
   ...Tooltip(),
+  ...Chip(),
 };
