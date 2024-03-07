@@ -126,6 +126,7 @@ export const Footer = () => {
       <Typography
         variant="subtitle2"
         textAlign={"center"}
+        color={"customColors.light"}
         children={`©${getCurrentYear()} Plantopia. All rights reserved.`}
       />
     </Viewbox>

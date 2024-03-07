@@ -11,6 +11,7 @@ const Buttons = () => {
       },
       styleOverrides: {
         root: ({ ownerState, theme }) => ({
+          borderRadius: 0,
           ...(ownerState.className?.slice("").includes("hover") && {
             "&.MuiButton-root:hover": {
               scale: "1.1",

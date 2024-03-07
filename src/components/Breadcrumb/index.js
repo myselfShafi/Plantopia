@@ -1,3 +1,4 @@
+import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { Box, Chip } from "@mui/material";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "next/link";
@@ -15,8 +16,9 @@ export const titles = [
 
 export default function CustomBreadcrumb({ currentPath }) {
   const arrayTags = currentPath ? currentPath : titles;
+  const { mobView } = useMediaQueries();
   return (
-    <Box p={"2rem"}>
+    <Box p={mobView ? "0 2rem" : "2rem"}>
       <Breadcrumbs aria-label="custom-breadcrumb" separator={"|"}>
         {arrayTags?.map((list, idx) => {
           return (

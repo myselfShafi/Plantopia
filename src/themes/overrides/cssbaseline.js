@@ -91,6 +91,10 @@ const Cssbaseline = () => {
         ".category-img": {
           transition: "transform .3s linear",
         },
+        ".card-overlay": {
+          position: "relative",
+          paddingTop: "2rem",
+        },
       }),
     },
   };

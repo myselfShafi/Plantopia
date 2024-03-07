@@ -1,19 +1,16 @@
+import { useMediaQueries } from "@/hooks/useMediaQueries";
 import {
   Box,
   Button,
   ImageList,
   ImageListItem,
   ImageListItemBar,
-  useMediaQuery,
-  useTheme,
 } from "@mui/material";
 import { useRouter } from "next/router";
 
 export const Gridlist = ({ itemData }) => {
   const router = useRouter();
-  const theme = useTheme();
-  const tabView = useMediaQuery(theme.breakpoints.between("sm", "md"));
-  const mobView = useMediaQuery(theme.breakpoints.down("sm"));
+  const { tabView, mobView } = useMediaQueries();
 
   return (
     <Box>

@@ -12,7 +12,10 @@ export const CartDropdown = () => {
       <IconButton
         aria-describedby="cart-popover"
         children={
-          <Badge badgeContent={4} children={<ShoppingCartCheckout />} />
+          <Badge
+            badgeContent={4}
+            children={<ShoppingCartCheckout className="dual" />}
+          />
         }
         onMouseEnter={(e) => setIsOpen(e.currentTarget)}
         onMouseLeave={handleClose}

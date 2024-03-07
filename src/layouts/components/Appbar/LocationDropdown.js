@@ -11,7 +11,7 @@ export const LocationDropdown = () => {
     <Fragment>
       <IconButton
         aria-describedby="location-popover"
-        children={<FmdGood />}
+        children={<FmdGood className="dual" />}
         onMouseEnter={(e) => setIsOpen(e.currentTarget)}
         onMouseLeave={handleClose}
       />

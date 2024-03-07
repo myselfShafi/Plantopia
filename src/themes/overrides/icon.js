@@ -4,7 +4,9 @@ const Icons = () => {
       styleOverrides: {
         root: ({ ownerState, theme }) => ({
           fontSize: "2rem",
-          color: theme.palette.customColors.main,
+          ...(ownerState.className?.slice("").includes("dual") && {
+            color: theme.palette.customColors.main,
+          }),
           ...(ownerState.className?.slice("").includes("stripIcon") && {
             color: theme.palette.background.default,
             fontSize: "1.8rem",
@@ -13,6 +15,9 @@ const Icons = () => {
             color: theme.palette.grey[300],
           }),
         }),
+        fontSizeSmall: {
+          fontSize: "1.5rem",
+        },
       },
     },
   };

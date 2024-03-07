@@ -1,4 +1,5 @@
 import { useContextTheme } from "@/hooks/useContextTheme";
+import { useMediaQueries } from "@/hooks/useMediaQueries";
 import {
   LightMode,
   Login,
@@ -14,8 +15,6 @@ import {
   Toolbar,
   Tooltip,
   Typography,
-  useMediaQuery,
-  useTheme,
 } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Link from "next/link";
@@ -26,15 +25,14 @@ import { LocationDropdown } from "./LocationDropdown";
 
 export const Appbar = () => {
   const { lightMode, toggleTheme } = useContextTheme();
-  const theme = useTheme();
-  const mobileView = useMediaQuery(theme.breakpoints.down("md"));
+  const { tabmobView } = useMediaQueries();
 
   const navbtns = [
     {
       id: 1,
       btn: (
         <Tooltip title={"Sign Up/Log In"} arrow placement="left">
-          <IconButton children={<Login />} />
+          <IconButton children={<Login className="dual" />} />
         </Tooltip>
       ),
     },
@@ -44,7 +42,13 @@ export const Appbar = () => {
       id: 4,
       btn: (
         <IconButton
-          children={lightMode ? <NightsStay /> : <LightMode />}
+          children={
+            lightMode ? (
+              <NightsStay className="dual" />
+            ) : (
+              <LightMode className="dual" />
+            )
+          }
           onClick={() => toggleTheme(!lightMode)}
         />
       ),
@@ -54,7 +58,7 @@ export const Appbar = () => {
   const cartbtn = [
     {
       id: 1,
-      btn: <ShoppingCartCheckout />,
+      btn: <ShoppingCartCheckout className="dual" />,
     },
   ];
 
@@ -78,7 +82,7 @@ export const Appbar = () => {
           disableGutters
           sx={{ display: "grid", gridTemplateColumns: "1fr auto 1fr" }}
         >
-          {mobileView ? (
+          {tabmobView ? (
             <Sidebar />
           ) : (
             <OutlinedInput
@@ -89,7 +93,7 @@ export const Appbar = () => {
               }}
               endAdornment={
                 <InputAdornment position="end">
-                  <IconButton children={<SearchOutlined />} />
+                  <IconButton children={<SearchOutlined className="dual" />} />
                 </InputAdornment>
               }
             />
@@ -104,11 +108,11 @@ export const Appbar = () => {
           />
           <Box
             display={"flex"}
-            justifyContent={mobileView ? "flex-end" : "space-between"}
+            justifyContent={tabmobView ? "flex-end" : "space-between"}
             justifySelf={"flex-end"}
             sx={{ width: "100%", maxWidth: "30rem" }}
           >
-            {(mobileView ? cartbtn : navbtns).map((btn) => {
+            {(tabmobView ? cartbtn : navbtns).map((btn) => {
               return <div key={btn.id}>{btn.btn}</div>;
             })}
           </Box>

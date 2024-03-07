@@ -8,6 +8,7 @@ const Chip = () => {
           },
         },
         outlined: ({ ownerState, theme }) => ({
+          cursor: "pointer",
           color: theme.palette.text.primary,
           "&.MuiChip-colorDefault": {
             borderColor: theme.palette.text.primary,

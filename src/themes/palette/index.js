@@ -19,6 +19,7 @@ const Palette = (mode) => {
       light: `rgba(${lightColor}, 1.0)`,
       main: `rgba(${mainColor}, 1.0)`,
       dark: `rgba(${darkColor}, 1.0)`,
+      cardBg: mode ? "#e2e2e2" : "#c9d6ff",
     },
     primary: {
       light: "#787EFF",
@@ -79,7 +80,7 @@ const Palette = (mode) => {
     },
     divider: defaultBgColor(),
     background: {
-      paper: mode ? "#30334E" : whiteColor,
+      paper: mode ? "#333333" : "#f0efed",
       default: defaultBgColor(),
     },
   };

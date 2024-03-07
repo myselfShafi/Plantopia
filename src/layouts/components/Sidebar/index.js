@@ -12,7 +12,7 @@ export const Sidebar = () => {
   return (
     <>
       <IconButton
-        children={<DragHandle />}
+        children={<DragHandle className="dual" />}
         onClick={() => setOpen(true)}
         sx={{ width: "fit-content" }}
       />
