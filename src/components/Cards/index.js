@@ -4,13 +4,26 @@ import {
   Card,
   CardActions,
   CardContent,
+  Stack,
   Typography,
 } from "@mui/material";
 import Image from "next/image";
+import icon1 from "../../../public/assests/icon1.png";
+import icon2 from "../../../public/assests/icon2.png";
 import png1 from "../../../public/assests/png4.png";
 import { CustomRating } from "../CustomRating";
 
 export const CustomCard = () => {
+  const requirements = [
+    {
+      icon: icon1,
+      text: "Daily",
+    },
+    {
+      icon: icon2,
+      text: "Frequently",
+    },
+  ];
   return (
     <Card>
       <CardContent>
@@ -21,6 +34,7 @@ export const CustomCard = () => {
               alt="plants-card"
               fill
               style={{ objectFit: "contain" }}
+              priority
             />
           </Card>
           <Typography
@@ -44,6 +58,31 @@ export const CustomCard = () => {
           sx={{ float: "right" }}
         />
         <CustomRating />
+        <Stack flexDirection={"row"} alignItems={"center"} columnGap={1}>
+          {requirements.map((list, idx) => {
+            return (
+              <Stack
+                key={idx}
+                flexDirection={"row"}
+                alignItems={"center"}
+                columnGap={1}
+              >
+                <Image
+                  src={list.icon}
+                  alt={list.text}
+                  height={25}
+                  className="req-icon"
+                />
+                <Typography
+                  variant="subtitle2"
+                  color="text.primary"
+                  children={list.text}
+                  className="req-text"
+                />
+              </Stack>
+            );
+          })}
+        </Stack>
       </CardContent>
       <CardActions>
         <Button

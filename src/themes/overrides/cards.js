@@ -10,7 +10,7 @@ const Cards = () => {
           flexDirection: "column",
           justifyContent: "flex-end",
           background: "transparent",
-          height: "30rem",
+          height: "35rem",
           overflow: "visible",
           ...(ownerState.className?.slice("").includes("img-card") && {
             position: "absolute",

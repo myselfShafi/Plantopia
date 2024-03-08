@@ -37,7 +37,7 @@ export default function Category() {
             elevation={0}
           >
             <AccordionSummary
-              expandIcon={<ExpandMore />}
+              expandIcon={<ExpandMore className="dual" />}
               children={
                 <Typography
                   variant="h4"

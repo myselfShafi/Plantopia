@@ -95,6 +95,14 @@ const Cssbaseline = () => {
           position: "relative",
           paddingTop: "2rem",
         },
+        ".req-text": {
+          width: 0,
+          transition: "width .5s",
+          overflow: "hidden",
+        },
+        ".req-icon:hover + .req-text": {
+          width: "100%",
+        },
       }),
     },
   };
