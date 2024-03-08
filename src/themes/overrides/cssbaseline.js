@@ -103,6 +103,9 @@ const Cssbaseline = () => {
         ".req-icon:hover + .req-text": {
           width: "100%",
         },
+        ".abc": {
+          width: "20% !important",
+        },
       }),
     },
   };

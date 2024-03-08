@@ -2,6 +2,7 @@ import CustomBreadcrumb, { titles } from "@/components/Breadcrumb";
 import { Viewbox } from "@/components/Viewbox";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { CardGrid } from "@/views/CardsGrid";
+import { FilterBox } from "@/views/FilterBox";
 import { ExpandMore } from "@mui/icons-material";
 import {
   Accordion,
@@ -61,7 +62,7 @@ export default function Category() {
             <Typography variant="subtitle1" children={lorem} />
           </Box>
         )}
-
+        <FilterBox />
         <CardGrid />
       </Viewbox>
     </Fragment>

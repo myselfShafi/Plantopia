@@ -1,5 +1,5 @@
 import { useContextTheme } from "@/hooks/useContextTheme";
-import { DragHandle, LightMode, Login, NightsStay } from "@mui/icons-material";
+import { LightMode, Login, NightsStay, SortRounded } from "@mui/icons-material";
 import { Box, Drawer, IconButton, Stack } from "@mui/material";
 import { useState } from "react";
 import { Menulist } from "../Menubar";
@@ -12,7 +12,7 @@ export const Sidebar = () => {
   return (
     <>
       <IconButton
-        children={<DragHandle className="dual" />}
+        children={<SortRounded className="dual" />}
         onClick={() => setOpen(true)}
         sx={{ width: "fit-content" }}
       />
