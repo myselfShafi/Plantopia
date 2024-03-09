@@ -1,3 +1,4 @@
+import Accordion from "./accordion";
 import Badge from "./badge";
 import Buttons from "./buttons";
 import Cards from "./cards";
@@ -9,6 +10,7 @@ import Icons from "./icon";
 import Imagelist from "./imagelist";
 import InputBase from "./inputbase";
 import Links from "./links";
+import List from "./list";
 import Paper from "./paper";
 import Tooltip from "./tooltip";
 
@@ -26,4 +28,6 @@ export default {
   ...Tooltip(),
   ...Chip(),
   ...Cards(),
+  ...List(),
+  ...Accordion(),
 };

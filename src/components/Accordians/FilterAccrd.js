@@ -1,4 +1,4 @@
-import { Add } from "@mui/icons-material";
+import { ArrowDropDownRounded } from "@mui/icons-material";
 import {
   Accordion,
   AccordionDetails,
@@ -11,6 +11,30 @@ import {
   ListItemText,
 } from "@mui/material";
 import { useState } from "react";
+import { CustomSlider } from "../CustomSlider";
+
+const filterList = [
+  {
+    label: "Pot Size",
+    list: [
+      { id: 1, value: "Small" },
+      { id: 2, value: "Medium" },
+      { id: 3, value: "Large" },
+      { id: 4, value: "XLarge" },
+    ],
+  },
+  {
+    label: "Availability",
+    list: [
+      { id: 1, value: "In stock" },
+      { id: 2, value: "Out of stock" },
+    ],
+  },
+  {
+    label: "Pricing",
+    isSlide: true,
+  },
+];
 
 export const FilterAccrd = () => {
   const [checked, setChecked] = useState([0]);
@@ -28,44 +52,47 @@ export const FilterAccrd = () => {
     setChecked(newChecked);
   };
   return (
-    <Accordion elevation={0}>
-      <AccordionSummary
-        children={"Size"}
-        expandIcon={<Add className="dual" fontSize="small" />}
-      />
-      <AccordionDetails
-        children={"afshdnfgbsdfagrdtf"}
-        sx={{ background: "rgba(34, 34, 34,1)" }}
-      >
-        <List>
-          {[0, 1, 2, 3].map((value) => {
-            const labelId = `checkbox-list-label-${value}`;
+    <>
+      {filterList.map((form, idx) => {
+        return (
+          <Accordion key={idx}>
+            <AccordionSummary
+              sx={{ textWrap: "nowrap" }}
+              children={form.label}
+              expandIcon={<ArrowDropDownRounded className="dual" />}
+            />
+            <AccordionDetails className="filter-div">
+              {!form.isSlide ? (
+                <List>
+                  {form.list?.map((value) => {
+                    const labelId = `${form.label}-${value.id}`;
 
-            return (
-              <ListItem key={value} disablePadding>
-                <ListItemButton onClick={handleToggle(value)}>
-                  <ListItemIcon>
-                    <Checkbox
-                      edge="start"
-                      sx={{ padding: 0 }}
-                      checked={checked.indexOf(value) !== -1}
-                      tabIndex={-1}
-                      disableRipple
-                      inputProps={{ "aria-labelledby": labelId }}
-                      size="small"
-                    />
-                  </ListItemIcon>
-                  <ListItemText
-                    id={labelId}
-                    primary={`Line item ${value + 1}`}
-                    sx={{ fontSize: ".5rem" }}
-                  />
-                </ListItemButton>
-              </ListItem>
-            );
-          })}
-        </List>
-      </AccordionDetails>
-    </Accordion>
+                    return (
+                      <ListItem key={value.id}>
+                        <ListItemButton onClick={handleToggle(value.id)}>
+                          <ListItemIcon>
+                            <Checkbox
+                              sx={{ padding: 0 }}
+                              checked={checked.indexOf(value.id) !== -1}
+                              tabIndex={-1}
+                              disableRipple
+                              inputProps={{ "aria-labelledby": labelId }}
+                              size="small"
+                            />
+                          </ListItemIcon>
+                          <ListItemText id={labelId} primary={value.value} />
+                        </ListItemButton>
+                      </ListItem>
+                    );
+                  })}
+                </List>
+              ) : (
+                <CustomSlider />
+              )}
+            </AccordionDetails>
+          </Accordion>
+        );
+      })}
+    </>
   );
 };

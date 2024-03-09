@@ -4,7 +4,7 @@ export const SettingContext = createContext();
 
 export const SettingsProvider = ({ children }) => {
   const [filterOn, setFilterOn] = useState(false);
-  console.log({ filterOn });
+
   const toggleFilter = () => setFilterOn(!filterOn);
 
   const contextValue = { filterOn, toggleFilter };

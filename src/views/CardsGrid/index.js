@@ -1,22 +1,23 @@
 import { FilterAccrd } from "@/components/Accordians/FilterAccrd";
 import { CustomCard } from "@/components/Cards";
 import { useContextSetting } from "@/hooks/useContextTheme";
-import styled from "@emotion/styled";
-import { Collapse, Grid, Paper, Stack } from "@mui/material";
+import { Collapse, Grid, Stack } from "@mui/material";
 
 export const CardGrid = () => {
-  const { filterOn, toggleFilter } = useContextSetting();
-  const FilterBox = styled(Paper)(({ theme }) => ({
-    marginTop: "3rem",
-    width: "100%",
-    background: "transparent",
-  }));
+  const { filterOn } = useContextSetting();
+
   return (
     <Stack flexDirection={"row"} columnGap={2} position={"relative"}>
-      <Collapse orientation="horizontal" in={filterOn}>
-        <FilterBox>
-          <FilterAccrd />
-        </FilterBox>
+      <Collapse
+        orientation="horizontal"
+        in={filterOn}
+        sx={{
+          mt: "5rem",
+          width: filterOn && "20% !important",
+          "& .MuiCollapse-wrapper": { display: "block" },
+        }}
+      >
+        <FilterAccrd />
       </Collapse>
       <Grid container spacing={4} my={1}>
         {[...Array(12)].map((list, idx) => {

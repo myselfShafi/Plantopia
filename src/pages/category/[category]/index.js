@@ -33,10 +33,7 @@ export default function Category() {
       <CustomBreadcrumb currentPath={newTitle} />
       <Viewbox>
         {mobView ? (
-          <Accordion
-            sx={{ mb: "5rem", background: "background.paper" }}
-            elevation={0}
-          >
+          <Accordion sx={{ mb: "5rem" }}>
             <AccordionSummary
               expandIcon={<ExpandMore className="dual" />}
               children={
