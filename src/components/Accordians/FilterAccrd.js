@@ -34,6 +34,15 @@ const filterList = [
     label: "Pricing",
     isSlide: true,
   },
+  {
+    label: "Discount",
+    list: [
+      { id: 1, value: "0-10" },
+      { id: 2, value: "10-25" },
+      { id: 3, value: "25-40" },
+      { id: 4, value: "40-50" },
+    ],
+  },
 ];
 
 export const FilterAccrd = () => {
