@@ -11,8 +11,7 @@
         "water": "weekly",
         "sunlight": "low-moderate",
         "description": "Snake Plant, also known as Mother-in-Law's Tongue, is a hardy indoor plant with tall, sword-shaped leaves marked with striking patterns. It's revered for its air-purifying abilities, efficiently removing toxins such as formaldehyde and benzene from the air. Thriving in low to moderate light, this plant is an excellent choice for beginners and those with busy schedules.",
-        "price": 500,
-        "discount": 450
+        "price": 500
       },
       {
         "uuid": "89374cf6-2bc0-4d62-b2e2-d38b62e003f7",
@@ -160,8 +159,7 @@
         "water": "every other day",
         "sunlight": "full sun",
         "description": "Petunias are versatile annual flowers prized for their colorful blooms and cascading growth habit. They thrive in full sun and well-drained soil, making them ideal for flower beds, borders, and hanging baskets. With their continuous flowering throughout the summer months and wide range of colors, petunias add beauty and vibrancy to outdoor landscapes.",
-        "price": 60,
-        "discount": 50
+        "price": 60
       },
       {
         "uuid": "32dbda3a-1d6d-4ef7-a2d2-d8a4e9d405a1",
@@ -309,8 +307,7 @@
         "water": "2-3 days",
         "sunlight": "bright-indirect",
         "description": "Aloe Vera, a succulent plant renowned for its medicinal properties, is a valuable addition to any indoor space. With its fleshy, gel-filled leaves, it's prized for its ability to soothe skin irritations and promote healing. Preferring bright, indirect sunlight and infrequent watering, it's an easy-care plant that adds both beauty and functionality to interiors.",
-        "price": 300,
-        "discount": 250
+        "price": 300
       },
       {
         "uuid": "a8d67576-9fe6-4a5d-a953-51e885a6f8b3",
@@ -419,7 +416,6 @@
         "usage": "Monthly",
         "description": "Neem Oil is a natural plant care product derived from the seeds of the neem tree. It is prized for its insecticidal, antifungal, and antibacterial properties, making it an effective solution for controlling pests and diseases on plants. Neem Oil can be used as a foliar spray or soil drench to prevent and treat common garden problems such as aphids, mites, and powdery mildew.",
         "price": 180,
-        "discount": 160,
         "imgURL": "/assets/png7.png"
       },
       {

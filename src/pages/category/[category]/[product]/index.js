@@ -1,8 +1,23 @@
+import CustomBreadcrumb, { titles } from "@/components/Breadcrumb";
 import { useRouter } from "next/router";
+import { Fragment } from "react";
 
-export default function ProductDetails(second) {
+export default function ProductDetails() {
   const {
-    query: { product },
+    query: { category, product },
+    asPath,
   } = useRouter();
-  return <div>{product}</div>;
+
+  const newTitle = [
+    ...titles,
+    ...[
+      { label: category, href: `/category/${category}` },
+      { label: product, href: asPath },
+    ],
+  ];
+  return (
+    <Fragment>
+      <CustomBreadcrumb currentPath={newTitle} />
+    </Fragment>
+  );
 }

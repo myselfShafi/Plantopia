@@ -71,13 +71,19 @@ export const CustomCard = ({ data }) => {
             mb={"1rem"}
           />
         </Box>
-
-        <Typography
-          color="customColors.main"
-          fontWeight={800}
-          children={`INR ${data.price}`}
-          sx={{ float: "right" }}
-        />
+        <Box sx={{ float: "right" }}>
+          {data.discount && (
+            <Typography
+              sx={{ textDecoration: "line-through" }}
+              children={`INR ${data.price}`}
+            />
+          )}
+          <Typography
+            color="customColors.main"
+            fontWeight={800}
+            children={`INR ${data.discount ?? data.price}`}
+          />
+        </Box>
         <CustomRating />
         <Stack flexDirection={"row"} alignItems={"center"} columnGap={1}>
           {data.usage ? (
