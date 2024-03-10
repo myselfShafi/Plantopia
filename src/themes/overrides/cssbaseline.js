@@ -99,9 +99,11 @@ const Cssbaseline = () => {
           width: 0,
           transition: "width .5s",
           overflow: "hidden",
+          textWrap: "nowrap",
         },
         ".req-icon:hover + .req-text": {
           width: "100%",
+          textWrap: "nowrap",
         },
       }),
     },

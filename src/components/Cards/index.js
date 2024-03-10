@@ -8,20 +8,40 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
-import icon1 from "../../../public/assests/icon1.png";
-import icon2 from "../../../public/assests/icon2.png";
-import png1 from "../../../public/assests/png4.png";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import icon1 from "../../../public/assets/icon1.png";
+import icon2 from "../../../public/assets/icon2.png";
+import icon3 from "../../../public/assets/icon3.png";
 import { CustomRating } from "../CustomRating";
 
-export const CustomCard = () => {
+const ReqComp = ({ icon, text }) => {
+  return (
+    <Stack flexDirection={"row"} alignItems={"center"} columnGap={1}>
+      <Image src={icon} alt={text} height={25} className="req-icon" />
+      <Typography
+        variant="subtitle2"
+        color="text.primary"
+        children={text}
+        className="req-text"
+      />
+    </Stack>
+  );
+};
+
+export const CustomCard = ({ data }) => {
+  const {
+    query: { category },
+  } = useRouter();
+
   const requirements = [
     {
       icon: icon1,
-      text: "Daily",
+      text: data.water,
     },
     {
       icon: icon2,
-      text: "Frequently",
+      text: data.sunlight,
     },
   ];
   return (
@@ -30,9 +50,10 @@ export const CustomCard = () => {
         <Box className={"card-overlay"}>
           <Card className="img-card">
             <Image
-              src={png1}
-              alt="plants-card"
+              src={data.imgURL}
+              alt={data.name}
               fill
+              sizes="100vw"
               style={{ objectFit: "contain" }}
               priority
             />
@@ -41,12 +62,12 @@ export const CustomCard = () => {
             variant="subtitle1"
             color="text.secondary"
             fontWeight={800}
-            children={"Indoor Plant 1"}
+            children={data.name}
           />
           <Typography
             variant="subtitle2"
             color="text.primary"
-            children={"Scientific title of Plant"}
+            children={data.scientific}
             mb={"1rem"}
           />
         </Box>
@@ -54,34 +75,22 @@ export const CustomCard = () => {
         <Typography
           color="customColors.main"
           fontWeight={800}
-          children={"INR 399"}
+          children={`INR ${data.price}`}
           sx={{ float: "right" }}
         />
         <CustomRating />
         <Stack flexDirection={"row"} alignItems={"center"} columnGap={1}>
-          {requirements.map((list, idx) => {
-            return (
-              <Stack
-                key={idx}
-                flexDirection={"row"}
-                alignItems={"center"}
-                columnGap={1}
-              >
-                <Image
-                  src={list.icon}
-                  alt={list.text}
-                  height={25}
-                  className="req-icon"
-                />
-                <Typography
-                  variant="subtitle2"
-                  color="text.primary"
-                  children={list.text}
-                  className="req-text"
-                />
-              </Stack>
-            );
-          })}
+          {data.usage ? (
+            <ReqComp icon={icon3} text={data?.usage} />
+          ) : (
+            requirements.map((list, idx) => {
+              return (
+                <div key={idx}>
+                  <ReqComp icon={list.icon} text={list?.text} />
+                </div>
+              );
+            })
+          )}
         </Stack>
       </CardContent>
       <CardActions>
@@ -90,6 +99,8 @@ export const CustomCard = () => {
           children={"View Product"}
           variant="contained"
           color="success"
+          LinkComponent={Link}
+          href={`/category/${category}/${data.uuid}`}
         />
       </CardActions>
     </Card>

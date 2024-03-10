@@ -4,7 +4,7 @@ import { useContextSetting } from "@/hooks/useContextTheme";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { Collapse, Grid, Stack } from "@mui/material";
 
-export const CardGrid = () => {
+export const CardGrid = ({ data }) => {
   const { filterOn } = useContextSetting();
   const { tabmobView } = useMediaQueries();
 
@@ -28,10 +28,10 @@ export const CardGrid = () => {
         </Collapse>
       )}
       <Grid container spacing={4} my={1}>
-        {[...Array(12)].map((list, idx) => {
+        {data?.map((eachdata, idx) => {
           return (
             <Grid key={idx} item xs={12} sm={6} lg={4}>
-              <CustomCard />
+              <CustomCard data={eachdata} />
             </Grid>
           );
         })}

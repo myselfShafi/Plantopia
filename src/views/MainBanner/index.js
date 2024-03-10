@@ -1,10 +1,10 @@
 import { MainSwiper } from "@/components/Swiper/MainSwiper";
-import img1 from "../../../public/assests/1.jpg";
-import img2 from "../../../public/assests/2.jpg";
+import img1 from "../../../public/assets/1.jpg";
+import img2 from "../../../public/assets/2.jpg";
 
-import img3 from "../../../public/assests/3.jpg";
+import img3 from "../../../public/assets/3.jpg";
 
-import img4 from "../../../public/assests/4.jpg";
+import img4 from "../../../public/assets/4.jpg";
 
 export const MainBanner = () => {
   const images = [

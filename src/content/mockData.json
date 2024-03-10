@@ -1,0 +1,1080 @@
+{
+  "indoor": {
+    "title": "Indoor Plants",
+    "info": "Houseplants are like a breath of fresh air in our living spaces, bringing nature indoors and infusing our surroundings with vitality. From vibrant green foliage to delicate blooms, indoor plants have the power to transform any room into a tranquil oasis. Whether nestled on windowsills, adorning shelves, or hanging gracefully from ceilings, these botanical beauties not only enhance our decor but also purify the air we breathe. Embracing the nurturing presence of indoor plants cultivates a deeper connection to the natural world, fostering a sense of calm and well-being in our homes.",
+    "data": [
+      {
+        "uuid": "45f7e318-8746-4f34-99a4-dbeeeb78a47a",
+        "name": "Snake Plant",
+        "scientific": "Sansevieria trifasciata",
+        "imgURL": "/assets/png1.png",
+        "water": "weekly",
+        "sunlight": "low-moderate",
+        "description": "Snake Plant, also known as Mother-in-Law's Tongue, is a hardy indoor plant with tall, sword-shaped leaves marked with striking patterns. It's revered for its air-purifying abilities, efficiently removing toxins such as formaldehyde and benzene from the air. Thriving in low to moderate light, this plant is an excellent choice for beginners and those with busy schedules.",
+        "price": 500,
+        "discount": 450
+      },
+      {
+        "uuid": "89374cf6-2bc0-4d62-b2e2-d38b62e003f7",
+        "name": "Spider Plant",
+        "scientific": "Chlorophytum comosum",
+        "imgURL": "/assets/png2.png",
+        "water": "2-3 days",
+        "sunlight": "indirect",
+        "description": "Spider Plant, characterized by its arching leaves with white stripes, is an easy-to-grow indoor plant that adds a touch of elegance to any space. Besides its aesthetic appeal, it's highly regarded for its air-purifying qualities, effectively combating pollutants like formaldehyde and carbon monoxide. Thriving in indirect sunlight, it's a perfect choice for homes or offices with limited natural light.",
+        "price": 350,
+        "discount": 300
+      },
+      {
+        "uuid": "1ac5f8b1-8108-4ac4-86b2-7b43133c42b5",
+        "name": "Peace Lily",
+        "scientific": "Spathiphyllum",
+        "imgURL": "/assets/png3.png",
+        "water": "weekly",
+        "sunlight": "low-moderate",
+        "description": "Peace Lily, featuring lush, glossy foliage and elegant white flowers, is a beloved indoor plant known for its graceful beauty and air-purifying capabilities. It thrives in low to moderate light conditions and requires minimal maintenance. Beyond its ornamental value, this plant effectively removes toxins like ammonia and benzene from the air, promoting a healthier indoor environment.",
+        "price": 600,
+        "discount": 550
+      },
+      {
+        "uuid": "43b946b7-85cf-42c7-91c6-9d3e1f5d0dfb",
+        "name": "ZZ Plant",
+        "scientific": "Zamioculcas zamiifolia",
+        "imgURL": "/assets/png4.png",
+        "water": "2-3 days",
+        "sunlight": "low-moderate",
+        "description": "ZZ Plant, characterized by its glossy, dark green foliage and sturdy upright stems, is a resilient indoor plant that thrives on neglect. With its drought-tolerant nature and ability to tolerate low light conditions, it's an ideal choice for busy individuals or those new to plant care. Additionally, its air-purifying properties make it a valuable addition to any indoor space.",
+        "price": 450,
+        "discount": 400
+      },
+      {
+        "uuid": "8a08c18b-c425-4dbd-aa14-62f4ff1766cc",
+        "name": "Monstera Deliciosa",
+        "scientific": "Monstera deliciosa",
+        "imgURL": "/assets/png2.png",
+        "water": "weekly",
+        "sunlight": "indirect",
+        "description": "Monstera Deliciosa, commonly known as the Swiss Cheese Plant, is a stunning tropical indoor plant characterized by its large, fenestrated leaves and vigorous growth habit. Apart from its striking appearance, it's cherished for its air-purifying qualities, effectively removing pollutants and improving indoor air quality. Thriving in indirect sunlight, it's an excellent choice for adding a touch of tropical elegance to any interior.",
+        "price": 700,
+        "discount": 650
+      },
+      {
+        "uuid": "f74827d7-0c71-4c53-b46e-22d51bc732f2",
+        "name": "Fiddle Leaf Fig",
+        "scientific": "Ficus lyrata",
+        "imgURL": "/assets/png1.png",
+        "water": "weekly",
+        "sunlight": "bright-indirect",
+        "description": "Fiddle Leaf Fig, prized for its large, violin-shaped leaves and sculptural form, is a popular choice among plant enthusiasts for creating a focal point in interiors. Requiring bright, indirect sunlight and regular watering, it thrives in well-lit spaces. Beyond its aesthetic appeal, this plant contributes to a healthier indoor environment by filtering pollutants from the air.",
+        "price": 800,
+        "discount": 750
+      },
+      {
+        "uuid": "5f1225ff-fa6d-44c3-bc2d-5b5121d2f2f9",
+        "name": "Aloe Vera",
+        "scientific": "Aloe barbadensis miller",
+        "imgURL": "/assets/png4.png",
+        "water": "2-3 days",
+        "sunlight": "bright-indirect",
+        "description": "Aloe Vera, a succulent plant renowned for its medicinal properties, is a valuable addition to any indoor space. With its fleshy, gel-filled leaves, it's prized for its ability to soothe skin irritations and promote healing. Preferring bright, indirect sunlight and infrequent watering, it's an easy-care plant that adds both beauty and functionality to interiors.",
+        "price": 300,
+        "discount": 250
+      },
+      {
+        "uuid": "49e7ef34-71c7-4430-b9c8-2a916d63b8b3",
+        "name": "Pothos",
+        "scientific": "Epipremnum aureum",
+        "imgURL": "/assets/png3.png",
+        "water": "weekly",
+        "sunlight": "low-moderate",
+        "description": "Pothos, characterized by its heart-shaped leaves and trailing vines, is a versatile indoor plant that thrives in various light conditions. With its ability to purify the air by removing toxins, it contributes to a healthier indoor environment. Easy to care for and highly adaptable, it's an excellent choice for beginners or those seeking a low-maintenance green companion.",
+        "price": 250,
+        "discount": 200
+      },
+      {
+        "uuid": "5b2c2d92-4fe7-4b96-86ef-9f1ad7b37d0d",
+        "name": "Chinese Money Plant",
+        "scientific": "Pilea peperomioides",
+        "imgURL": "/assets/png2.png",
+        "water": "weekly",
+        "sunlight": "bright-indirect",
+        "description": "Chinese Money Plant, also known as the Pancake Plant, is a charming indoor plant with round, coin-shaped leaves attached to slender stems. Beyond its decorative appeal, it's believed to bring good luck and prosperity, making it a popular choice for gifting. Requiring bright, indirect sunlight and moderate watering, it's a delightful addition to any home or office space.",
+        "price": 400,
+        "discount": 350
+      },
+      {
+        "uuid": "b477fc38-52b0-4d44-9a79-7037b4964e7e",
+        "name": "Rubber Plant",
+        "scientific": "Ficus elastica",
+        "imgURL": "/assets/png4.png",
+        "water": "weekly",
+        "sunlight": "bright-indirect",
+        "description": "Rubber Plant, featuring large, glossy leaves and an upright growth habit, is a classic indoor plant that adds a touch of sophistication to interiors. With its air-purifying qualities and ability to thrive in bright, indirect sunlight, it's an ideal choice for enhancing indoor air quality and aesthetics. Easy to care for and long-lasting, it's a timeless addition to any indoor garden.",
+        "price": 550,
+        "discount": 500
+      }
+    ]
+  },
+  "outdoor": {
+    "title": "Outdoor Plants",
+    "info": "Gardens are the outdoor sanctuaries where nature's beauty flourishes under the open sky. With a palette of colors ranging from the vibrant hues of blossoming flowers to the lush greenery of thriving foliage, outdoor spaces come alive with the presence of plants. From sprawling lawns to meticulously curated landscapes, gardens offer a tapestry of textures and scents that delight the senses and awaken the soul. Whether tucked away in a secluded corner or proudly displayed in full view, outdoor plants invite us to immerse ourselves in the wonders of the natural world, providing a sanctuary for relaxation, contemplation, and rejuvenation amidst the hustle and bustle of everyday life.",
+    "data": [
+      {
+        "uuid": "ff3abfd7-874c-45c6-a97e-fb452f7ab4c1",
+        "name": "Lavender",
+        "scientific": "Lavandula",
+        "imgURL": "/assets/png1.png",
+        "water": "2-3 times a week",
+        "sunlight": "full sun",
+        "description": "Lavender is a fragrant herb known for its aromatic purple flowers and soothing scent. It thrives in sunny locations with well-drained soil, making it an excellent addition to gardens and landscapes. Besides its ornamental value, lavender attracts pollinators like bees and butterflies, contributing to a biodiverse outdoor environment.",
+        "price": 100,
+        "discount": 90
+      },
+      {
+        "uuid": "c2a6353b-9d2a-4aae-b3d1-66a3b7d7a9c7",
+        "name": "Rosemary",
+        "scientific": "Rosmarinus officinalis",
+        "imgURL": "/assets/png3.png",
+        "water": "once a week",
+        "sunlight": "full sun",
+        "description": "Rosemary is a versatile herb with fragrant needle-like leaves and blue flowers. It thrives in sunny locations with well-drained soil and requires minimal watering. Rosemary is valued not only for its culinary uses but also for its ornamental appeal and ability to attract beneficial insects like bees and butterflies to the garden.",
+        "price": 120,
+        "discount": 110
+      },
+      {
+        "uuid": "2f146e12-cb35-4ad4-9240-72be7b8f12a1",
+        "name": "Geranium",
+        "scientific": "Pelargonium",
+        "imgURL": "/assets/png4.png",
+        "water": "twice a week",
+        "sunlight": "partial sun",
+        "description": "Geraniums are popular flowering plants prized for their vibrant blooms and decorative foliage. They thrive in partial sun and well-drained soil, making them suitable for outdoor gardens, containers, and hanging baskets. With their prolific flowering and easy care requirements, geraniums add color and charm to any outdoor space.",
+        "price": 80,
+        "discount": 70
+      },
+      {
+        "uuid": "bf1c48b5-b3f2-4a05-a027-0a52d034f578",
+        "name": "Petunia",
+        "scientific": "Petunia",
+        "imgURL": "/assets/png2.png",
+        "water": "every other day",
+        "sunlight": "full sun",
+        "description": "Petunias are versatile annual flowers prized for their colorful blooms and cascading growth habit. They thrive in full sun and well-drained soil, making them ideal for flower beds, borders, and hanging baskets. With their continuous flowering throughout the summer months and wide range of colors, petunias add beauty and vibrancy to outdoor landscapes.",
+        "price": 60,
+        "discount": 50
+      },
+      {
+        "uuid": "32dbda3a-1d6d-4ef7-a2d2-d8a4e9d405a1",
+        "name": "Marigold",
+        "scientific": "Tagetes",
+        "imgURL": "/assets/png4.png",
+        "water": "once a week",
+        "sunlight": "full sun",
+        "description": "Marigolds are cheerful annual flowers known for their bright orange, yellow, or red blooms and aromatic foliage. They thrive in full sun and well-drained soil, making them popular choices for borders, containers, and companion planting. Marigolds not only add color to outdoor gardens but also deter pests like nematodes, making them valuable additions to vegetable gardens.",
+        "price": 70,
+        "discount": 60
+      },
+      {
+        "uuid": "6db84946-0e47-496b-9c1b-680c1f3a787a",
+        "name": "Daisy",
+        "scientific": "Bellis perennis",
+        "imgURL": "/assets/png3.png",
+        "water": "twice a week",
+        "sunlight": "full sun to partial shade",
+        "description": "Daisies are charming perennial flowers with white petals and yellow centers, adding a touch of innocence and simplicity to outdoor landscapes. They thrive in a variety of conditions, from full sun to partial shade, and require regular watering to maintain soil moisture. Daisies are versatile plants, suitable for flower beds, rock gardens, and wildflower meadows.",
+        "price": 90,
+        "discount": 80
+      },
+      {
+        "uuid": "e87b96a5-6c72-4a15-9c10-d7986d1b254b",
+        "name": "Snapdragon",
+        "scientific": "Antirrhinum majus",
+        "imgURL": "/assets/png1.png",
+        "water": "twice a week",
+        "sunlight": "full sun to partial shade",
+        "description": "Snapdragons are colorful annual flowers prized for their unique, snap-like blooms and vertical growth habit. They thrive in full sun to partial shade and well-drained soil, making them versatile additions to outdoor gardens and borders. Snapdragons attract pollinators like bees and butterflies and are often used as cut flowers for floral arrangements.",
+        "price": 110,
+        "discount": 100
+      },
+      {
+        "uuid": "2a76846b-476e-470e-97de-86d85e47c8d0",
+        "name": "Zinnia",
+        "scientific": "Zinnia elegans",
+        "imgURL": "/assets/png4.png",
+        "water": "every other day",
+        "sunlight": "full sun",
+        "description": "Zinnias are vibrant annual flowers known for their bold, dahlia-like blooms and long-lasting color display. They thrive in full sun and well-drained soil, making them perfect for flower beds, borders, and containers. With their wide range of colors and compact growth habit, zinnias are popular choices for adding visual interest and beauty to outdoor landscapes.",
+        "price": 100,
+        "discount": 90
+      },
+      {
+        "uuid": "1c85a9ff-80b2-4e1a-9069-efdd32abf1ab",
+        "name": "Sunflower",
+        "scientific": "Helianthus annuus",
+        "imgURL": "/assets/png2.png",
+        "water": "once a week",
+        "sunlight": "full sun",
+        "description": "Sunflowers are iconic annual plants known for their large, daisy-like blooms and towering height. They thrive in full sun and well-drained soil, making them excellent choices for borders, backyards, and fields. Sunflowers are not only admired for their beauty but also valued for their edible seeds and role in providing food and habitat for birds and pollinators.",
+        "price": 120,
+        "discount": 110
+      },
+      {
+        "uuid": "8a14e524-392d-45e3-b5d4-2c4a330bc011",
+        "name": "Lantana",
+        "scientific": "Lantana camara",
+        "imgURL": "/assets/png1.png",
+        "water": "twice a week",
+        "sunlight": "full sun",
+        "description": "Lantanas are colorful perennial shrubs prized for their clusters of vibrant flowers and tolerance to hot, sunny conditions. They thrive in full sun and well-drained soil, making them ideal choices for sunny borders, slopes, and containers. Lantanas attract butterflies and hummingbirds and are valued for their long-lasting blooms and drought tolerance.",
+        "price": 80,
+        "discount": 70
+      },
+      {
+        "uuid": "b3ec8414-60e8-4a49-8d3c-116649c15129",
+        "name": "Hydrangea",
+        "scientific": "Hydrangea macrophylla",
+        "imgURL": "/assets/png3.png",
+        "water": "twice a week",
+        "sunlight": "partial sun to partial shade",
+        "description": "Hydrangeas are deciduous shrubs valued for their large, showy flower clusters and lush foliage. They thrive in partial sun to partial shade and moist, well-drained soil, making them perfect for borders, hedges, and woodland gardens. With their ability to change flower color based on soil pH and their long-lasting blooms, hydrangeas add beauty and charm to outdoor landscapes.",
+        "price": 150,
+        "discount": 140
+      },
+      {
+        "uuid": "92e45612-d155-4d8d-b6e1-6db9d51be58b",
+        "name": "Daylily",
+        "scientific": "Hemerocallis",
+        "imgURL": "/assets/png1.png",
+        "water": "twice a week",
+        "sunlight": "full sun to partial shade",
+        "description": "Daylilies are resilient perennial plants prized for their colorful, trumpet-shaped blooms and easy care requirements. They thrive in full sun to partial shade and well-drained soil, making them versatile additions to flower beds, borders, and naturalized areas. With their long blooming period and wide range of colors, daylilies add beauty and charm to outdoor landscapes.",
+        "price": 90,
+        "discount": 80
+      }
+    ]
+  },
+  "potted": {
+    "title": "Potted Plants",
+    "info": "",
+    "data": [
+      {
+        "uuid": "5f7a8a6e-9f60-48f1-92bc-47bea2ff29e4",
+        "name": "Fiddle Leaf Fig",
+        "scientific": "Ficus lyrata",
+        "imgURL": "/assets/png3.png",
+        "water": "weekly",
+        "sunlight": "bright-indirect",
+        "description": "Fiddle Leaf Fig, prized for its large, violin-shaped leaves and sculptural form, is a popular choice among plant enthusiasts for creating a focal point in interiors. Requiring bright, indirect sunlight and regular watering, it thrives in well-lit spaces. Beyond its aesthetic appeal, this plant contributes to a healthier indoor environment by filtering pollutants from the air.",
+        "price": 800,
+        "discount": 750
+      },
+      {
+        "uuid": "b02b3d54-eb8b-4c4b-a20d-f9063bcfaaeb",
+        "name": "Snake Plant",
+        "scientific": "Sansevieria trifasciata",
+        "imgURL": "/assets/png2.png",
+        "water": "weekly",
+        "sunlight": "low-moderate",
+        "description": "Snake Plant, also known as Mother-in-Law's Tongue, is a hardy indoor plant with tall, sword-shaped leaves marked with striking patterns. It's revered for its air-purifying abilities, efficiently removing toxins such as formaldehyde and benzene from the air. Thriving in low to moderate light, this plant is an excellent choice for beginners and those with busy schedules.",
+        "price": 500,
+        "discount": 450
+      },
+      {
+        "uuid": "fe18d1f7-aae5-4328-b11d-013f9e363b51",
+        "name": "Peace Lily",
+        "scientific": "Spathiphyllum",
+        "imgURL": "/assets/png4.png",
+        "water": "weekly",
+        "sunlight": "low-moderate",
+        "description": "Peace Lily, featuring lush, glossy foliage and elegant white flowers, is a beloved indoor plant known for its graceful beauty and air-purifying capabilities. It thrives in low to moderate light conditions and requires minimal maintenance. Beyond its ornamental value, this plant effectively removes toxins like ammonia and benzene from the air, promoting a healthier indoor environment.",
+        "price": 600,
+        "discount": 550
+      },
+      {
+        "uuid": "f7b38c1e-9d1a-4ac5-8b22-947d42e2e2a1",
+        "name": "Spider Plant",
+        "scientific": "Chlorophytum comosum",
+        "imgURL": "/assets/png1.png",
+        "water": "2-3 days",
+        "sunlight": "indirect",
+        "description": "Spider Plant, characterized by its arching leaves with white stripes, is an easy-to-grow indoor plant that adds a touch of elegance to any space. Besides its aesthetic appeal, it's highly regarded for its air-purifying qualities, effectively combating pollutants like formaldehyde and carbon monoxide. Thriving in indirect sunlight, it's a perfect choice for homes or offices with limited natural light.",
+        "price": 350,
+        "discount": 300
+      },
+      {
+        "uuid": "a5031919-50a9-4da8-8955-228ce1b6e9d1",
+        "name": "Aloe Vera",
+        "scientific": "Aloe barbadensis miller",
+        "imgURL": "/assets/png3.png",
+        "water": "2-3 days",
+        "sunlight": "bright-indirect",
+        "description": "Aloe Vera, a succulent plant renowned for its medicinal properties, is a valuable addition to any indoor space. With its fleshy, gel-filled leaves, it's prized for its ability to soothe skin irritations and promote healing. Preferring bright, indirect sunlight and infrequent watering, it's an easy-care plant that adds both beauty and functionality to interiors.",
+        "price": 300,
+        "discount": 250
+      },
+      {
+        "uuid": "a8d67576-9fe6-4a5d-a953-51e885a6f8b3",
+        "name": "Rubber Plant",
+        "scientific": "Ficus elastica",
+        "imgURL": "/assets/png2.png",
+        "water": "weekly",
+        "sunlight": "bright-indirect",
+        "description": "Rubber Plant, featuring large, glossy leaves and an upright growth habit, is a classic indoor plant that adds a touch of sophistication to interiors. With its air-purifying qualities and ability to thrive in bright, indirect sunlight, it's an ideal choice for enhancing indoor air quality and aesthetics. Easy to care for and long-lasting, it's a timeless addition to any indoor garden.",
+        "price": 550,
+        "discount": 500
+      },
+      {
+        "uuid": "d0db0455-7dc4-419a-95d0-3196b93d8598",
+        "name": "Pothos",
+        "scientific": "Epipremnum aureum",
+        "imgURL": "/assets/png4.png",
+        "water": "weekly",
+        "sunlight": "low-moderate",
+        "description": "Pothos, characterized by its heart-shaped leaves and trailing vines, is a versatile indoor plant that thrives in various light conditions. With its ability to purify the air by removing toxins, it contributes to a healthier indoor environment. Easy to care for and highly adaptable, it's an excellent choice for beginners or those seeking a low-maintenance green companion.",
+        "price": 250,
+        "discount": 200
+      },
+      {
+        "uuid": "dfb1c196-74c2-4e25-b22a-660a06f1ac8a",
+        "name": "Money Plant",
+        "scientific": "Epipremnum aureum",
+        "imgURL": "/assets/png2.png",
+        "water": "weekly",
+        "sunlight": "low-moderate",
+        "description": "Money Plant, also known as Devil's Ivy, is a popular indoor plant with heart-shaped leaves that are believed to bring luck and prosperity. It thrives in low to moderate light conditions and requires minimal maintenance. With its ability to purify the air and its auspicious symbolism, Money Plant is a cherished addition to homes and offices.",
+        "price": 200,
+        "discount": 180
+      },
+      {
+        "uuid": "9b9f1589-bb18-4f11-b06c-85e2d3f2ed3b",
+        "name": "Jade Plant",
+        "scientific": "Crassula ovata",
+        "imgURL": "/assets/png1.png",
+        "water": "2-3 weeks",
+        "sunlight": "bright",
+        "description": "Jade Plant, also known as the money tree, is a succulent with small, thick, oval-shaped leaves that resemble coins. It is considered a symbol of good luck and prosperity in many cultures. With its ability to store water in its leaves, the Jade Plant is drought-tolerant and requires infrequent watering. It thrives in bright, indirect sunlight and is an ideal addition to indoor spaces.",
+        "price": 150,
+        "discount": 130
+      },
+      {
+        "uuid": "14b8da61-8e43-4b9b-b920-660ddc91e52c",
+        "name": "ZZ Plant",
+        "scientific": "Zamioculcas zamiifolia",
+        "imgURL": "/assets/png3.png",
+        "water": "2-3 weeks",
+        "sunlight": "low-moderate",
+        "description": "ZZ Plant, characterized by its glossy, dark green foliage and sturdy upright stems, is a resilient indoor plant that thrives on neglect. With its drought-tolerant nature and ability to tolerate low light conditions, it's an ideal choice for busy individuals or those new to plant care. Additionally, its air-purifying properties make it a valuable addition to any indoor space.",
+        "price": 400,
+        "discount": 350
+      },
+      {
+        "uuid": "5cfa3c12-39e3-4d14-8dc8-4aa48aeb2d52",
+        "name": "Cactus Mix",
+        "scientific": "Various species",
+        "imgURL": "/assets/png4.png",
+        "water": "every 2-3 weeks",
+        "sunlight": "bright",
+        "description": "Cactus Mix is a collection of various cactus species, each with its unique appearance and characteristics. These low-maintenance plants are perfect for adding a touch of desert beauty to indoor spaces. With their ability to store water in their stems and minimal water requirements, they're ideal for busy individuals or those new to plant care.",
+        "price": 120,
+        "discount": 100
+      },
+      {
+        "uuid": "b9a508d9-7e9e-49bc-92d8-5f31672ec9f3",
+        "name": "Chinese Evergreen",
+        "scientific": "Aglaonema",
+        "imgURL": "/assets/png1.png",
+        "water": "weekly",
+        "sunlight": "low-moderate",
+        "description": "Chinese Evergreen is a popular indoor plant known for its attractive foliage and tolerance to low light conditions. With its striking variegated leaves in shades of green, silver, and red, it adds a touch of elegance to any indoor space. Chinese Evergreen requires minimal maintenance and is an excellent choice for beginners or those looking to enhance their indoor environment.",
+        "price": 300,
+        "discount": 250
+      }
+    ]
+  },
+  "plant_care": {
+    "title": "Plant Care & Fertilizers",
+    "info": "Nurturing our green companions requires a delicate balance of attention and care, ensuring they thrive in their environment. From providing the right amount of sunlight to watering with precision, each aspect of plant care plays a crucial role in their well-being. Alongside these fundamental practices, fertilizers serve as the nourishing fuel that encourages robust growth and vibrant blooms. Whether organic or synthetic, fertilizers supply essential nutrients that replenish the soil and fortify plants against stressors. With proper application and timing, these vital supplements bolster the health and resilience of our botanical friends, empowering them to flourish and flourish.",
+    "data": [
+      {
+        "uuid": "f2565129-7b42-46fd-8d45-0e49d3174255",
+        "name": "All-Purpose Liquid Plant Food",
+        "usage": "Bi-weekly",
+        "description": "All-Purpose Liquid Plant Food is a balanced fertilizer formulated to promote healthy growth and vibrant blooms in a wide range of indoor and outdoor plants. Its concentrated formula provides essential nutrients, including nitrogen, phosphorus, and potassium, to support overall plant health and vigor. Ideal for use every two weeks during the growing season to encourage lush foliage and abundant flowering.",
+        "price": 150,
+        "discount": 130,
+        "imgURL": "/assets/png5.png"
+      },
+      {
+        "uuid": "a29e6d40-09bb-434a-b5ff-5a2a50d1b68d",
+        "name": "Organic Potting Soil",
+        "usage": "As needed",
+        "description": "Organic Potting Soil is a nutrient-rich blend formulated to provide the ideal growing environment for indoor and outdoor plants. Made from organic ingredients such as compost, coconut coir, and perlite, it promotes healthy root development and vigorous growth. This premium potting mix retains moisture while ensuring excellent drainage, creating optimal conditions for plant growth and vitality.",
+        "price": 200,
+        "discount": 180,
+        "imgURL": "/assets/png6.png"
+      },
+      {
+        "uuid": "e3deea8e-75c6-4c44-ae8d-aa59eac6e543",
+        "name": "Neem Oil",
+        "usage": "Monthly",
+        "description": "Neem Oil is a natural plant care product derived from the seeds of the neem tree. It is prized for its insecticidal, antifungal, and antibacterial properties, making it an effective solution for controlling pests and diseases on plants. Neem Oil can be used as a foliar spray or soil drench to prevent and treat common garden problems such as aphids, mites, and powdery mildew.",
+        "price": 180,
+        "discount": 160,
+        "imgURL": "/assets/png7.png"
+      },
+      {
+        "uuid": "c27f1913-d303-44fc-b9fd-f0cb27c0bdf6",
+        "name": "Slow-Release Fertilizer Spikes",
+        "usage": "Seasonal",
+        "description": "Slow-Release Fertilizer Spikes are convenient and easy-to-use fertilizer spikes designed to provide continuous feeding for indoor and outdoor plants. Each spike contains a balanced blend of essential nutrients, including nitrogen, phosphorus, and potassium, encased in a specially formulated coating that releases nutrients gradually over time. These spikes are ideal for feeding potted plants, trees, and shrubs throughout the growing season.",
+        "price": 120,
+        "discount": 100,
+        "imgURL": "/assets/png8.png"
+      },
+      {
+        "uuid": "47b0048f-b682-4dd0-b1d8-2a4a1f269804",
+        "name": "Compost",
+        "usage": "As needed",
+        "description": "Compost is a natural soil amendment made from decomposed organic matter, such as kitchen scraps, yard waste, and leaves. It enriches the soil with essential nutrients, improves soil structure, and enhances moisture retention, creating a fertile environment for plant growth. Compost can be used as a top dressing, incorporated into planting holes, or brewed into compost tea to nourish plants and promote healthy soil ecosystems.",
+        "price": 100,
+        "discount": 80,
+        "imgURL": "/assets/png5.png"
+      },
+      {
+        "uuid": "e61a7644-46af-4f4e-8d09-37c13b0b1601",
+        "name": "Liquid Seaweed Extract",
+        "usage": "Monthly",
+        "description": "Liquid Seaweed Extract is a natural plant tonic derived from seaweed harvested from pristine coastal waters. It contains a wide range of trace minerals, growth hormones, and amino acids that stimulate root development, improve nutrient uptake, and enhance plant resilience to stress. Applied as a foliar spray or soil drench, Liquid Seaweed Extract promotes vigorous growth, increased flowering, and overall plant health.",
+        "price": 160,
+        "discount": 140,
+        "imgURL": "/assets/png6.png"
+      },
+      {
+        "uuid": "5fe0c10a-52c6-4f70-8c8c-12186c4f05e8",
+        "name": "Insecticidal Soap",
+        "usage": "As needed",
+        "description": "Insecticidal Soap is a safe and effective plant care product formulated to control common pests such as aphids, spider mites, and whiteflies. Made from potassium salts of fatty acids, it disrupts the cellular membranes of insects upon contact, causing dehydration and eventual death. Insecticidal Soap is suitable for use on indoor and outdoor plants and can be applied directly to affected areas as a spray.",
+        "price": 140,
+        "discount": 120,
+        "imgURL": "/assets/png7.png"
+      },
+      {
+        "uuid": "d2c441fc-c45f-4fa4-b38c-1c7bbf888d63",
+        "name": "Rooting Hormone Powder",
+        "usage": "As needed",
+        "description": "Rooting Hormone Powder is a plant care product designed to promote root development and improve the success rate of propagation from cuttings. It contains synthetic or natural auxins that stimulate the formation of adventitious roots, enabling cuttings to establish themselves more quickly and effectively. Rooting Hormone Powder is applied by dipping the cut end of the cutting into the powder before planting.",
+        "price": 90,
+        "discount": 70,
+        "imgURL": "/assets/png8.png"
+      },
+      {
+        "uuid": "bb64bc2c-8634-40f3-84d0-fcb6b2a80481",
+        "name": "pH Testing Kit",
+        "usage": "Seasonal",
+        "description": "pH Testing Kit is a handy tool for monitoring the pH levels of soil and water, essential for maintaining optimal growing conditions for plants. It includes pH test strips or a pH meter for accurately measuring acidity or alkalinity levels. By ensuring the pH of the growing medium is within the ideal range for specific plant species, gardeners can prevent nutrient deficiencies and optimize nutrient uptake.",
+        "price": 50,
+        "discount": 40,
+        "imgURL": "/assets/png5.png"
+      },
+      {
+        "uuid": "c8735a2c-8c79-47b6-b01d-1b42d0042044",
+        "name": "Orchid Fertilizer",
+        "usage": "Monthly",
+        "description": "Orchid Fertilizer is a specialized fertilizer formulated to meet the unique nutritional needs of orchids, including epiphytic and terrestrial varieties. It contains a balanced blend of macro and micronutrients, as well as essential trace elements like calcium and magnesium, to support healthy growth and vibrant blooms. Orchid Fertilizer is applied monthly during the growing season to promote robust root development and abundant flowering.",
+        "price": 180,
+        "discount": 160,
+        "imgURL": "/assets/png6.png"
+      },
+      {
+        "uuid": "e867ec24-c2f6-4cf7-98b1-7289bf684527",
+        "name": "Mulch",
+        "usage": "Seasonal",
+        "description": "Mulch is a protective covering applied to the soil surface around plants to conserve moisture, suppress weed growth, and regulate soil temperature. It can be made from a variety of organic materials, such as shredded bark, straw, or compost, and helps improve soil structure and fertility as it decomposes. Mulch also enhances the aesthetic appeal of garden beds and containers while reducing the need for watering and weeding.",
+        "price": 70,
+        "discount": 60,
+        "imgURL": "/assets/png7.png"
+      },
+      {
+        "uuid": "09c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Plant Watering Globe",
+        "usage": "Continuous",
+        "description": "Plant Watering Globe is a decorative and practical solution for keeping potted plants hydrated while away from home or during busy periods. Made from glass or plastic, it features a hollow globe that slowly releases water into the soil as needed, ensuring plants receive a consistent water supply. Plant Watering Globes are ideal for use with indoor and outdoor plants and can help prevent under or overwatering.",
+        "price": 100,
+        "discount": 80,
+        "imgURL": "/assets/png8.png"
+      }
+    ]
+  },
+  "seeds_&_bulbs": {
+    "title": "Seeds & Bulbs",
+    "info": "In the palm of our hands lie the promise of new beginnings, encapsulated within tiny seeds and dormant bulbs. With care and precision, we plant them in soil, entrusting them to sunlight and water. From these humble beginnings, vibrant life emerges, unfurling into magnificent displays of color and fragrance. With patience and dedication, we witness the miracle of growth, connecting us to nature's resilience and the cyclical rhythm of life. As we sow these seeds of hope, we participate in the timeless dance of creation, fostering connections to the earth and the cycles of growth that sustain us.",
+    "data": [
+      {
+        "uuid": "8f2565129-7b42-46fd-8d45-0e49d3174255",
+        "name": "Tomato Seeds",
+        "usage": "Spring planting",
+        "price": 80,
+        "discount": 70,
+        "imgURL": "/assets/png9.png"
+      },
+      {
+        "uuid": "9a29e6d40-09bb-434a-b5ff-5a2a50d1b68d",
+        "name": "Tulip Bulbs",
+        "usage": "Autumn planting",
+        "description": "Tulip Bulbs are prized for their vibrant blooms and elegant appearance, making them popular choices for spring gardens and floral arrangements. These bulbs produce a variety of tulip colors and shapes, ranging from classic reds and yellows to exotic parrot tulips. Plant in well-drained soil and provide ample sunlight for stunning spring displays.",
+        "price": 120,
+        "discount": 110,
+        "imgURL": "/assets/png10.png"
+      },
+      {
+        "uuid": "b3e3deea8e-75c6-4c44-ae8d-aa59eac6e543",
+        "name": "Lavender Seeds",
+        "usage": "Spring planting",
+        "description": "Lavender Seeds are perfect for growing fragrant and ornamental lavender plants in gardens and landscapes. These seeds produce aromatic lavender blooms in shades of purple, blue, and white, attracting bees and butterflies to the garden. With their drought-tolerant nature and sun-loving disposition, lavender plants thrive in sunny, well-drained locations.",
+        "price": 100,
+        "discount": 90,
+        "imgURL": "/assets/png11.png"
+      },
+      {
+        "uuid": "cc27f1913-d303-44fc-b9fd-f0cb27c0bdf6",
+        "name": "Daffodil Bulbs",
+        "usage": "Autumn planting",
+        "description": "Daffodil Bulbs are cheerful spring-blooming bulbs known for their vibrant yellow, white, and orange flowers. These bulbs produce clusters of daffodil blooms atop sturdy stems, creating a striking display in gardens and landscapes. Plant in well-drained soil and provide full sun to partial shade for beautiful blooms year after year.",
+        "price": 90,
+        "discount": 80,
+        "imgURL": "/assets/png9.png"
+      },
+      {
+        "uuid": "0d47b0048f-b682-4dd0-b1d8-2a4a1f269804",
+        "name": "Rose Seeds",
+        "usage": "Spring planting",
+        "price": 150,
+        "discount": 140,
+        "imgURL": "/assets/png10.png"
+      },
+      {
+        "uuid": "4e61a7644-46af-4f4e-8d09-37c13b0b1601",
+        "name": "Sunflower Seeds",
+        "usage": "Spring planting",
+        "description": "Sunflower Seeds are the perfect choice for adding a splash of sunshine to gardens and landscapes. These seeds produce tall sunflower plants with large, cheerful blooms in shades of yellow and gold. With their vibrant flowers and edible seeds, sunflowers attract pollinators and provide a source of food for birds and wildlife.",
+        "price": 80,
+        "discount": 70,
+        "imgURL": "/assets/png11.png"
+      },
+      {
+        "uuid": "f5fe0c10a-52c6-4f70-8c8c-12186c4f05e8",
+        "name": "Lily Bulbs",
+        "usage": "Autumn planting",
+        "description": "Lily Bulbs are beloved for their exotic blooms and delightful fragrance, making them popular choices for gardeners and florists alike. These bulbs produce lily plants with elegant flowers in a variety of colors, including white, pink, and orange. Plant in well-drained soil and provide full sun to partial shade for stunning lily displays in late spring and summer.",
+        "price": 110,
+        "discount": 100,
+        "imgURL": "/assets/png9.png"
+      },
+      {
+        "uuid": "dd2c441fc-c45f-4fa4-b38c-1c7bbf888d63",
+        "name": "Vegetable Seeds Assortment",
+        "usage": "Spring planting",
+        "description": "Vegetable Seeds Assortment offers a diverse selection of seeds for growing a bountiful vegetable garden. This assortment includes popular vegetable varieties such as tomatoes, peppers, cucumbers, and carrots, providing a variety of flavors, textures, and colors to enjoy fresh from the garden. With proper care and maintenance, these seeds yield nutritious and delicious homegrown vegetables.",
+        "price": 130,
+        "discount": 120,
+        "imgURL": "/assets/png10.png"
+      },
+      {
+        "uuid": "7c8735a2c-8c79-47b6-b01d-1b42d0042044",
+        "name": "Gladiolus Bulbs",
+        "usage": "Spring planting",
+        "description": "Gladiolus Bulbs, also known as sword lilies, are prized for their tall spikes of colorful flowers, making them popular additions to summer gardens and cut flower arrangements. These bulbs produce gladiolus plants with striking blooms in hues of red, pink, purple, and white. Plant in well-drained soil and provide full sun for stunning gladiolus displays.",
+        "price": 100,
+        "discount": 90,
+        "imgURL": "/assets/png11.png"
+      },
+      {
+        "uuid": "f609c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Herb Seeds Collection",
+        "usage": "Spring planting",
+        "description": "Herb Seeds Collection offers a diverse assortment of seeds for growing flavorful herbs in home gardens and kitchen windowsills. This collection includes popular herb varieties such as basil, cilantro, parsley, and mint, providing an array of fresh herbs for culinary use. With proper care and maintenance, these seeds yield abundant harvests of aromatic and tasty herbs.",
+        "price": 100,
+        "discount": 90,
+        "imgURL": "/assets/png9.png"
+      },
+      {
+        "uuid": "a09c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Peony Bulbs",
+        "usage": "Autumn planting",
+        "description": "Peony Bulbs are cherished for their large, luxurious blooms and enchanting fragrance, making them prized additions to spring gardens and floral arrangements. These bulbs produce peony plants with exquisite flowers in shades of pink, white, and red, adding elegance and charm to any landscape. Plant in fertile, well-drained soil and provide full sun for optimal peony growth.",
+        "price": 140,
+        "discount": 130,
+        "imgURL": "/assets/png10.png"
+      }
+    ]
+  },
+  "plant_accessories": {
+    "title": "Plants Accessories and tools",
+    "info": "Enhancing the beauty and functionality of our green sanctuaries, plant accessories are the essential tools and embellishments that elevate our gardening experience. From decorative planters and trellises to practical watering cans and gardening gloves, these accessories not only add flair to our outdoor spaces but also streamline the care and maintenance of our botanical companions. With a vast array of options to suit every style and need, plant accessories allow us to personalize our gardening endeavors, creating unique and inviting environments that reflect our personality and passion for plants.",
+    "data": [
+      {
+        "uuid": "8f2565129-7b42-46fd-8d45-0e49d3174255",
+        "name": "Automatic Plant Watering System",
+        "description": "The Automatic Plant Watering System is a sophisticated solution for ensuring plants receive the right amount of water without manual intervention. Equipped with sensors and timers, this system automatically waters plants based on soil moisture levels and preset schedules, ensuring optimal hydration and plant health. Ideal for indoor and outdoor gardens, this system saves time and conserves water.",
+        "price": 1200,
+        "discount": 1100,
+        "imgURL": "/assets/png12.png"
+      },
+      {
+        "uuid": "9a29e6d40-09bb-434a-b5ff-5a2a50d1b68d",
+        "name": "LED Grow Lights",
+        "description": "LED Grow Lights provide supplemental lighting for indoor plants, ensuring they receive adequate light for healthy growth and development. These energy-efficient lights mimic natural sunlight and can be customized to suit different plant species and growth stages. With their compact design and adjustable brightness, LED Grow Lights are ideal for use in grow tents, shelves, and hydroponic setups.",
+        "price": 1000,
+        "discount": 900,
+        "imgURL": "/assets/png13.png"
+      },
+      {
+        "uuid": "b3e3deea8e-75c6-4c44-ae8d-aa59eac6e543",
+        "name": "Premium Plant Potting Bench",
+        "description": "The Premium Plant Potting Bench is a versatile workstation designed for potting, transplanting, and organizing gardening tools and supplies. Constructed from durable materials such as cedar or teak wood, this bench features multiple shelves, drawers, and hooks for storing pots, soil, and gardening equipment. With its ergonomic design and ample workspace, it's an essential addition to any gardener's arsenal.",
+        "price": 1500,
+        "discount": 1400,
+        "imgURL": "/assets/png14.png"
+      },
+      {
+        "uuid": "cc27f1913-d303-44fc-b9fd-f0cb27c0bdf6",
+        "name": "Smart Plant Monitoring Device",
+        "description": "The Smart Plant Monitoring Device is an innovative tool that allows users to remotely monitor and track the health and growth of their plants. Equipped with sensors for measuring soil moisture, temperature, and light levels, this device provides real-time data and alerts via a smartphone app. With its user-friendly interface and customizable settings, it's an indispensable tool for plant enthusiasts.",
+        "price": 1800,
+        "discount": 1700,
+        "imgURL": "/assets/png15.png"
+      },
+      {
+        "uuid": "0d47b0048f-b682-4dd0-b1d8-2a4a1f269804",
+        "name": "High-Pressure Plant Mister",
+        "description": "The High-Pressure Plant Mister is a professional-grade sprayer designed for delivering a fine mist of water or foliar spray to indoor and outdoor plants. Featuring a durable pump mechanism and adjustable nozzle, this mister produces a powerful and consistent spray pattern, ensuring thorough coverage and hydration for foliage and flowers. With its ergonomic design and easy-to-use functionality, it's a must-have for plant care enthusiasts.",
+        "price": 1300,
+        "discount": 1200,
+        "imgURL": "/assets/png12.png"
+      },
+      {
+        "uuid": "4e61a7644-46af-4f4e-8d09-37c13b0b1601",
+        "name": "Expandable Garden Hose",
+        "description": "The Expandable Garden Hose is a lightweight and flexible hose designed for watering gardens, lawns, and outdoor spaces with ease. Made from durable materials such as latex and polyester, this hose expands and contracts when water is turned on and off, eliminating kinks and tangles. With its compact design and adjustable length, it's convenient to store and transport, making it perfect for gardening enthusiasts.",
+        "price": 1400,
+        "discount": 1300,
+        "imgURL": "/assets/png13.png"
+      },
+      {
+        "uuid": "f5fe0c10a-52c6-4f70-8c8c-12186c4f05e8",
+        "name": "Heavy-Duty Plant Caddy",
+        "description": "The Heavy-Duty Plant Caddy is a sturdy and versatile platform designed for moving heavy potted plants with ease. Constructed from robust materials such as steel or resin, this caddy features durable casters that swivel 360 degrees, allowing for smooth and effortless maneuverability. With its adjustable size and weight capacity, it's suitable for transporting large pots and planters indoors and outdoors.",
+        "price": 1600,
+        "discount": 1500,
+        "imgURL": "/assets/png14.png"
+      },
+      {
+        "uuid": "dd2c441fc-c45f-4fa4-b38c-1c7bbf888d63",
+        "name": "Premium Garden Gloves",
+        "description": "Premium Garden Gloves provide superior protection and comfort for hands during gardening tasks. Made from high-quality materials such as leather or synthetic fibers, these gloves offer excellent durability, flexibility, and grip, allowing for precise handling of tools and plants. With their reinforced palms and fingertips, they're ideal for tackling tough gardening jobs while keeping hands safe and comfortable.",
+        "price": 1700,
+        "discount": 1600,
+        "imgURL": "/assets/png15.png"
+      },
+      {
+        "uuid": "7c8735a2c-8c79-47b6-b01d-1b42d0042044",
+        "name": "Vertical Garden Wall Planter",
+        "description": "The Vertical Garden Wall Planter is a space-saving solution for creating lush green walls and vertical gardens indoors and outdoors. Made from durable materials such as plastic or metal, this planter features multiple pockets or shelves for planting a variety of herbs, flowers, and succulents. With its modular design and easy installation, it's perfect for adding greenery to small spaces and urban environments.",
+        "price": 1800,
+        "discount": 1700,
+        "imgURL": "/assets/png12.png"
+      },
+      {
+        "uuid": "f609c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Automatic Plant Feeder",
+        "description": "The Automatic Plant Feeder is a convenient device that delivers nutrients to plants gradually over time, ensuring they receive essential fertilizers for healthy growth and development. Featuring a reservoir and drip irrigation system, this feeder can be filled with liquid or soluble fertilizers, which are dispensed directly to plant roots as needed. With its programmable timer and adjustable flow rate, it's an efficient and hassle-free way to fertilize plants.",
+        "price": 1900,
+        "discount": 1800,
+        "imgURL": "/assets/png13.png"
+      },
+      {
+        "uuid": "a09c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Premium Garden Cart",
+        "description": "The Premium Garden Cart is a versatile tool for transporting heavy loads of soil, plants, and equipment in gardens, yards, and landscaping projects. Constructed from heavy-duty materials such as steel or polyethylene, this cart features large pneumatic tires and a sturdy handle for easy maneuverability over various terrains. With its spacious bed and high weight capacity, it's indispensable for tackling big gardening tasks with ease.",
+        "price": 2000,
+        "discount": 1900,
+        "imgURL": "/assets/png14.png"
+      },
+      {
+        "uuid": "b09c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Plant Humidifier",
+        "description": "The Plant Humidifier is a specialized device designed to increase humidity levels around indoor plants, creating a more favorable environment for their growth and well-being. Equipped with ultrasonic technology, this humidifier emits a fine mist of water into the air, providing plants with the moisture they need to thrive. With its compact size and adjustable settings, it's perfect for use in homes, offices, and greenhouses.",
+        "price": 2200,
+        "discount": 2100,
+        "imgURL": "/assets/png15.png"
+      }
+    ]
+  },
+  "gifts_&_sets": {
+    "title": "Gifts and Sets",
+    "info": "Gift-giving takes on a botanical charm with plants gift sets, offering a delightful way to celebrate special occasions and express heartfelt sentiments. From lush terrariums and succulent arrangements to elegant bonsai trees and flowering plant baskets, these thoughtfully curated sets bring the beauty of nature into the lives of loved ones. Whether commemorating birthdays, anniversaries, or expressing sympathy, plants gift sets offer a living reminder of love, growth, and renewal. Paired with charming accessories such as decorative pots, watering cans, or personalized plant markers, these gifts become treasured keepsakes that evoke fond memories and inspire continued nurturing. With a diverse selection of plants and presentation options to choose from, there's a perfect gift set for every occasion and recipient, fostering connections and spreading joy one green gift at a time.",
+    "data": [
+      {
+        "uuid": "8f2565129-7b42-46fd-8d45-0e49d3174255",
+        "name": "Succulent Gift Set",
+        "description": "The Succulent Gift Set is a charming collection of assorted succulents presented in decorative pots or containers. These low-maintenance plants are perfect for adding a touch of greenery to desks, shelves, or windowsills. With their unique shapes and textures, succulents make delightful gifts for any occasion, from birthdays to housewarmings.",
+        "price": 700,
+        "discount": 650,
+        "imgURL": "/assets/png12.png"
+      },
+      {
+        "uuid": "9a29e6d40-09bb-434a-b5ff-5a2a50d1b68d",
+        "name": "Herb Garden Starter Kit",
+        "description": "The Herb Garden Starter Kit is a complete set for growing fresh herbs at home. It includes pots, seeds, soil, and instructions for cultivating a variety of culinary herbs such as basil, parsley, and cilantro. This kit is perfect for novice gardeners or anyone looking to add flavor and freshness to their cooking.",
+        "price": 800,
+        "discount": 750,
+        "imgURL": "/assets/png11.png"
+      },
+      {
+        "uuid": "b3e3deea8e-75c6-4c44-ae8d-aa59eac6e543",
+        "name": "Indoor Plant Care Set",
+        "description": "The Indoor Plant Care Set is a thoughtful gift for plant lovers and enthusiasts. It includes essential tools and accessories for maintaining healthy indoor plants, such as watering cans, pruning shears, and plant food. With this set, recipients can nurture their green companions with care and attention.",
+        "price": 900,
+        "discount": 850,
+        "imgURL": "/assets/png9.png"
+      },
+      {
+        "uuid": "cc27f1913-d303-44fc-b9fd-f0cb27c0bdf6",
+        "name": "Terrarium DIY Kit",
+        "description": "The Terrarium DIY Kit allows recipients to create their miniature garden enclosed in glass. It includes a glass container, soil, decorative rocks, and a variety of small plants or succulents. This kit provides a fun and creative activity for individuals or groups and makes a unique and memorable gift for nature lovers.",
+        "price": 1000,
+        "discount": 950,
+        "imgURL": "/assets/png15.png"
+      },
+      {
+        "uuid": "0d47b0048f-b682-4dd0-b1d8-2a4a1f269804",
+        "name": "Bonsai Tree Gift Set",
+        "description": "The Bonsai Tree Gift Set is a symbol of beauty, harmony, and tranquility. It includes a miniature bonsai tree, bonsai pot, pruning scissors, and care instructions. Bonsai trees are revered for their graceful appearance and meditative qualities, making them meaningful gifts for special occasions.",
+        "price": 1100,
+        "discount": 1050,
+        "imgURL": "/assets/png14.png"
+      },
+      {
+        "uuid": "4e61a7644-46af-4f4e-8d09-37c13b0b1601",
+        "name": "Air Plant Collection",
+        "description": "The Air Plant Collection features a variety of unique and exotic air plants presented in stylish containers or holders. These low-maintenance plants thrive without soil and require minimal care, making them perfect for busy lifestyles. With their intriguing forms and textures, air plants make eye-catching gifts for plant enthusiasts.",
+        "price": 1200,
+        "discount": 1150,
+        "imgURL": "/assets/png13.png"
+      },
+      {
+        "uuid": "f5fe0c10a-52c6-4f70-8c8c-12186c4f05e8",
+        "name": "Cactus Gift Box",
+        "description": "The Cactus Gift Box is a delightful assortment of small cacti presented in a decorative box or container. These hardy and resilient plants require minimal water and maintenance, making them perfect for busy individuals or those new to plant care. With their unique shapes and spiny textures, cacti add charm and personality to any space.",
+        "price": 1300,
+        "discount": 1250,
+        "imgURL": "/assets/png10.png"
+      },
+      {
+        "uuid": "dd2c441fc-c45f-4fa4-b38c-1c7bbf888d63",
+        "name": "Scented Candle Gift Set",
+        "description": "The Scented Candle Gift Set is a luxurious treat for the senses, featuring a selection of fragrant candles in elegant packaging. Each candle is carefully crafted from premium ingredients and infused with essential oils or botanical extracts, creating a soothing and aromatic ambiance. This set is perfect for relaxation, meditation, or creating a cozy atmosphere at home.",
+        "price": 1400,
+        "discount": 1350,
+        "imgURL": "/assets/png15.png"
+      },
+      {
+        "uuid": "7c8735a2c-8c79-47b6-b01d-1b42d0042044",
+        "name": "Plant Lover's Journal",
+        "description": "The Plant Lover's Journal is a beautifully designed notebook for recording gardening adventures, plant care tips, and botanical inspirations. Featuring lined pages, illustrations, and prompts for tracking plant growth and observations, this journal is the perfect companion for green-thumbed enthusiasts. It's a thoughtful and practical gift for anyone passionate about plants.",
+        "price": 1500,
+        "discount": 1450,
+        "imgURL": "/assets/png9.png"
+      },
+      {
+        "uuid": "f609c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Botanical Art Prints Set",
+        "description": "The Botanical Art Prints Set is a curated collection of botanical illustrations and prints, perfect for adding a touch of nature to any space. Featuring exquisite artwork depicting flowers, plants, and foliage, these prints make beautiful wall decorations or gifts for plant enthusiasts and art lovers alike. Printed on high-quality paper with archival inks, they're designed to last a lifetime.",
+        "price": 1600,
+        "discount": 1550,
+        "imgURL": "/assets/png11.png"
+      },
+      {
+        "uuid": "a09c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Gardening Tool Set with Tote",
+        "description": "The Gardening Tool Set with Tote is a comprehensive kit for tackling gardening tasks with ease and efficiency. It includes essential tools such as trowels, pruners, cultivators, and gloves, neatly organized in a durable tote bag for convenient storage and transport. Whether planting, weeding, or pruning, this set has everything needed to maintain a beautiful and productive garden.",
+        "price": 1700,
+        "discount": 1650,
+        "imgURL": "/assets/png13.png"
+      },
+      {
+        "uuid": "b09c03f3c-f98c-48c5-b0a4-9a4f779f97cd",
+        "name": "Hanging Plant Basket Set",
+        "description": "The Hanging Plant Basket Set is a stylish way to display cascading plants and trailing vines indoors or outdoors. It includes decorative baskets or holders with built-in hooks for easy hanging, creating vertical gardens or green accents in any space. With their attractive designs and functional features, these baskets are perfect for adding charm and greenery to porches, patios, or windows.",
+        "price": 1800,
+        "discount": 1750,
+        "imgURL": "/assets/png12.png"
+      }
+    ]
+  },
+  "seasonal_plants": {
+    "title": "Seasonal Plants",
+    "info": "Nature's ever-changing palette unfolds with the arrival of each new season, offering a rotating cast of botanical delights to grace our gardens and landscapes. From the vibrant blooms of spring bulbs to the fiery foliage of autumnal trees, seasonal plants paint the landscape with bursts of color and texture, signaling the passage of time and the shifting rhythms of the natural world. Embracing the ebb and flow of the seasons, we eagerly anticipate the arrival of each new wave of floral displays and foliage transformations, eagerly planting and tending to seasonal favorites that flourish in their appointed time. ",
+    "data": [
+      {
+        "uuid": "se4fcb27c0bdf6-4f34-44fc-b9fd-cc0c27c0bdf6",
+        "name": "Poinsettia",
+        "scientific": "Euphorbia pulcherrima",
+        "water": "Weekly",
+        "sunlight": "Indirect sunlight",
+        "description": "Poinsettias are popular seasonal plants known for their vibrant red and green foliage, making them a staple of holiday decor. These plants symbolize the spirit of Christmas and are often used as festive centerpieces or gifts. With proper care and maintenance, including regular watering and indirect sunlight, poinsettias can brighten up any home during the holiday season.",
+        "price": 250,
+        "discount": 220,
+        "imgURL": "/assets/png3.png"
+      },
+      {
+        "uuid": "so7d2c441fc-c45f-4fa4-b38c-1c7bso7d2c441fc",
+        "name": "Christmas Cactus",
+        "scientific": "Schlumbergera",
+        "water": "Bi-weekly",
+        "sunlight": "Bright indirect light",
+        "description": "Christmas Cactus is a popular seasonal plant cherished for its colorful blooms that coincide with the holiday season. With their vibrant flowers in shades of pink, red, and white, Christmas Cacti add a festive touch to any indoor space. These easy-to-care-for plants thrive in bright indirect light and require minimal watering, making them ideal for holiday decorations.",
+        "price": 200,
+        "discount": 180,
+        "imgURL": "/assets/png2.png"
+      },
+      {
+        "uuid": "sp4e61a7644-46af-4f4e-8d09-37c13sp4e61a7644",
+        "name": "Amaryllis",
+        "scientific": "Hippeastrum",
+        "water": "Weekly",
+        "sunlight": "Bright, indirect light",
+        "description": "Amaryllis is a stunning seasonal plant known for its large, trumpet-shaped blooms that emerge in the winter months. Available in a variety of colors, including red, white, pink, and orange, Amaryllis adds elegance and beauty to indoor spaces during the holiday season. With proper care and attention to watering and light requirements, Amaryllis bulbs can produce multiple blooms for weeks of enjoyment.",
+        "price": 300,
+        "discount": 270,
+        "imgURL": "/assets/png1.png"
+      },
+      {
+        "uuid": "ss8f2565129-7b42-46fd-8d45-0e49ss8f2565129",
+        "name": "Cyclamen",
+        "scientific": "Cyclamen persicum",
+        "water": "When soil is dry",
+        "sunlight": "Bright, indirect light",
+        "description": "Cyclamen is a charming seasonal plant prized for its delicate, swept-back flowers and attractive marbled leaves. Available in shades of pink, red, purple, and white, Cyclamen blooms during the winter months, adding color and elegance to indoor spaces. With their preference for cool temperatures and bright, indirect light, Cyclamen plants thrive as festive decorations or gifts during the holiday season.",
+        "price": 280,
+        "discount": 250,
+        "imgURL": "/assets/png4.png"
+      },
+      {
+        "uuid": "si9a29e6d40-09bb-434a-b5ff-5a2asi9a29e6d40",
+        "name": "Winter Jasmine",
+        "scientific": "Jasminum nudiflorum",
+        "water": "Moderate",
+        "sunlight": "Full sun to partial shade",
+        "description": "Winter Jasmine is a delightful seasonal plant known for its bright yellow flowers that bloom during the winter months. This deciduous shrub adds cheerful color to gardens and landscapes when many other plants are dormant. Winter Jasmine is easy to grow and thrives in a variety of conditions, from full sun to partial shade, making it a versatile and low-maintenance addition to winter gardens.",
+        "price": 270,
+        "discount": 240,
+        "imgURL": "/assets/png3.png"
+      },
+      {
+        "uuid": "sd0d47b0048f-b682-4dd0-b1d8-2a4asd0d47b0048f",
+        "name": "Holly",
+        "scientific": "Ilex aquifolium",
+        "water": "Regularly",
+        "sunlight": "Full sun to partial shade",
+        "description": "Holly is a classic seasonal plant synonymous with the winter holidays, featuring glossy green leaves and bright red berries. This evergreen shrub adds festive cheer to gardens and landscapes during the colder months and is often used in wreaths, garlands, and floral arrangements. Holly plants are adaptable and easy to grow, thriving in a range of conditions from full sun to partial shade.",
+        "price": 290,
+        "discount": 260,
+        "imgURL": "/assets/png2.png"
+      },
+      {
+        "uuid": "ss2b3e3deea8e-75c6-4c44-ae8d-aa59ss2b3e3deea8e",
+        "name": "Winterberry",
+        "scientific": "Ilex verticillata",
+        "water": "Regularly",
+        "sunlight": "Full sun to partial shade",
+        "description": "Winterberry is a striking seasonal plant valued for its clusters of bright red berries that adorn bare branches in the winter months. This deciduous shrub provides valuable food for birds and wildlife during the colder months and adds color and interest to winter landscapes. Winterberry plants are easy to grow and thrive in a variety of soil types and light conditions, making them a versatile choice for winter gardens.",
+        "price": 310,
+        "discount": 280,
+        "imgURL": "/assets/png1.png"
+      },
+      {
+        "uuid": "swcc27f1913-d303-44fc-b9fd-f0cc27f1913",
+        "name": "Snowdrop",
+        "scientific": "Galanthus",
+        "water": "Regularly",
+        "sunlight": "Partial shade",
+        "description": "Snowdrop is a charming seasonal plant heralding the arrival of spring with its dainty white flowers that bloom in late winter. These early bloomers are often the first signs of new life in the garden, pushing through snow and frost to bring hope and renewal. Snowdrops are easy to grow and naturalize readily, forming carpets of delicate blooms that enchant gardeners and herald the changing seasons.",
+        "price": 260,
+        "discount": 230,
+        "imgURL": "/assets/png4.png"
+      },
+      {
+        "uuid": "sz0d47b0048f-b682-4dd0-b1d8-2a4asz0d47b0048f",
+        "name": "Winter Pansies",
+        "scientific": "Viola",
+        "water": "Regularly",
+        "sunlight": "Full sun to partial shade",
+        "description": "Winter Pansies are cheerful seasonal plants admired for their bright, colorful flowers that bloom during the cooler months. These cold-hardy annuals add splashes of vibrant hues to gardens, containers, and borders when many other plants are dormant. Winter Pansies thrive in cool temperatures and are easy to grow, making them popular choices for adding winter interest to landscapes and outdoor spaces.",
+        "price": 270,
+        "discount": 240,
+        "imgURL": "/assets/png3.png"
+      },
+      {
+        "uuid": "ss1b3e3deea8e-75c6-4c44-ae8d-aa59ss1b3e3deea8e",
+        "name": "Winter Heather",
+        "scientific": "Erica carnea",
+        "water": "Regularly",
+        "sunlight": "Full sun to partial shade",
+        "description": "Winter Heather is a charming seasonal plant prized for its delicate flowers and evergreen foliage that brighten up gardens during the winter months. Available in shades of pink, white, and purple, Winter Heather blooms from late winter to early spring, providing valuable nectar for pollinators. With its low-growing habit and tolerance for poor soils, Winter Heather is an excellent choice for adding color and texture to winter landscapes.",
+        "price": 280,
+        "discount": 250,
+        "imgURL": "/assets/png2.png"
+      },
+      {
+        "uuid": "sa0d47b0048f-b682-4dd0-b1d8-2a4asa0d47b0048f",
+        "name": "Winter Aconite",
+        "scientific": "Eranthis hyemalis",
+        "water": "Regularly",
+        "sunlight": "Partial shade",
+        "description": "Winter Aconite is a delightful seasonal plant known for its cheerful yellow flowers that bloom in late winter to early spring. These early bloomers emerge as soon as the snow melts, brightening up gardens and woodland areas with their sunny blooms. Winter Aconite is easy to grow and naturalizes readily, spreading joy and color to winter landscapes year after year.",
+        "price": 290,
+        "discount": 260,
+        "imgURL": "/assets/png1.png"
+      },
+      {
+        "uuid": "sa9a29e6d40-09bb-434a-b5ff-5a2asa9a29e6d40",
+        "name": "Winter Honeysuckle",
+        "scientific": "Lonicera fragrantissima",
+        "water": "Regularly",
+        "sunlight": "Full sun to partial shade",
+        "description": "Winter Honeysuckle is a fragrant seasonal plant prized for its clusters of creamy white flowers that bloom in late winter to early spring. With their sweet, honey-like fragrance, these flowers attract pollinators and provide early nectar for bees and butterflies. Winter Honeysuckle is easy to grow and tolerates a variety of soil and light conditions, making it a versatile and low-maintenance addition to winter gardens.",
+        "price": 300,
+        "discount": 270,
+        "imgURL": "/assets/png4.png"
+      }
+    ]
+  },
+  "rare_exotic_plants": {
+    "title": "Rare and Exotic Plants",
+    "info": "Rare and exotic plants are the crown jewels of the botanical world, captivating with their unique beauty and elusive nature. From towering tropical palms to intricate orchid blooms, they demand attention and admiration. Cultivating these treasures requires expertise and dedication, offering a journey of discovery into the remarkable diversity of plant life.",
+    "data": [
+      {
+        "uuid": "8f2565129-7b42-46fd-8d45-0e49d3174255",
+        "name": "Black Bat Flower",
+        "scientific": "Tacca chantrieri",
+        "water": "Weekly",
+        "sunlight": "Low",
+        "description": "The Black Bat Flower, also known as Tacca chantrieri, is a rare and exotic plant prized for its unusual flowers resembling flying bats. Native to Southeast Asia, this plant thrives in warm and humid conditions, making it ideal for tropical gardens and greenhouse cultivation. With its dark purple-black flowers and large, deeply veined leaves, it adds a touch of mystique and intrigue to any plant collection.",
+        "price": 800,
+        "discount": 750,
+        "imgURL": "/assets/png3.png"
+      },
+      {
+        "uuid": "9a29e6d40-09bb-434a-b5ff-5a2a50d1b68d",
+        "name": "Jade Vine",
+        "scientific": "Strongylodon macrobotrys",
+        "water": "Bi-weekly",
+        "sunlight": "Partial",
+        "description": "The Jade Vine, scientifically known as Strongylodon macrobotrys, is a rare and enchanting vine native to the Philippines. Renowned for its spectacular clusters of turquoise flowers, this vine adds a splash of vibrant color to tropical gardens and conservatories. With its long, pendulous blooms and lush foliage, it's a captivating sight and a must-have for collectors of rare and exotic plants.",
+        "price": 900,
+        "discount": 850,
+        "imgURL": "/assets/png1.png"
+      },
+      {
+        "uuid": "b3e3deea8e-75c6-4c44-ae8d-aa59eac6e543",
+        "name": "Amorphophallus Titanum",
+        "scientific": "Amorphophallus titanum",
+        "water": "2-3 times per week",
+        "sunlight": "Indirect",
+        "description": "The Amorphophallus Titanum, also known as the Titan Arum or Corpse Flower, is a rare and extraordinary plant famed for its massive inflorescence and pungent odor resembling rotting flesh. Native to the rainforests of Sumatra, this plant blooms infrequently and unpredictably, making each flowering event a rare spectacle. Despite its off-putting smell, it attracts curious botanists and enthusiasts from around the world.",
+        "price": 1200,
+        "discount": 1150,
+        "imgURL": "/assets/png4.png"
+      },
+      {
+        "uuid": "cc27f1913-d303-44fc-b9fd-f0cb27c0bdf6",
+        "name": "Queen of the Night",
+        "scientific": "Epiphyllum oxypetalum",
+        "water": "Monthly",
+        "sunlight": "Bright",
+        "description": "The Queen of the Night, scientifically known as Epiphyllum oxypetalum, is a rare and exquisite cactus species renowned for its nocturnal blooming and intoxicating fragrance. Native to Central and South America, this cactus produces large, white flowers that open only at night, filling the air with a sweet and heady perfume. With its ethereal beauty and captivating scent, it's a prized addition to any garden or greenhouse.",
+        "price": 1000,
+        "discount": 950,
+        "imgURL": "/assets/png2.png"
+      },
+      {
+        "uuid": "0d47b0048f-b682-4dd0-b1d8-2a4a1f269804",
+        "name": "Corpse Lily",
+        "scientific": "Rafflesia arnoldii",
+        "water": "Varies",
+        "sunlight": "Indirect",
+        "description": "The Corpse Lily, scientifically known as Rafflesia arnoldii, is a rare and fascinating plant with the largest individual flower in the world. Endemic to the rainforests of Southeast Asia, this parasitic plant lacks leaves, stems, and roots, and relies on host plants for nutrients. Its massive, foul-smelling flowers can reach over three feet in diameter, attracting pollinators with their putrid odor.",
+        "price": 1500,
+        "discount": 1450,
+        "imgURL": "/assets/png1.png"
+      },
+      {
+        "uuid": "4e61a7644-46af-4f4e-8d09-37c13b0b1601",
+        "name": "Rainbow Eucalyptus",
+        "scientific": "Eucalyptus deglupta",
+        "water": "Weekly",
+        "sunlight": "Full",
+        "description": "The Rainbow Eucalyptus, scientifically known as Eucalyptus deglupta, is a rare and stunning tree prized for its multicolored bark that peels away to reveal vibrant hues of green, orange, pink, and blue. Native to the Philippines and other tropical regions, this eucalyptus species thrives in warm, humid climates and moist, well-drained soil. With its unique and eye-catching appearance, it's a standout choice for tropical landscapes and arboreta.",
+        "price": 1100,
+        "discount": 1050,
+        "imgURL": "/assets/png3.png"
+      },
+      {
+        "uuid": "f5fe0c10a-52c6-4f70-8c8c-12186c4f05e8",
+        "name": "Wollemi Pine",
+        "scientific": "Wollemia nobilis",
+        "water": "Occasional",
+        "sunlight": "Partial",
+        "description": "The Wollemi Pine, scientifically known as Wollemia nobilis, is a rare and ancient conifer species discovered in remote rainforest gorges of Wollemi National Park, Australia. Thought to be extinct for millions of years, this living fossil has distinctive foliage resembling fern fronds and produces small, pinecone-like structures. With its fascinating history and conservation significance, it's a treasured addition to botanical gardens and private collections.",
+        "price": 1300,
+        "discount": 1250,
+        "imgURL": "/assets/png2.png"
+      },
+      {
+        "uuid": "dd2c441fc-c45f-4fa4-b38c-1c7bbf888d63",
+        "name": "Pitcher Plant",
+        "scientific": "Nepenthes spp.",
+        "water": "Regular",
+        "sunlight": "Bright",
+        "description": "The Pitcher Plant, belonging to the genus Nepenthes, is a diverse group of carnivorous plants known for their modified leaves that form pitcher-shaped traps. Found in tropical regions worldwide, these plants attract and digest insects and other small prey to obtain nutrients lacking in their native habitats. With their fascinating adaptations and striking appearance, they're popular among collectors of rare and unusual plants.",
+        "price": 1400,
+        "discount": 1350,
+        "imgURL": "/assets/png4.png"
+      },
+      {
+        "uuid": "7c8735a2c-8c79-47b6-b01d-1b42d0042044",
+        "name": "Ghost Orchid",
+        "scientific": "Dendrophylax lindenii",
+        "water": "Weekly",
+        "sunlight": "Filtered",
+        "description": "The Ghost Orchid, scientifically known as Dendrophylax lindenii, is a rare and elusive orchid species native to Florida and the Caribbean. Renowned for its ethereal, ghostly appearance and lack of leaves or roots, this orchid relies on mycorrhizal fungi and surrounding trees for support and nutrients. With its delicate, white flowers that seem to float in midair, it's a prized find for orchid enthusiasts and botanists.",
+        "price": 1700,
+        "discount": 1650,
+        "imgURL": "/assets/png3.png"
+      },
+      {
+        "uuid": "8c8735a2c-8c79-47b6-b01d-1b42d0042044",
+        "name": "Rafflesia Arnoldii",
+        "scientific": "Rafflesia arnoldii",
+        "water": "Monthly",
+        "sunlight": "Partial",
+        "description": "Rafflesia Arnoldii, also known as the corpse flower, is a rare and unique plant native to the rainforests of Southeast Asia. It is known for producing the largest individual flower in the world, which can measure up to one meter in diameter and emits a foul odor similar to that of decaying flesh. Despite its unpleasant smell, the beauty and rarity of the Rafflesia Arnoldii make it a prized botanical specimen.",
+        "price": 1900,
+        "discount": 1850,
+        "imgURL": "/assets/png4.png"
+      },
+      {
+        "uuid": "9c8735a2c-8c79-47b6-b01d-1b42d0042044",
+        "name": "Lithops",
+        "scientific": "Lithops spp.",
+        "water": "Sparingly",
+        "sunlight": "Direct",
+        "description": "Lithops, also known as living stones, are rare and fascinating succulent plants native to southern Africa. They are known for their unique appearance, which resembles small stones or pebbles, helping them blend in with their rocky desert habitats. Lithops have evolved to survive in arid conditions by storing water in their thick, fleshy leaves. With their intriguing morphology and low-maintenance care requirements, they are sought after by succulent enthusiasts.",
+        "price": 1600,
+        "discount": 1550,
+        "imgURL": "/assets/png2.png"
+      }
+    ]
+  }
+}
