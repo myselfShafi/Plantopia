@@ -1,4 +1,5 @@
 import CustomBreadcrumb, { titles } from "@/components/Breadcrumb";
+import { ProductWrapper } from "@/views/ProductWrapper";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 
@@ -18,6 +19,7 @@ export default function ProductDetails() {
   return (
     <Fragment>
       <CustomBreadcrumb currentPath={newTitle} />
+      <ProductWrapper />
     </Fragment>
   );
 }

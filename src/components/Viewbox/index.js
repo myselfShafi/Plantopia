@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
 
-export const Viewbox = ({ children, ...other }) => {
+export const Viewbox = ({ children, bgcolor, ...other }) => {
   const StyledBox = styled(Box)(({ theme }) => ({
     maxWidth: "75%",
     width: "100%",
@@ -12,8 +12,8 @@ export const Viewbox = ({ children, ...other }) => {
     },
   }));
   return (
-    <Box py={"3rem"} {...other}>
-      <StyledBox>{children}</StyledBox>
+    <Box py={"3rem"} bgcolor={bgcolor}>
+      <StyledBox {...other}>{children}</StyledBox>
     </Box>
   );
 };

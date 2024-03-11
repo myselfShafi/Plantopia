@@ -105,6 +105,48 @@ const Cssbaseline = () => {
           width: "100%",
           textWrap: "nowrap",
         },
+
+        ".mySwiper2": {
+          height: "45rem",
+          width: "98%",
+          [theme.breakpoints.down("lg")]: {
+            height: "28rem",
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "32rem",
+            width: "100%",
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "20rem",
+          },
+        },
+
+        ".mySwiper": {
+          height: "30rem",
+          width: "100%",
+          [theme.breakpoints.down("lg")]: {
+            height: "18rem",
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "12rem",
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "6rem",
+          },
+        },
+
+        ".mySwiper2 .swiper-slide, .mySwiper .swiper-slide": {
+          background: theme.palette.customColors.cardBg,
+        },
+
+        ".mySwiper .swiper-slide": {
+          height: "100%",
+          opacity: 0.75,
+        },
+
+        ".mySwiper .swiper-slide-thumb-active": {
+          opacity: 1,
+        },
       }),
     },
   };

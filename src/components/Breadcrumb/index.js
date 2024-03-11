@@ -19,7 +19,11 @@ export default function CustomBreadcrumb({ currentPath }) {
   const { mobView } = useMediaQueries();
   return (
     <Box p={mobView ? "0 2rem" : "2rem"}>
-      <Breadcrumbs aria-label="custom-breadcrumb" separator={"|"}>
+      <Breadcrumbs
+        aria-label="custom-breadcrumb"
+        separator={"|"}
+        maxItems={mobView ? 2 : undefined}
+      >
         {arrayTags?.map((list, idx) => {
           return (
             <Chip
