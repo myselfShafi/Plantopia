@@ -5,6 +5,7 @@ export const useMediaQueries = () => {
   const tabView = useMediaQuery(theme.breakpoints.between("sm", "md"));
   const tabmobView = useMediaQuery(theme.breakpoints.down("md"));
   const mobView = useMediaQuery(theme.breakpoints.down("sm"));
+  const laptabmobView = useMediaQuery(theme.breakpoints.down("lg"));
 
-  return { tabView, mobView, tabmobView };
+  return { tabView, mobView, tabmobView, laptabmobView };
 };

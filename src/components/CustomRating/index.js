@@ -1,7 +1,13 @@
 import { Grass } from "@mui/icons-material";
 import { Box, Rating, styled } from "@mui/material";
+import { useState } from "react";
 
-export const CustomRating = () => {
+function getLabelText(value) {
+  return `${value} Star${value !== 1 ? "s" : ""}`;
+}
+
+export const CustomRating = ({ size, isCard, readOnly, ...other }) => {
+  const [value, setValue] = useState(4.3);
   const StyledRating = styled(Rating)(({ theme }) => ({
     "& .MuiRating-iconFilled": {
       color: theme.palette.success.dark,
@@ -14,15 +20,21 @@ export const CustomRating = () => {
     },
   }));
   return (
-    <Box display={"flex"} gap={1} alignItems={"center"} mb={".5rem"}>
+    <Box display={"flex"} gap={1} alignItems={"center"} {...other}>
       <StyledRating
         name="plant-rating"
-        defaultValue={4}
-        readOnly
-        icon={<Grass fontSize="small" />}
-        emptyIcon={<Grass fontSize="small" />}
+        value={value}
+        precision={0.1}
+        getLabelText={getLabelText}
+        readOnly={readOnly}
+        icon={<Grass fontSize={size} />}
+        emptyIcon={<Grass fontSize={size} />}
       />
-      <Box children={"45 Ratings"} />
+      {!isCard ? (
+        <Box children={`(${value})`} />
+      ) : (
+        <Box children={"45 Ratings"} />
+      )}
     </Box>
   );
 };

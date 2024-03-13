@@ -2,6 +2,7 @@ import { ProductSwiper } from "@/components/Swiper/ProductSwiper";
 import { Viewbox } from "@/components/Viewbox";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { Box } from "@mui/material";
+import { ProductDetail } from "../ProductDetails/main";
 
 export const ProductWrapper = () => {
   const { mobView, tabmobView } = useMediaQueries();
@@ -12,7 +13,7 @@ export const ProductWrapper = () => {
         gridTemplateColumns={!tabmobView && ".15fr 1fr 1fr"}
       >
         <ProductSwiper />
-        <Box></Box>
+        <ProductDetail />
       </Box>
     </Viewbox>
   );

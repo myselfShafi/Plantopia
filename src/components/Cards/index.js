@@ -66,7 +66,6 @@ export const CustomCard = ({ data }) => {
           />
           <Typography
             variant="subtitle2"
-            color="text.primary"
             children={data.scientific}
             mb={"1rem"}
           />
@@ -84,7 +83,7 @@ export const CustomCard = ({ data }) => {
             children={`INR ${data.discount ?? data.price}`}
           />
         </Box>
-        <CustomRating />
+        <CustomRating size={"small"} isCard readOnly={true} mb={".5rem"} />
         <Stack flexDirection={"row"} alignItems={"center"} columnGap={1}>
           {data.usage ? (
             <ReqComp icon={icon3} text={data?.usage} />
