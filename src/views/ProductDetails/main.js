@@ -3,6 +3,7 @@ import { QuantitySelect } from "@/components/QuantityBlock";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { Favorite } from "@mui/icons-material";
 import { Box, Button, Divider, Paper, Stack, Typography } from "@mui/material";
+import { DeliveryInfo } from "./deliveryInfo";
 
 export const ProductDetail = () => {
   const { tabmobView, laptabmobView } = useMediaQueries();
@@ -40,14 +41,15 @@ export const ProductDetail = () => {
           color="text.secondary"
         />
       </Stack>
-      <Divider variant="middle" sx={{ m: "2rem" }} />
+      <Divider sx={{ my: "2rem" }} />
       <QuantitySelect />
       <Stack flexDirection={"row"} gap={2} my={"2rem"}>
         <Button children={"Add to Cart"} variant="contained" fullWidth />
         <Button children={<Favorite />} variant="contained" />
       </Stack>
-
       <Button children={"Buy It Now"} variant="outlined" fullWidth />
+      <Divider sx={{ my: "2rem" }} />
+      <DeliveryInfo />
     </Box>
   );
 };

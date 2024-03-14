@@ -26,6 +26,13 @@ const Buttons = () => {
             color: theme.palette.background.paper,
           }),
         }),
+        outlinedInfo: ({ ownerState, theme }) => ({
+          ...(ownerState.className?.slice("").includes("nav-btn") && {
+            color: theme.palette.text.primary,
+            borderColor: theme.palette.text.primary,
+            background: theme.palette.info.light,
+          }),
+        }),
         endIcon: {
           "& *:nth-of-type(1)": {
             fontSize: "unset",

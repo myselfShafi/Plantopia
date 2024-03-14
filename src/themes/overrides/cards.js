@@ -6,12 +6,14 @@ const Cards = () => {
       },
       styleOverrides: {
         root: ({ ownerState, theme }) => ({
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-end",
-          background: "transparent",
-          height: "35rem",
-          overflow: "visible",
+          ...(ownerState.className?.slice("").includes("main-card") && {
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-end",
+            background: "transparent",
+            height: "35rem",
+            overflow: "visible",
+          }),
           ...(ownerState.className?.slice("").includes("img-card") && {
             position: "absolute",
             top: "0",
@@ -24,21 +26,26 @@ const Cards = () => {
             width: "90%",
           }),
         }),
+        variantOutline: {
+          background: "#ff4",
+        },
       },
     },
     MuiCardContent: {
       styleOverrides: {
-        root: ({ theme }) => ({
+        root: ({ ownerState, theme }) => ({
           background: theme.palette.background.paper,
-          paddingTop: "10rem",
-          transition: "transform 0.3s, padding-top 0.3s",
-          "&:hover": {
-            transform: "scale(1.02)",
-            paddingTop: "15rem",
-            ".img-card": {
-              transform: "translateX(-45%) translateY(-100%) scale(1.02)",
+          ...(ownerState.className?.slice("").includes("content-card") && {
+            paddingTop: "10rem",
+            transition: "transform 0.3s, padding-top 0.3s",
+            "&:hover": {
+              transform: "scale(1.02)",
+              paddingTop: "15rem",
+              ".img-card": {
+                transform: "translateX(-45%) translateY(-100%) scale(1.02)",
+              },
             },
-          },
+          }),
         }),
       },
     },

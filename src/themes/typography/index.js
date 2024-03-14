@@ -25,7 +25,7 @@ const Typography = {
     letterSpacing: "0.15px",
   },
   subtitle1: {
-    letterSpacing: "0.5px",
+    letterSpacing: "1px",
     lineHeight: 1.8,
   },
   subtitle2: {

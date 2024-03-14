@@ -45,8 +45,8 @@ export const CustomCard = ({ data }) => {
     },
   ];
   return (
-    <Card>
-      <CardContent>
+    <Card className="main-card">
+      <CardContent className="content-card">
         <Box className={"card-overlay"}>
           <Card className="img-card">
             <Image
@@ -54,7 +54,7 @@ export const CustomCard = ({ data }) => {
               alt={data.name}
               fill
               sizes="100vw"
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "contain", padding: "10%" }}
               priority
             />
           </Card>

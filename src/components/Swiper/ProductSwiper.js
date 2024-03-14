@@ -30,7 +30,7 @@ const SwiperComponent = ({ ...other }) => {
             <Image
               src={img}
               alt={`img-${img}`}
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "contain", padding: "10%" }}
             />
           </SwiperSlide>
         );
@@ -61,7 +61,7 @@ export const ProductSwiper = () => {
             freeMode={true}
             watchSlidesProgress
             modules={[FreeMode, Navigation, Thumbs]}
-            className="mySwiper"
+            className="mySwiper1"
           />
         </>
       ) : (
@@ -72,7 +72,7 @@ export const ProductSwiper = () => {
             freeMode={true}
             watchSlidesProgress
             modules={[FreeMode, Navigation, Thumbs]}
-            className="mySwiper"
+            className="mySwiper1"
           />
           <SwiperComponent
             thumbs={{

@@ -121,7 +121,7 @@ const Cssbaseline = () => {
           },
         },
 
-        ".mySwiper": {
+        ".mySwiper1": {
           height: "30rem",
           width: "100%",
           [theme.breakpoints.down("lg")]: {
@@ -135,17 +135,29 @@ const Cssbaseline = () => {
           },
         },
 
-        ".mySwiper2 .swiper-slide, .mySwiper .swiper-slide": {
+        ".mySwiper2 .swiper-slide, .mySwiper1 .swiper-slide": {
           background: theme.palette.customColors.cardBg,
         },
 
-        ".mySwiper .swiper-slide": {
+        ".mySwiper1 .swiper-slide": {
           height: "100%",
           opacity: 0.75,
         },
 
-        ".mySwiper .swiper-slide-thumb-active": {
+        ".mySwiper1 .swiper-slide-thumb-active": {
           opacity: 1,
+        },
+
+        ".swiper.sliderSwiper": {
+          position: "absolute",
+          height: "fit-content",
+          width: "100%",
+        },
+
+        ".sliderSwiper .swiper-slide": {
+          height: "100%",
+          width: "12rem",
+          textAlign: "center",
         },
       }),
     },
