@@ -6,6 +6,7 @@ const Cards = () => {
       },
       styleOverrides: {
         root: ({ ownerState, theme }) => ({
+          borderColor: theme.palette.text.disabled,
           ...(ownerState.className?.slice("").includes("main-card") && {
             display: "flex",
             flexDirection: "column",
@@ -26,9 +27,6 @@ const Cards = () => {
             width: "90%",
           }),
         }),
-        variantOutline: {
-          background: "#ff4",
-        },
       },
     },
     MuiCardContent: {

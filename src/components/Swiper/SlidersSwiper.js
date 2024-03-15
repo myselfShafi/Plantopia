@@ -13,11 +13,13 @@ const NavButtons = ({ start, end }) => {
   const swiper = useSwiper();
   const btn = [
     {
+      id: 1,
       icon: <SkipPreviousRounded />,
       action: () => swiper.slidePrev(),
       position: start,
     },
     {
+      id: 2,
       icon: <SkipNextRounded />,
       action: () => swiper.slideNext(),
       position: end,
@@ -36,10 +38,10 @@ const NavButtons = ({ start, end }) => {
 
   return (
     <CustomStack>
-      {btn.map((item, idx) => {
+      {btn.map((item) => {
         return (
           <Button
-            key={idx}
+            key={item.id}
             sx={{ visibility: item.position ? "hidden" : "visible" }}
             className={"nav-btn"}
             variant="outlined"
@@ -53,7 +55,7 @@ const NavButtons = ({ start, end }) => {
   );
 };
 
-export const SlidersSwiper = () => {
+export const SlidersSwiper = ({ data }) => {
   const [start, setStart] = useState(true);
   const [end, setEnd] = useState(false);
 
@@ -69,12 +71,11 @@ export const SlidersSwiper = () => {
       }}
       className="sliderSwiper"
     >
-      <SwiperSlide children={<OfferCard />} />
-      <SwiperSlide children={<OfferCard />} />
-      <SwiperSlide children={<OfferCard />} />
-      <SwiperSlide children={<OfferCard />} />
-      <SwiperSlide children={<OfferCard />} />
-      <SwiperSlide children={<OfferCard />} />
+      {data?.map((each, index) => {
+        return (
+          <SwiperSlide key={index} children={<OfferCard eachData={each} />} />
+        );
+      })}
       <NavButtons start={start} end={end} />
     </Swiper>
   );

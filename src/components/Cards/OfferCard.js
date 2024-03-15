@@ -1,15 +1,14 @@
 import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 
-export const OfferCard = () => {
+export const OfferCard = ({ eachData }) => {
+  const { title, detail } = eachData;
   return (
-    <Card variant="outlined" sx={{ height: "100%", width: "100%" }}>
+    <Card variant="outlined">
       <CardActionArea>
         <CardContent>
-          <Typography children={"No Cost EMI"} fontWeight={800} gutterBottom />
+          <Typography children={title} fontWeight={800} gutterBottom />
           <Typography
-            children={
-              "Upto ₹1,340.00 EMI interest savings on select Credit Cards, Amazon Pay LaterUpto ₹1,340.00 EMI interest savings on select Credit Cards"
-            }
+            children={detail}
             overflow={"hidden"}
             textOverflow={"ellipsis"}
             sx={{
