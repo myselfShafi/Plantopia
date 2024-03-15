@@ -6,7 +6,14 @@ export const OfferCard = ({ eachData }) => {
     <Card variant="outlined">
       <CardActionArea>
         <CardContent>
-          <Typography children={title} fontWeight={800} gutterBottom />
+          <Typography
+            children={title}
+            fontWeight={800}
+            gutterBottom
+            whiteSpace={"nowrap"}
+            overflow={"hidden"}
+            textOverflow={"ellipsis"}
+          />
           <Typography
             children={detail}
             overflow={"hidden"}

@@ -4,11 +4,17 @@ import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { Favorite } from "@mui/icons-material";
 import { Box, Button, Divider, Paper, Stack, Typography } from "@mui/material";
 import { DeliveryInfo } from "./deliveryInfo";
+import { OfferInfo } from "./offerInfo";
 
 export const ProductDetail = () => {
   const { tabmobView, laptabmobView } = useMediaQueries();
   return (
-    <Box mx={tabmobView ? "1rem" : "5rem"} my={tabmobView && "2.5rem"}>
+    <Box
+      mx={tabmobView ? "1rem" : "5rem"}
+      my={tabmobView && "2.5rem"}
+      position={"absolute"}
+      sx={{ top: 0, bottom: 0, left: 0, right: 0 }}
+    >
       <Typography variant="h4" children={"Indoor Plant 1"} gutterBottom />
       <Typography
         variant="body1"
@@ -48,8 +54,9 @@ export const ProductDetail = () => {
         <Button children={<Favorite />} variant="contained" />
       </Stack>
       <Button children={"Buy It Now"} variant="outlined" fullWidth />
-      <Divider sx={{ my: "2rem" }} />
       <DeliveryInfo />
+      <Divider sx={{ my: "2rem" }} />
+      <OfferInfo />
     </Box>
   );
 };

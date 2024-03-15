@@ -1,51 +1,41 @@
-import { SlidersSwiper } from "@/components/Swiper/SlidersSwiper";
-import { Box, Stack, Typography } from "@mui/material";
-import Image from "next/image";
-import icon4 from "../../../public/assets/icon4.png";
+import { Inventory2Rounded, LocalShipping, Wallet } from "@mui/icons-material";
+import { Paper, Stack, Typography } from "@mui/material";
 
-const offers = [
+const delivery = [
   {
-    title: "Combo Deals",
-    detail:
-      "Buy any two plants and get 10% off on your total purchase. Limited time deal.",
+    icon: <LocalShipping />,
+    text: "Free shipping above ₹500",
   },
   {
-    title: "Bank Offer",
-    detail:
-      "Upto ₹800.00 discount on select Credit Cards, select Debit Cards for transactions done above ₹2000.00",
+    icon: <Wallet />,
+    text: "COD Available",
   },
   {
-    title: "Loyalty points",
-    detail:
-      "Earn 1 point for every ₹10 spent. Redeem 100 points for a ₹50 discount on your next purchase.",
-  },
-  {
-    title: "No Cost EMI",
-    detail:
-      "Upto ₹1,340.00 EMI interest savings on select Credit Cards, Amazon Pay LaterUpto ₹1,340.00 EMI interest savings on select Credit Cards",
-  },
-  {
-    title: "Subscribe & Save",
-    detail:
-      "Subscribe to our monthly plant delivery service and get 15% off your first month",
+    icon: <Inventory2Rounded />,
+    text: "Replacement Guarantee(T&C apply)",
   },
 ];
 
 export const DeliveryInfo = () => {
   return (
-    <Box>
-      <Stack
-        flexDirection={"row"}
-        alignItems={"center"}
-        gap={1.5}
-        mb={"1.5rem"}
-      >
-        <Image src={icon4} alt="discount" height={30} />
-        <Typography children={"Offers"} variant="subtitle1" fontWeight={800} />
-      </Stack>
-      <Box position={"relative"}>
-        <SlidersSwiper data={offers} />
-      </Box>
-    </Box>
+    <Stack flexDirection={"row"} justifyContent={"center"} gap={2} mt={"2rem"}>
+      {delivery.map((each, idx) => {
+        return (
+          <Stack
+            key={idx}
+            alignItems={"center"}
+            textAlign={"center"}
+            width={"30%"}
+          >
+            <Paper
+              elevation={0}
+              children={each.icon}
+              sx={{ p: "1rem", borderRadius: "50%" }}
+            />
+            <Typography variant="subtitle1" children={each.text} mt={"1rem"} />
+          </Stack>
+        );
+      })}
+    </Stack>
   );
 };

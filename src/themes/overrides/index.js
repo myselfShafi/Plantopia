@@ -12,6 +12,7 @@ import InputBase from "./inputbase";
 import Links from "./links";
 import List from "./list";
 import Paper from "./paper";
+import Table from "./tables";
 import Tooltip from "./tooltip";
 
 export default {
@@ -30,4 +31,5 @@ export default {
   ...Cards(),
   ...List(),
   ...Accordion(),
+  ...Table(),
 };
