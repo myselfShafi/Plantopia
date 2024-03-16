@@ -6,8 +6,17 @@ function getLabelText(value) {
   return `${value} Star${value !== 1 ? "s" : ""}`;
 }
 
-export const CustomRating = ({ size, isCard, readOnly, ...other }) => {
+export const CustomRating = ({
+  size,
+  isCard,
+  isRating,
+  readOnly,
+  ...other
+}) => {
   const [value, setValue] = useState(4.3);
+  const handleChange = (e) => {
+    setValue(e.target.value);
+  };
   const StyledRating = styled(Rating)(({ theme }) => ({
     "& .MuiRating-iconFilled": {
       color: theme.palette.success.dark,
@@ -27,14 +36,12 @@ export const CustomRating = ({ size, isCard, readOnly, ...other }) => {
         precision={0.1}
         getLabelText={getLabelText}
         readOnly={readOnly}
+        onChange={handleChange}
         icon={<Grass fontSize={size} />}
         emptyIcon={<Grass fontSize={size} />}
       />
-      {!isCard ? (
-        <Box children={`(${value})`} />
-      ) : (
-        <Box children={"45 Ratings"} />
-      )}
+      {isRating && <Box children={`(${value})`} />}
+      {isCard && <Box children={"45 Ratings"} />}
     </Box>
   );
 };

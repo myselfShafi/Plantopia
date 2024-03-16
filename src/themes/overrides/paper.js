@@ -12,6 +12,14 @@ const Paper = () => {
             background: `linear-gradient(to top, ${theme.palette.background.default}, transparent)`,
           }),
         }),
+        outlined: ({ ownerState, theme }) => ({
+          background: theme.palette.background.default,
+          padding: "1rem",
+          border: `2px dashed ${theme.palette.background.paper}`,
+          "&:hover": {
+            background: theme.palette.background.paper,
+          },
+        }),
       },
     },
   };

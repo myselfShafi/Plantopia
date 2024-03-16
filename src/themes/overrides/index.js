@@ -12,6 +12,7 @@ import InputBase from "./inputbase";
 import Links from "./links";
 import List from "./list";
 import Paper from "./paper";
+import Select from "./select";
 import Table from "./tables";
 import Tooltip from "./tooltip";
 
@@ -32,4 +33,5 @@ export default {
   ...List(),
   ...Accordion(),
   ...Table(),
+  ...Select(),
 };

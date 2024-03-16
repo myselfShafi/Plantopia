@@ -1,12 +1,11 @@
 import { ProductSwiper } from "@/components/Swiper/ProductSwiper";
-import { Viewbox } from "@/components/Viewbox";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { Box, Divider, styled } from "@mui/material";
 import { ProductDetail } from "../ProductDetails/main";
 import { ProductInfo } from "../ProductDetails/productInfo";
 
 export const ProductWrapper = () => {
-  const { mobView, tabmobView } = useMediaQueries();
+  const { tabmobView } = useMediaQueries();
 
   const ScrollBox = styled(Box)({
     height: tabmobView && "50vh",
@@ -18,7 +17,7 @@ export const ProductWrapper = () => {
   });
 
   return (
-    <Viewbox sx={{ maxWidth: mobView ? `100% !important` : `85% !important` }}>
+    <>
       <Box
         display={"grid"}
         gridTemplateColumns={!tabmobView && ".15fr 1fr 1fr"}
@@ -30,6 +29,7 @@ export const ProductWrapper = () => {
       </Box>
       <Divider sx={{ mt: "4rem" }} />
       <ProductInfo />
-    </Viewbox>
+      <Divider />
+    </>
   );
 };

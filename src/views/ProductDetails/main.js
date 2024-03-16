@@ -22,7 +22,7 @@ export const ProductDetail = () => {
         color="text.secondary"
         children={"Scientific Plant Name"}
       />
-      <CustomRating readOnly={true} my={"1rem"} />
+      <CustomRating readOnly my={"1rem"} isRating />
       <Stack
         flexDirection={laptabmobView ? "column" : "row"}
         alignItems={!laptabmobView && "center"}

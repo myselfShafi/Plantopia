@@ -7,6 +7,14 @@ const Chip = () => {
             borderRadius: 4,
           },
         },
+        filled: ({ ownerState, theme }) => ({
+          ...(ownerState.className?.slice("").includes("rating") && {
+            background: theme.palette.customColors.main,
+            color: theme.palette.background.paper,
+            fontWeight: 800,
+            borderRadius: 0,
+          }),
+        }),
         outlined: ({ ownerState, theme }) => ({
           cursor: "pointer",
           color: theme.palette.text.primary,
