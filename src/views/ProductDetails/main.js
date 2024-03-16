@@ -3,6 +3,7 @@ import { QuantitySelect } from "@/components/QuantityBlock";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { Favorite } from "@mui/icons-material";
 import { Box, Button, Divider, Paper, Stack, Typography } from "@mui/material";
+import { CareInfo } from "./careInfo";
 import { DeliveryInfo } from "./deliveryInfo";
 import { OfferInfo } from "./offerInfo";
 
@@ -26,6 +27,7 @@ export const ProductDetail = () => {
         flexDirection={laptabmobView ? "column" : "row"}
         alignItems={!laptabmobView && "center"}
         gap={"1rem"}
+        mb={"1rem"}
       >
         <Stack flexDirection={"row"} alignItems={"center"} columnGap={"1rem"}>
           <Paper
@@ -47,6 +49,7 @@ export const ProductDetail = () => {
           color="text.secondary"
         />
       </Stack>
+      <CareInfo />
       <Divider sx={{ my: "2rem" }} />
       <QuantitySelect />
       <Stack flexDirection={"row"} gap={2} my={"2rem"}>
