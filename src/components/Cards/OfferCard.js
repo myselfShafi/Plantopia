@@ -3,7 +3,7 @@ import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 export const OfferCard = ({ eachData }) => {
   const { title, detail } = eachData;
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" sx={{ p: 0 }}>
       <CardActionArea>
         <CardContent>
           <Typography

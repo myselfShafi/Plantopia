@@ -5,6 +5,7 @@ import { Viewbox } from "@/components/Viewbox";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { ChevronLeftRounded, ChevronRightRounded } from "@mui/icons-material";
 import { Box, Button, Paper, Stack, Typography } from "@mui/material";
+import { useState } from "react";
 
 const samples = [
   {
@@ -50,10 +51,58 @@ const samples = [
     user: "Customer 1",
     comment_date: "10 Dec 2023",
   },
+
+  {
+    rating: "4.6",
+    subject: "Delighted!",
+    comment:
+      "Received my plant in pristine condition. It's thriving in its new home and brings such joy to my space. Thank you for the excellent service!",
+    user: "NatureLover99",
+    comment_date: "7 Mar 2024",
+  },
+
+  {
+    rating: "4.4",
+    subject: "Impressive packaging",
+    comment:
+      "The packaging was top-notch, ensuring the plant arrived safely. It's been a few weeks, and it's already growing beautifully. Very pleased with my purchase!",
+    user: "PlantObsessed22",
+    comment_date: "19 Jan 2024",
+  },
+
+  {
+    rating: "4.9",
+    subject: "Exceeded expectations",
+    comment:
+      "I'm amazed by the quality of the plant and the care taken in packaging it. It's flourishing in my garden and has become a centerpiece. Highly recommend!",
+    user: "FloralFanatic123",
+    comment_date: "2 Feb 2024",
+  },
+
+  {
+    rating: "4.7",
+    subject: "Happy customer",
+    comment:
+      "Couldn't be happier with my purchase! The plant arrived quickly and in perfect condition. It's thriving in its new environment. Thank you for the wonderful addition to my home!",
+    user: "BotanicalBeauty",
+    comment_date: "14 Dec 2023",
+  },
 ];
 
 export const ReviewWrapper = () => {
   const { tabmobView } = useMediaQueries();
+  const [dataArray, setDataArray] = useState(samples.slice(0, 4));
+  const [dataIndex, setDataIndex] = useState(4);
+
+  const showPrev = () => {
+    setDataIndex(dataIndex - 4);
+    setDataArray(samples.slice(dataIndex - 4, dataIndex));
+  };
+  const showNext = () => {
+    setDataIndex(dataIndex + 4);
+    setDataArray(samples.slice(dataIndex, dataIndex + 4));
+  };
+
   return (
     <Viewbox sx={{ maxWidth: "85% !important" }}>
       <Typography variant="h5" children={"Customer Reviews"} my={"2rem"} />
@@ -79,7 +128,7 @@ export const ReviewWrapper = () => {
         <Box display={"flex"} flexDirection={"column"}>
           {!tabmobView && <CommentFilter />}
           <Box py={"1rem"}>
-            {samples.map((comment, idx) => {
+            {dataArray.map((comment, idx) => {
               return (
                 <div key={idx}>
                   <CommentPanel data={comment} />
@@ -96,11 +145,15 @@ export const ReviewWrapper = () => {
               variant="contained"
               color="secondary"
               children={<ChevronLeftRounded />}
+              onClick={showPrev}
+              disabled={dataIndex === 4}
             />
             <Button
               variant="contained"
               color="secondary"
               children={<ChevronRightRounded />}
+              onClick={showNext}
+              disabled={dataIndex >= samples.length}
             />
           </Stack>
         </Box>
