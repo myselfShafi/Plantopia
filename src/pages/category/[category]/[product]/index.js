@@ -1,24 +1,25 @@
 import CustomBreadcrumb, { titles } from "@/components/Breadcrumb";
 import { Viewbox } from "@/components/Viewbox";
+import mockData from "@/content/mockData.json";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { ProductWrapper } from "@/views/ProductWrapper";
 import { ReviewWrapper } from "@/views/ReviewWrapper";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 
-export default function ProductDetails() {
+export default function ProductDetails({ params }) {
+  const { data, eachCategory } = params;
   const { mobView } = useMediaQueries();
-
   const {
-    query: { category, product },
+    query: { category },
     asPath,
   } = useRouter();
 
   const newTitle = [
     ...titles,
     ...[
-      { label: category, href: `/category/${category}` },
-      { label: product, href: asPath },
+      { label: eachCategory.title, href: `/category/${category}` },
+      { label: data?.name, href: asPath },
     ],
   ];
   return (
@@ -27,9 +28,51 @@ export default function ProductDetails() {
       <Viewbox
         sx={{ maxWidth: mobView ? `100% !important` : `85% !important` }}
       >
-        <ProductWrapper />
+        <ProductWrapper data={data} />
         <ReviewWrapper />
       </Viewbox>
     </Fragment>
   );
+}
+
+export async function getStaticProps(context) {
+  const {
+    params: { category, product },
+  } = context;
+
+  const dataList = await fetch(
+    `http://localhost:3000/api/category/${category}/${product}`,
+    {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    }
+  );
+  const categories = await fetch(
+    `http://localhost:3000/api/category/${category}`,
+    {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    }
+  );
+
+  const eachData = await dataList?.json();
+  const eachCategory = await categories?.json();
+
+  return {
+    props: {
+      params: { data: eachData, eachCategory },
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  const categories = Object.keys(mockData);
+
+  const paths = categories.flatMap((category) =>
+    mockData[category].data.map((product) => ({
+      params: { category, product: product.uuid },
+    }))
+  );
+
+  return { paths, fallback: false };
 }

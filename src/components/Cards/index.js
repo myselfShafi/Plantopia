@@ -18,7 +18,13 @@ import { CustomRating } from "../CustomRating";
 const ReqComp = ({ icon, text }) => {
   return (
     <Stack flexDirection={"row"} alignItems={"center"} columnGap={1}>
-      <Image src={icon} alt={text} height={25} className="req-icon" />
+      <Image
+        src={icon}
+        alt={text}
+        height={25}
+        width={25}
+        className="req-icon"
+      />
       <Typography
         variant="subtitle2"
         color="text.primary"
@@ -53,7 +59,7 @@ export const CustomCard = ({ data }) => {
               src={data.imgURL}
               alt={data.name}
               fill
-              sizes="100vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               style={{ objectFit: "contain", padding: "10%" }}
               priority
             />
@@ -90,9 +96,11 @@ export const CustomCard = ({ data }) => {
           ) : (
             requirements.map((list, idx) => {
               return (
-                <div key={idx}>
-                  <ReqComp icon={list.icon} text={list?.text} />
-                </div>
+                list?.text && (
+                  <div key={idx}>
+                    <ReqComp icon={list.icon} text={list?.text} />
+                  </div>
+                )
               );
             })
           )}

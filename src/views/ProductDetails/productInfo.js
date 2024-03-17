@@ -3,49 +3,49 @@ import { Viewbox } from "@/components/Viewbox";
 import { ArrowRightAlt } from "@mui/icons-material";
 import { Stack, Typography } from "@mui/material";
 
-const information = [
-  {
-    title: "Description",
-    desc: "Neem Oil is a natural plant care product derived from the seeds of the neem tree. It is prized for its insecticidal, antifungal, and antibacterial properties, making it an effective solution for controlling pests and diseases on plants. Neem Oil can be used as a foliar spray or soil drench to prevent and treat common garden problems such as aphids, mites, and powdery mildew.",
-  },
-  {
-    title: "Specifications",
-    table: [
-      {
-        type: "Plant height",
-        value: "6-7 inches(15-30 cm)",
-      },
-      {
-        type: "Plant spread",
-        value: "3-5 inches(7-13cm)",
-      },
-    ],
-  },
-  {
-    title: "Key requirements",
-    desc: "Choosing the right location for your plant is crucial for its health and well-being. Here are some tips:",
-    list: [
-      {
-        tag: "Indirect Light",
-        text: "Peace Lilies thrive in bright, indirect light. Avoid placing them in direct sunlight, as this can scorch their delicate leaves. A north or east-facing window is ideal.",
-      },
-      {
-        tag: "Temperature",
-        text: "Maintain a consistent indoor temperature between 65-80°F (18-27°C). Keep the plant away from drafts and cold windows in the winter.",
-      },
-      {
-        tag: "Humidity",
-        text: "Peace Lilies prefer higher humidity levels. You can increase humidity by misting the leaves regularly or placing a tray of water near the plant.",
-      },
-      {
-        tag: "Container",
-        text: "Ensure your pot has drainage holes to prevent overwatering. Repot your Peace Lily when it outgrows its container.",
-      },
-    ],
-  },
-];
+export const ProductInfo = ({ data }) => {
+  const information = [
+    {
+      title: "Description",
+      desc: data?.description,
+    },
+    {
+      title: "Specifications",
+      table: [
+        {
+          type: "Plant height",
+          value: "6-7 inches(15-30 cm)",
+        },
+        {
+          type: "Plant spread",
+          value: "3-5 inches(7-13cm)",
+        },
+      ],
+    },
+    {
+      title: "Key requirements",
+      desc: "Choosing the right location for your plant is crucial for its health and well-being. Here are some tips:",
+      list: [
+        {
+          tag: "Indirect Light",
+          text: `${data.name} thrive in bright, indirect light. Avoid placing them in direct sunlight, as this can scorch their delicate leaves. A north or east-facing window is ideal.`,
+        },
+        {
+          tag: "Temperature",
+          text: `Maintain a consistent indoor temperature between 65-80°F (18-27°C). Keep the plant away from drafts and cold windows in the winter.`,
+        },
+        {
+          tag: "Humidity",
+          text: `${data.name} prefer higher humidity levels. You can increase humidity by misting the leaves regularly or placing a tray of water near the plant.`,
+        },
+        {
+          tag: "Container",
+          text: `Ensure your pot has drainage holes to prevent overwatering. Repot your ${data.name} when it outgrows its container.`,
+        },
+      ],
+    },
+  ];
 
-export const ProductInfo = () => {
   return (
     <Viewbox>
       {information.map((section, idx) => {

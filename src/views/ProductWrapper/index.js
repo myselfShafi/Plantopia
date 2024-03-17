@@ -4,7 +4,7 @@ import { Box, Divider, styled } from "@mui/material";
 import { ProductDetail } from "../ProductDetails/main";
 import { ProductInfo } from "../ProductDetails/productInfo";
 
-export const ProductWrapper = () => {
+export const ProductWrapper = ({ data }) => {
   const { tabmobView } = useMediaQueries();
 
   const ScrollBox = styled(Box)({
@@ -22,13 +22,13 @@ export const ProductWrapper = () => {
         display={"grid"}
         gridTemplateColumns={!tabmobView && ".15fr 1fr 1fr"}
       >
-        <ProductSwiper />
+        <ProductSwiper data={data} />
         <ScrollBox>
-          <ProductDetail />
+          <ProductDetail data={data} />
         </ScrollBox>
       </Box>
       <Divider sx={{ mt: "4rem" }} />
-      <ProductInfo />
+      <ProductInfo data={data} />
       <Divider />
     </>
   );
