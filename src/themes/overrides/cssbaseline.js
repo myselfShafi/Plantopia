@@ -159,6 +159,11 @@ const Cssbaseline = () => {
           width: "12rem",
           textAlign: "center",
         },
+
+        ".navSwiper": {
+          width: "100%",
+          height: "35rem",
+        },
       }),
     },
   };

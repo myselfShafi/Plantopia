@@ -64,12 +64,7 @@ export const CustomCard = ({ data }) => {
               priority
             />
           </Card>
-          <Typography
-            variant="h6"
-            letterSpacing={".15rem"}
-            fontWeight={800}
-            children={data.name}
-          />
+          <Typography variant="h6" fontWeight={800} children={data.name} />
           <Typography
             variant="subtitle1"
             children={data.scientific}
