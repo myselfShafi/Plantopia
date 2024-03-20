@@ -21,17 +21,18 @@ const Palette = (mode) => {
       dark: `rgba(${darkColor}, 1.0)`,
       cardBg: mode ? "#EEF0E5" : "#E3F4F4",
       footerBg: "#013220",
+      monoBg: "#128c7e",
     },
     primary: {
-      light: "#81ba00",
+      light: "#dcf8c6",
       main: mode ? whiteColor : "#145333",
       dark: "#81ba00",
       contrastText: mode ? "#145333" : whiteColor,
     },
     secondary: {
-      light: "#D5F0C1",
-      main: "#AAD9BB",
-      dark: "#80BCBD",
+      light: "#ACE2E1",
+      main: "#41C9E2",
+      dark: "#008DDA",
       contrastText: whiteColor,
     },
     error: {
@@ -81,7 +82,7 @@ const Palette = (mode) => {
     },
     divider: defaultBgColor(),
     background: {
-      paper: mode ? "#18392B" : "#F5F7F8",
+      paper: mode ? "#075e54" : "#F5F7F8",
       default: defaultBgColor(),
     },
   };

@@ -74,7 +74,7 @@ export const Menubar = () => {
   return (
     <Hidden mdDown>
       <StyledStack
-        bgcolor={"customColors.footerBg"}
+        bgcolor={"customColors.monoBg"}
         sx={{
           backgroundImage:
             'url("https://www.transparenttextures.com/patterns/xv.png")',
