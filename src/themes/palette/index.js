@@ -1,7 +1,8 @@
 const Palette = (mode) => {
   const whiteColor = "#fff";
   const lightColor = "255, 255, 255";
-  const darkColor = "34, 34, 34";
+  const darkColor = "26, 41, 2";
+
   const mainColor = mode ? lightColor : darkColor;
   const bgColor = mode ? darkColor : lightColor;
 
@@ -14,23 +15,23 @@ const Palette = (mode) => {
   };
 
   return {
-    // mode: mode && "light",
     customColors: {
       light: `rgba(${lightColor}, 1.0)`,
       main: `rgba(${mainColor}, 1.0)`,
       dark: `rgba(${darkColor}, 1.0)`,
-      cardBg: mode ? "#e2e2e2" : "#c9d6ff",
+      cardBg: mode ? "#EEF0E5" : "#E3F4F4",
+      footerBg: "#013220",
     },
     primary: {
-      light: "#787EFF",
-      main: "#666CFF",
-      dark: "#5A5FE0",
-      contrastText: whiteColor,
+      light: "#81ba00",
+      main: mode ? whiteColor : "#145333",
+      dark: "#81ba00",
+      contrastText: mode ? "#145333" : whiteColor,
     },
     secondary: {
-      light: "#7F889B",
-      main: "#4a5161",
-      dark: "#333333",
+      light: "#D5F0C1",
+      main: "#AAD9BB",
+      dark: "#80BCBD",
       contrastText: whiteColor,
     },
     error: {
@@ -80,7 +81,7 @@ const Palette = (mode) => {
     },
     divider: defaultBgColor(),
     background: {
-      paper: mode ? "#333333" : "#f0efed",
+      paper: mode ? "#18392B" : "#F5F7F8",
       default: defaultBgColor(),
     },
   };

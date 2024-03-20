@@ -79,7 +79,7 @@ export const Footer = () => {
     },
   ];
   return (
-    <Viewbox bgcolor={"secondary.dark"}>
+    <Viewbox bgcolor={"customColors.footerBg"}>
       <Grid container spacing={2}>
         {footerContent.map((item) => {
           return (

@@ -18,6 +18,9 @@ const Icons = () => {
         fontSizeSmall: {
           fontSize: "1.5rem",
         },
+        fontSizeLarge: {
+          fontSize: "4.5rem",
+        },
       },
     },
   };

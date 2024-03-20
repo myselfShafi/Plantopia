@@ -10,7 +10,7 @@ export const CommentPanel = ({ data }) => {
           variant="filled"
           label={data.rating}
           size="small"
-          icon={<Grass fontSize="small" color="primary" />}
+          icon={<Grass fontSize="small" color="background" />}
         />
         <Typography variant="h5" children={data.subject} />
       </Stack>

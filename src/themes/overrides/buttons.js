@@ -18,13 +18,19 @@ const Buttons = () => {
             },
           }),
           whiteSpace: "nowrap",
-          transition: "scale .5s ease",
+          transition: "scale .5s ease, background .5s",
         }),
         text: ({ ownerState, theme }) => ({
           color: theme.palette.grey[200],
           ...(ownerState.className?.slice("").includes("toggleColor") && {
             color: theme.palette.background.paper,
           }),
+        }),
+        outlined: ({ theme }) => ({
+          "&:hover": {
+            background: theme.palette.primary.main,
+            color: theme.palette.primary.contrastText,
+          },
         }),
         outlinedInfo: ({ ownerState, theme }) => ({
           ...(ownerState.className?.slice("").includes("nav-btn") && {

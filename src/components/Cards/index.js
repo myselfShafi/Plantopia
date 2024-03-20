@@ -65,15 +65,15 @@ export const CustomCard = ({ data }) => {
             />
           </Card>
           <Typography
-            variant="subtitle1"
-            color="text.secondary"
+            variant="h6"
+            letterSpacing={".15rem"}
             fontWeight={800}
             children={data.name}
           />
           <Typography
-            variant="subtitle2"
+            variant="subtitle1"
             children={data.scientific}
-            mb={"1rem"}
+            gutterBottom
           />
         </Box>
         <Box sx={{ float: "right" }}>
@@ -109,9 +109,9 @@ export const CustomCard = ({ data }) => {
       <CardActions>
         <Button
           fullWidth
+          disableElevation
           children={"View Product"}
           variant="contained"
-          color="success"
           LinkComponent={Link}
           href={`/category/${category}/${data.uuid}`}
         />

@@ -13,11 +13,11 @@ const Typography = {
     letterSpacing: 0,
   },
   h4: {
-    fontWeight: 500,
+    fontWeight: 600,
     letterSpacing: "0.25px",
   },
   h5: {
-    fontWeight: 500,
+    fontWeight: 600,
     letterSpacing: ".20px",
   },
   h6: {

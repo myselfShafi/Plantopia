@@ -26,13 +26,7 @@ export const FilterBox = () => {
       {!mobView &&
         ["View All", "In Stock", "Fast Delivered"].map((list, idx) => {
           return (
-            <Button
-              key={idx}
-              variant="outlined"
-              children={list}
-              size="small"
-              sx={{ color: "text.secondary" }}
-            />
+            <Button key={idx} variant="outlined" children={list} size="small" />
           );
         })}
 

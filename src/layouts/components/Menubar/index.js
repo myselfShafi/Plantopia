@@ -73,7 +73,13 @@ export const Menubar = () => {
 
   return (
     <Hidden mdDown>
-      <StyledStack bgcolor={"secondary.dark"}>
+      <StyledStack
+        bgcolor={"customColors.footerBg"}
+        sx={{
+          backgroundImage:
+            'url("https://www.transparenttextures.com/patterns/xv.png")',
+        }}
+      >
         <Menulist className={"hover"} />
       </StyledStack>
     </Hidden>

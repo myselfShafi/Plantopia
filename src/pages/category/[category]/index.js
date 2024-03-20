@@ -35,6 +35,7 @@ export default function Category({ params }) {
                   variant="h4"
                   textTransform={"capitalize"}
                   children={title}
+                  fontWeight={600}
                 />
               }
             />
@@ -49,6 +50,7 @@ export default function Category({ params }) {
               textTransform={"capitalize"}
               children={title}
               mb={"1rem"}
+              fontWeight={600}
             />
             <Typography variant="subtitle1" children={info} />
           </Box>

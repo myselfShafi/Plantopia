@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [lightMode, toggleLightMode] = useState(true);
+  const [lightMode, toggleLightMode] = useState(false);
 
   const toggleTheme = (theme) => {
     toggleLightMode(theme);

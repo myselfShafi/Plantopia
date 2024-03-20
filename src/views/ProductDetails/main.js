@@ -61,7 +61,7 @@ export const ProductDetail = ({ data }) => {
       <QuantitySelect />
       <Stack flexDirection={"row"} gap={2} my={"2rem"}>
         <Button children={"Add to Cart"} variant="contained" fullWidth />
-        <Button children={<Favorite />} variant="contained" />
+        <Button children={<Favorite />} variant="outlined" />
       </Stack>
       <Button children={"Buy It Now"} variant="outlined" fullWidth />
       <DeliveryInfo />
