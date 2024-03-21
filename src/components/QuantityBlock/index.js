@@ -26,11 +26,9 @@ export const QuantitySelect = () => {
 
   return (
     <Stack flexDirection={"row"} alignItems={"center"}>
-      <Button
-        children={<RemoveRounded />}
-        variant="outlined"
-        onClick={decrement}
-      />
+      <Button variant="outlined" onClick={decrement}>
+        <RemoveRounded />
+      </Button>
 
       <OutlinedInput
         value={quantity}
@@ -42,20 +40,15 @@ export const QuantitySelect = () => {
         type="number"
         error={quantity > 20 || quantity < 1}
       />
-      <Button
-        children={<AddRounded />}
-        variant="outlined"
-        onClick={increment}
-      />
+      <Button variant="outlined" onClick={increment}>
+        <AddRounded />
+      </Button>
 
       {(quantity > 20 || quantity < 1) && (
-        <Typography
-          children={`${quantity > 20 ? "Max" : "Min"}. order quantity is ${
-            quantity > 20 ? "20" : "1"
-          }`}
-          ml={"2rem"}
-          color={"error"}
-        />
+        <Typography ml={"2rem"} color={"error"}>
+          {quantity > 20 ? "Max" : "Min"}. order quantity is{" "}
+          {quantity > 20 ? "20" : "1"}
+        </Typography>
       )}
     </Stack>
   );

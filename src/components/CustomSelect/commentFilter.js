@@ -19,10 +19,10 @@ export const CommentFilter = () => {
         onChange={(e) => setValue(e.target.value)}
         native
       >
-        <option value={10} children={"Most Recent"} />
-        <option value={20} children={"Most Relevent"} />
-        <option value={30} children={"Highest to lowest Rating"} />
-        <option value={40} children={"Lowest to highest Rating"} />
+        <option value={10}> Most Recent</option>
+        <option value={20}> Most Relevent</option>
+        <option value={30}> Highest to lowest Rating</option>
+        <option value={40}> Lowest to highest Rating</option>
       </Select>
     </FormControl>
   );

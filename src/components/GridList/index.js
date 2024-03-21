@@ -31,12 +31,13 @@ export const Gridlist = ({ itemData }) => {
               title={item?.title}
               subtitle={
                 <Button
-                  children={"SHOP NOW"}
                   variant="contained"
                   color="info"
                   size="medium"
                   onClick={() => router.push(item?.href)}
-                />
+                >
+                  SHOP NOW
+                </Button>
               }
             />
           </ImageListItem>

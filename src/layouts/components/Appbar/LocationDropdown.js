@@ -11,10 +11,11 @@ export const LocationDropdown = () => {
     <Fragment>
       <IconButton
         aria-describedby="location-popover"
-        children={<FmdGood className="dual" />}
         onMouseEnter={(e) => setIsOpen(e.currentTarget)}
         onMouseLeave={handleClose}
-      />
+      >
+        <FmdGood className="dual" />
+      </IconButton>
       <PopoverWrapper
         open={isOpen}
         close={(e) => setIsOpen(e.currentTarget)}
@@ -23,7 +24,7 @@ export const LocationDropdown = () => {
         <Box textAlign={"center"}>
           <Typography>
             Discover nearby local stores! <br />
-            <span children={"Log in"} style={{ fontWeight: 800 }} /> now
+            <span style={{ fontWeight: 800 }}>Log in</span> now
           </Typography>
         </Box>
       </PopoverWrapper>

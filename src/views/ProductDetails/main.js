@@ -19,12 +19,12 @@ export const ProductDetail = ({ data }) => {
       position={"absolute"}
       sx={{ top: 0, bottom: 0, left: 0, right: 0 }}
     >
-      <Typography variant="h4" children={name} gutterBottom />
-      <Typography
-        variant="body1"
-        color="text.secondary"
-        children={scientific}
-      />
+      <Typography variant="h4" gutterBottom>
+        {name}
+      </Typography>
+      <Typography variant="body1" color="text.secondary">
+        {scientific}
+      </Typography>
       <CustomRating readOnly my={"1rem"} isRating />
       <Stack
         flexDirection={laptabmobView ? "column" : "row"}
@@ -35,35 +35,38 @@ export const ProductDetail = ({ data }) => {
         <Stack flexDirection={"row"} alignItems={"center"} columnGap={"1rem"}>
           {discount && (
             <>
-              <Paper
-                children={`${percent}% off`}
-                elevation={0}
-                square
-                sx={{ p: ".5rem" }}
-              />
+              <Paper elevation={0} square sx={{ p: ".5rem" }}>
+                {percent}% off
+              </Paper>
               <Typography
-                children={`INR ${price}`}
                 variant="h6"
                 color="text.secondary"
                 sx={{ textDecoration: "line-through" }}
-              />
+              >
+                INR ${price}
+              </Typography>
             </>
           )}
-          <Typography variant="h5" children={`INR ${discount ?? price}`} />
+          <Typography variant="h5">INR ${discount ?? price}</Typography>
         </Stack>
-        <Typography
-          children={`(MRP inclusive of all taxes)`}
-          color="text.secondary"
-        />
+        <Typography color="text.secondary">
+          (MRP inclusive of all taxes)
+        </Typography>
       </Stack>
       <CareInfo info={{ water, sunlight, usage }} />
       <Divider sx={{ my: "2rem" }} />
       <QuantitySelect />
       <Stack flexDirection={"row"} gap={2} my={"2rem"}>
-        <Button children={"Add to Cart"} variant="contained" fullWidth />
-        <Button children={<Favorite />} variant="outlined" />
+        <Button variant="contained" fullWidth>
+          Add to Cart
+        </Button>
+        <Button variant="outlined">
+          <Favorite />
+        </Button>
       </Stack>
-      <Button children={"Buy It Now"} variant="outlined" fullWidth />
+      <Button variant="outlined" fullWidth>
+        Buy It Now
+      </Button>
       <DeliveryInfo />
       <Divider sx={{ my: "2rem" }} />
       <OfferInfo />

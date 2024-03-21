@@ -34,20 +34,19 @@ const ReviewComp = ({ data }) => {
         maxWidth={tabmobView ? "100%" : "60%"}
         fontStyle={"italic"}
         textAlign={"center"}
-        children={`“ ${data.comment} ”`}
         gutterBottom
-      />
+      >
+        “ {data.comment} ”
+      </Typography>
       <StyledBox gap={"1rem"}>
         <Avatar
           alt="random_person_1"
           src={data.img}
           sx={{ width: "150px", height: "150px" }}
         />
-        <Typography
-          variant="subtitle1"
-          textTransform={"uppercase"}
-          children={`${data.user} | ${data.profession}`}
-        />
+        <Typography variant="subtitle1" textTransform={"uppercase"}>
+          {data.user} | {data.profession}
+        </Typography>
       </StyledBox>
     </StyledBox>
   );

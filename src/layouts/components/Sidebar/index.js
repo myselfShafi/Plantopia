@@ -11,11 +11,9 @@ export const Sidebar = () => {
 
   return (
     <>
-      <IconButton
-        children={<SortRounded className="dual" />}
-        onClick={() => setOpen(true)}
-        sx={{ width: "fit-content" }}
-      />
+      <IconButton onClick={() => setOpen(true)} sx={{ width: "fit-content" }}>
+        <SortRounded className="dual" />
+      </IconButton>
       <Drawer
         open={open}
         onClose={() => setOpen(false)}
@@ -30,17 +28,16 @@ export const Sidebar = () => {
         >
           <Menulist onClick={() => setOpen(false)} className={"toggleColor"} />
           <Stack color={"background.paper"} rowGap={"2rem"}>
-            <IconButton children={<Login className="stripIcon" />} />
-            <IconButton
-              children={
-                lightMode ? (
-                  <NightsStay className="stripIcon" />
-                ) : (
-                  <LightMode className="stripIcon" />
-                )
-              }
-              onClick={() => toggleTheme(!lightMode)}
-            />
+            <IconButton>
+              <Login className="stripIcon" />
+            </IconButton>
+            <IconButton onClick={() => toggleTheme(!lightMode)}>
+              {lightMode ? (
+                <NightsStay className="stripIcon" />
+              ) : (
+                <LightMode className="stripIcon" />
+              )}
+            </IconButton>
           </Stack>
         </Box>
       </Drawer>

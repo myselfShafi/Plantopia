@@ -12,18 +12,22 @@ export const CommentPanel = ({ data }) => {
           size="small"
           icon={<Grass fontSize="small" color="background" />}
         />
-        <Typography variant="h5" children={data.subject} />
+        <Typography variant="h5">{data.subject}</Typography>
       </Stack>
-      <Typography variant="body1" children={data.comment} gutterBottom />
+      <Typography variant="body1" gutterBottom>
+        {data.comment}
+      </Typography>
       <Stack
         flexDirection={"row"}
         gap={2}
         alignItems={"center"}
         color={"text.secondary"}
       >
-        <Typography variant="subtitle1" children={data.user} fontWeight={800} />
+        <Typography variant="subtitle1" fontWeight={800}>
+          {data.user}
+        </Typography>
         <Divider orientation="vertical" flexItem sx={{ height: "1.2rem" }} />
-        <Typography variant="subtitle1" children={data.comment_date} />
+        <Typography variant="subtitle1">{data.comment_date}</Typography>
       </Stack>
     </Paper>
   );

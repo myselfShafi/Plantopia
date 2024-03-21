@@ -25,12 +25,9 @@ const ReqComp = ({ icon, text }) => {
         width={25}
         className="req-icon"
       />
-      <Typography
-        variant="subtitle2"
-        color="text.primary"
-        children={text}
-        className="req-text"
-      />
+      <Typography variant="subtitle2" color="text.primary" className="req-text">
+        {text}
+      </Typography>
     </Stack>
   );
 };
@@ -64,25 +61,22 @@ export const CustomCard = ({ data }) => {
               priority
             />
           </Card>
-          <Typography variant="h6" fontWeight={800} children={data.name} />
-          <Typography
-            variant="subtitle1"
-            children={data.scientific}
-            gutterBottom
-          />
+          <Typography variant="h6" fontWeight={800}>
+            {data.name}
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            {data.scientific}
+          </Typography>
         </Box>
         <Box sx={{ float: "right" }}>
           {data.discount && (
             <Typography
               sx={{ textDecoration: "line-through" }}
-              children={`INR ${data.price}`}
-            />
+            >{`INR ${data.price}`}</Typography>
           )}
-          <Typography
-            color="customColors.main"
-            fontWeight={800}
-            children={`INR ${data.discount ?? data.price}`}
-          />
+          <Typography color="customColors.main" fontWeight={800}>{`INR ${
+            data.discount ?? data.price
+          }`}</Typography>
         </Box>
         <CustomRating size={"small"} isCard readOnly={true} mb={".5rem"} />
         <Stack flexDirection={"row"} alignItems={"center"} columnGap={1}>
@@ -105,11 +99,12 @@ export const CustomCard = ({ data }) => {
         <Button
           fullWidth
           disableElevation
-          children={"View Product"}
           variant="contained"
           LinkComponent={Link}
           href={`/category/${category}/${data.uuid}`}
-        />
+        >
+          {"View Product"}
+        </Button>
       </CardActions>
     </Card>
   );

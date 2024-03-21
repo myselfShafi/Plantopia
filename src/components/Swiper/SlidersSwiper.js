@@ -46,9 +46,10 @@ const NavButtons = ({ start, end }) => {
             className={"nav-btn"}
             variant="outlined"
             color="info"
-            children={item.icon}
             onClick={item.action}
-          />
+          >
+            {item.icon}
+          </Button>
         );
       })}
     </CustomStack>
@@ -73,7 +74,9 @@ export const SlidersSwiper = ({ data }) => {
     >
       {data?.map((each, index) => {
         return (
-          <SwiperSlide key={index} children={<OfferCard eachData={each} />} />
+          <SwiperSlide key={index}>
+            <OfferCard eachData={each} />
+          </SwiperSlide>
         );
       })}
       <NavButtons start={start} end={end} />

@@ -11,26 +11,21 @@ export const CartDropdown = () => {
     <Fragment>
       <IconButton
         aria-describedby="cart-popover"
-        children={
-          <Badge
-            badgeContent={4}
-            children={<ShoppingCartCheckout className="dual" />}
-          />
-        }
         onMouseEnter={(e) => setIsOpen(e.currentTarget)}
         onMouseLeave={handleClose}
-      />
+      >
+        <Badge badgeContent={4}>
+          <ShoppingCartCheckout className="dual" />
+        </Badge>
+      </IconButton>
       <PopoverWrapper open={isOpen} close={handleClose} id={"cart-popover"}>
         <Box textAlign={"center"}>
-          <Typography
-            children={"Missing your fav plants?"}
-            fontWeight={800}
-            mb={"1rem"}
-          />
+          <Typography fontWeight={800} mb={"1rem"}>
+            Missing your fav plants?
+          </Typography>
           <Typography>
-            <span children={"Log in"} style={{ fontWeight: 800 }} /> and
-            discover any treasures you've added from another device to your
-            shopping cart!
+            <span style={{ fontWeight: 800 }}>Log in</span> and discover any
+            treasures you've added from another device to your shopping cart!
           </Typography>
         </Box>
       </PopoverWrapper>

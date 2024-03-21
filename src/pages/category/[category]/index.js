@@ -28,31 +28,30 @@ export default function Category({ params }) {
       <Viewbox>
         {mobView ? (
           <Accordion sx={{ mb: "5rem" }}>
-            <AccordionSummary
-              expandIcon={<ExpandMore className="dual" />}
-              children={
-                <Typography
-                  variant="h4"
-                  textTransform={"capitalize"}
-                  children={title}
-                  fontWeight={600}
-                />
-              }
-            />
-            <AccordionDetails
-              children={<Typography variant="subtitle1" children={info} />}
-            />
+            <AccordionSummary expandIcon={<ExpandMore className="dual" />}>
+              <Typography
+                variant="h4"
+                textTransform={"capitalize"}
+                fontWeight={600}
+              >
+                {title}
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="subtitle1">{info}</Typography>
+            </AccordionDetails>
           </Accordion>
         ) : (
           <Box bgcolor={"background.paper"} p={"2rem"} mb={"5rem"}>
             <Typography
               variant="h4"
               textTransform={"capitalize"}
-              children={title}
               mb={"1rem"}
               fontWeight={600}
-            />
-            <Typography variant="subtitle1" children={info} />
+            >
+              {title}
+            </Typography>
+            <Typography variant="subtitle1">{info}</Typography>
           </Box>
         )}
         <FilterBox />

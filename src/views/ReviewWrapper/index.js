@@ -105,7 +105,9 @@ export const ReviewWrapper = () => {
 
   return (
     <Viewbox sx={{ maxWidth: "85% !important" }}>
-      <Typography variant="h5" children={"Customer Reviews"} my={"2rem"} />
+      <Typography variant="h5" my={"2rem"}>
+        Customer Reviews
+      </Typography>
       <Box display={"grid"} gridTemplateColumns={!tabmobView && ".4fr 1fr"}>
         <Box
           display={"flex"}
@@ -144,17 +146,19 @@ export const ReviewWrapper = () => {
             <Button
               variant="contained"
               color="secondary"
-              children={<ChevronLeftRounded />}
               onClick={showPrev}
               disabled={dataIndex === 4}
-            />
+            >
+              <ChevronLeftRounded />
+            </Button>
             <Button
               variant="contained"
               color="secondary"
-              children={<ChevronRightRounded />}
               onClick={showNext}
               disabled={dataIndex >= samples.length}
-            />
+            >
+              <ChevronRightRounded />
+            </Button>
           </Stack>
         </Box>
       </Box>

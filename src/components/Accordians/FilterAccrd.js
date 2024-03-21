@@ -67,9 +67,10 @@ export const FilterAccrd = () => {
           <Accordion key={idx}>
             <AccordionSummary
               sx={{ textWrap: "nowrap" }}
-              children={form.label}
               expandIcon={<ArrowDropDownRounded className="dual" />}
-            />
+            >
+              {form.label}
+            </AccordionSummary>
             <AccordionDetails className="filter-div">
               {!form.isSlide ? (
                 <List>

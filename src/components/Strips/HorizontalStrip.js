@@ -11,8 +11,8 @@ export const HorizontalStrip = () => {
             color={"background.paper"}
             letterSpacing={"1rem"}
           >
-            FLASH SALE <span children={"💥"} /> 50% off <span children={"💥"} />{" "}
-            SHOP NOW! 👜
+            ALERT! FLASH SALE <span>💥</span> 50% off <span>💥</span> SHOP NOW!
+            👜
           </Typography>
         </Box>
       ))}

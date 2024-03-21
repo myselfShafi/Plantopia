@@ -41,7 +41,9 @@ export const OfferInfo = () => {
         mb={"1.5rem"}
       >
         <Image src={icon4} alt="discount" height={30} />
-        <Typography children={"Offers"} variant="subtitle1" fontWeight={800} />
+        <Typography variant="subtitle1" fontWeight={800}>
+          Offers
+        </Typography>
       </Stack>
       <Box position={"relative"} height={"12rem"}>
         <SlidersSwiper data={offers} />

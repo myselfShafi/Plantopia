@@ -48,7 +48,7 @@ export const FeatureDiv = () => {
             gap={"1.5rem"}
           >
             {each.icon}
-            <Typography variant="h6" children={each.text} />
+            <Typography variant="h6">{each.text}</Typography>
           </Stack>
         );
       })}

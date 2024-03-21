@@ -7,15 +7,15 @@ export const OfferCard = ({ eachData }) => {
       <CardActionArea>
         <CardContent>
           <Typography
-            children={title}
             fontWeight={800}
             gutterBottom
             whiteSpace={"nowrap"}
             overflow={"hidden"}
             textOverflow={"ellipsis"}
-          />
+          >
+            {title}
+          </Typography>
           <Typography
-            children={detail}
             overflow={"hidden"}
             textOverflow={"ellipsis"}
             sx={{
@@ -24,7 +24,9 @@ export const OfferCard = ({ eachData }) => {
               WebkitBoxOrient: "vertical",
             }}
             gutterBottom
-          />
+          >
+            {detail}
+          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

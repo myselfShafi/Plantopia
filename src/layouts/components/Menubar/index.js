@@ -43,7 +43,6 @@ export const Menulist = ({ onClick, ...other }) => {
         return (
           <div key={item.id}>
             <Button
-              children={item.title}
               variant="text"
               {...other}
               size="small"
@@ -51,7 +50,9 @@ export const Menulist = ({ onClick, ...other }) => {
                 router.push(item.href);
                 onClick && onClick();
               }}
-            />
+            >
+              {item.title}
+            </Button>
           </div>
         );
       })}

@@ -15,8 +15,10 @@ export const InfoTable = ({ data, ...other }) => {
           {data?.map((item, idx) => {
             return (
               <TableRow key={idx}>
-                <TableCell component="th" scope="row" children={item.type} />
-                <TableCell align="right" children={item.value} />
+                <TableCell component="th" scope="row">
+                  {item.type}
+                </TableCell>
+                <TableCell align="right">{item.value}</TableCell>
               </TableRow>
             );
           })}

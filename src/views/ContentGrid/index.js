@@ -56,13 +56,16 @@ export const ContentGrid = () => {
 
   return (
     <Viewbox>
-      <Typography variant="h3" children={title.main} mb={"3rem"} />
-      <Typography variant="subtitle1" children={title.text} mb={"3rem"} />
+      <Typography variant="h3" mb={"3rem"}>
+        {title.main}
+      </Typography>
+      <Typography variant="subtitle1" mb={"3rem"}>
+        {title.text}
+      </Typography>
       <Gridlist itemData={dataArr} />
       {dataArr.length !== images.length + images2.length && (
         <Paper elevation={0} className={"more-div"}>
           <Button
-            children={"More"}
             variant="text"
             endIcon={<ExpandCircleDownOutlined />}
             size="large"
@@ -71,7 +74,9 @@ export const ContentGrid = () => {
               color: "customColors.main",
             }}
             onClick={loadMore}
-          />
+          >
+            More
+          </Button>
         </Paper>
       )}
     </Viewbox>

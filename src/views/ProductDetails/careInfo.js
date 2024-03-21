@@ -27,7 +27,7 @@ export const CareInfo = ({ info }) => {
                 height={30}
                 className="req-icon"
               />
-              <Typography variant="subtitle1" children={each?.value} />
+              <Typography variant="subtitle1">{each?.value}</Typography>
             </Stack>
           )
         );

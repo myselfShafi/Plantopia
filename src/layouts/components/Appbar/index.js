@@ -32,7 +32,9 @@ export const Appbar = () => {
       id: 1,
       btn: (
         <Tooltip title={"Sign Up/Log In"} arrow placement="left">
-          <IconButton children={<Login className="dual" />} />
+          <IconButton>
+            <Login className="dual" />
+          </IconButton>
         </Tooltip>
       ),
     },
@@ -41,16 +43,13 @@ export const Appbar = () => {
     {
       id: 4,
       btn: (
-        <IconButton
-          children={
-            lightMode ? (
-              <NightsStay className="dual" />
-            ) : (
-              <LightMode className="dual" />
-            )
-          }
-          onClick={() => toggleTheme(!lightMode)}
-        />
+        <IconButton onClick={() => toggleTheme(!lightMode)}>
+          {lightMode ? (
+            <NightsStay className="dual" />
+          ) : (
+            <LightMode className="dual" />
+          )}
+        </IconButton>
       ),
     },
   ];
@@ -93,7 +92,9 @@ export const Appbar = () => {
               }}
               endAdornment={
                 <InputAdornment position="end">
-                  <IconButton children={<SearchOutlined className="dual" />} />
+                  <IconButton>
+                    <SearchOutlined className="dual" />
+                  </IconButton>
                 </InputAdornment>
               }
             />
@@ -102,10 +103,11 @@ export const Appbar = () => {
             component={Link}
             variant="h3"
             mx={"1rem"}
-            children={"Plantopia"}
             color={"customColors.main"}
             href={"/"}
-          />
+          >
+            Plantopia
+          </Typography>
           <Box
             display={"flex"}
             justifyContent={tabmobView ? "flex-end" : "space-between"}

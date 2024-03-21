@@ -7,8 +7,8 @@ export const CustomSlider = () => {
   return (
     <Fragment>
       <Stack flexDirection={"row"} justifyContent={"space-between"}>
-        <Typography children={price[0] * 20} />
-        <Typography children={price[1] * 20} />
+        <Typography>{price[0] * 20}</Typography>
+        <Typography>{price[1] * 20}</Typography>
       </Stack>
       <Slider
         value={price}

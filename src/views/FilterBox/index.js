@@ -10,23 +10,23 @@ export const FilterBox = () => {
   const { mobView } = useMediaQueries();
   return (
     <Stack flexDirection={"row"} columnGap={3}>
-      <Box
-        flexGrow={1}
-        children={
-          <Button
-            variant="text"
-            startIcon={<Tune className={"dual"} />}
-            children={"filter"}
-            size="small"
-            sx={{ color: "customColors.main" }}
-            onClick={toggleFilter}
-          />
-        }
-      />
+      <Box flexGrow={1}>
+        <Button
+          variant="text"
+          startIcon={<Tune className={"dual"} />}
+          size="small"
+          sx={{ color: "customColors.main" }}
+          onClick={toggleFilter}
+        >
+          filter
+        </Button>
+      </Box>
       {!mobView &&
         ["View All", "In Stock", "Fast Delivered"].map((list, idx) => {
           return (
-            <Button key={idx} variant="outlined" children={list} size="small" />
+            <Button key={idx} variant="outlined" size="small">
+              {list}
+            </Button>
           );
         })}
 
@@ -53,8 +53,8 @@ export const FilterBox = () => {
             justifyContent={"space-between"}
             m={"2rem"}
           >
-            <Typography children={"Filter By"} variant="h4" />
-            <Button variant="outlined" children={"Apply"} />
+            <Typography variant="h4">Filter By</Typography>
+            <Button variant="outlined">Apply</Button>
           </Stack>
           <FilterAccrd />
         </SwipeableDrawer>

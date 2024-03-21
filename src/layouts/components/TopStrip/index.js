@@ -34,9 +34,10 @@ export const TopStrip = () => {
       <Divider
         sx={{ flexGrow: 1, display: { xs: "none", lg: "inherit" } }}
         textAlign="center"
-        children={"Nature's Cart"}
         variant="middle"
-      />
+      >
+        Nature's Cart
+      </Divider>
       <Box columnGap={"3rem"} display={"flex"} alignItems={"center"}>
         {Icons.reverse().map((icon, index) => {
           return <div key={index}>{icon}</div>;

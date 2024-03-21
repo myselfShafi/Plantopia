@@ -86,33 +86,33 @@ export const Footer = () => {
             <Grid item key={item.id} xs={12} sm={6} lg={3}>
               <Stack>
                 <Typography
-                  children={item.title}
                   variant="subtitle1"
                   fontWeight={"bold"}
                   color={"customColors.light"}
                   my={"1rem"}
-                />
+                >
+                  {item.title}
+                </Typography>
                 {item.link &&
                   item.link.map((list, idx) => (
                     <Link
                       key={idx}
                       href={list?.href}
                       underline={list.ul}
-                      children={list.text}
                       mb={".5rem"}
                       sx={item.sx && { pointerEvents: item.sx?.pointer }}
-                    />
+                    >
+                      {list.text}
+                    </Link>
                   ))}
 
                 {item.button && (
                   <Grid container width={"70%"}>
                     {item.button.map((btn, idx) => (
                       <Grid item xs={5} textAlign={"center"} key={idx}>
-                        <IconButton
-                          children={btn.icon}
-                          href={btn.href}
-                          target="_blank"
-                        />
+                        <IconButton href={btn.href} target="_blank">
+                          {btn.icon}
+                        </IconButton>
                       </Grid>
                     ))}
                   </Grid>
@@ -127,8 +127,9 @@ export const Footer = () => {
         variant="subtitle2"
         textAlign={"center"}
         color={"customColors.light"}
-        children={`©${getCurrentYear()} Plantopia. All rights reserved.`}
-      />
+      >
+        ©{getCurrentYear()} Plantopia. All rights reserved.
+      </Typography>
     </Viewbox>
   );
 };

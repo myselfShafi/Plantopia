@@ -43,9 +43,10 @@ export const Testimonials = () => {
           variant="h3"
           fontWeight={400}
           textAlign={"center"}
-          children={"What our Customers Says?"}
           gutterBottom
-        />
+        >
+          What our Customers Says?
+        </Typography>
         <Divider
           sx={{
             width: "10rem",

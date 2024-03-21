@@ -51,9 +51,11 @@ export const ProductInfo = ({ data }) => {
       {information.map((section, idx) => {
         return (
           <div key={idx}>
-            <Typography variant="h5" children={section.title} my={"2rem"} />
+            <Typography variant="h5" my={"2rem"}>
+              {section.title}
+            </Typography>
             {section?.desc && (
-              <Typography variant="body1" children={section?.desc} />
+              <Typography variant="body1">{section?.desc}</Typography>
             )}
             {section?.table && (
               <InfoTable
@@ -77,8 +79,9 @@ export const ProductInfo = ({ data }) => {
                         component={"span"}
                         fontWeight={800}
                         textTransform={"uppercase"}
-                        children={`${each.tag}: `}
-                      />
+                      >
+                        {each.tag} :{" "}
+                      </Typography>
                       {each.text}
                     </Typography>
                   </Stack>

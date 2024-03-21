@@ -40,8 +40,8 @@ export const CustomRating = ({
         icon={<Grass fontSize={size} />}
         emptyIcon={<Grass fontSize={size} />}
       />
-      {isRating && <Box children={`(${value})`} />}
-      {isCard && <Box children={"45 Ratings"} />}
+      {isRating && <Box>({value})</Box>}
+      {isCard && <Box>45 Ratings</Box>}
     </Box>
   );
 };

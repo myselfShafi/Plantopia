@@ -27,12 +27,12 @@ export const DeliveryInfo = () => {
             textAlign={"center"}
             width={"30%"}
           >
-            <Paper
-              elevation={0}
-              children={each.icon}
-              sx={{ p: "1rem", borderRadius: "50%" }}
-            />
-            <Typography variant="subtitle1" children={each.text} mt={"1rem"} />
+            <Paper elevation={0} sx={{ p: "1rem", borderRadius: "50%" }}>
+              {each.icon}
+            </Paper>
+            <Typography variant="subtitle1" mt={"1rem"}>
+              {each.text}
+            </Typography>
           </Stack>
         );
       })}
