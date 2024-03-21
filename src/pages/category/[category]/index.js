@@ -67,7 +67,7 @@ export async function getStaticProps(context) {
   } = context;
 
   const dataList = await fetch(
-    `${process.env.NEXT_PUBLIC_DOMAIN}api/category/${category}`,
+    `${process.env.DOMAIN}api/category/${category}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
