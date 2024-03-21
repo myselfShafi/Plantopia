@@ -25,7 +25,8 @@ export const CartDropdown = () => {
           </Typography>
           <Typography>
             <span style={{ fontWeight: 800 }}>Log in</span> and discover any
-            treasures you've added from another device to your shopping cart!
+            treasures you&apos;ve added from another device to your shopping
+            cart!
           </Typography>
         </Box>
       </PopoverWrapper>

@@ -16,22 +16,44 @@ import Select from "./select";
 import Table from "./tables";
 import Tooltip from "./tooltip";
 
-export default {
-  ...InputBase(),
-  ...Icons(),
-  ...Buttons(),
-  ...Badge(),
-  ...Divider(),
-  ...Cssbaseline(),
-  ...Imagelist(),
-  ...Paper(),
-  ...Links(),
-  ...Dropdowns(),
-  ...Tooltip(),
-  ...Chip(),
-  ...Cards(),
-  ...List(),
-  ...Accordion(),
-  ...Table(),
-  ...Select(),
+const overrides = () => {
+  const inputBase = InputBase();
+  const icons = Icons();
+  const buttons = Buttons();
+  const badge = Badge();
+  const divider = Divider();
+  const cssbaseline = Cssbaseline();
+  const imagelist = Imagelist();
+  const paper = Paper();
+  const links = Links();
+  const dropdowns = Dropdowns();
+  const tooltip = Tooltip();
+  const chip = Chip();
+  const cards = Cards();
+  const list = List();
+  const accordion = Accordion();
+  const table = Table();
+  const select = Select();
+
+  return Object.assign(
+    inputBase,
+    icons,
+    buttons,
+    badge,
+    divider,
+    cssbaseline,
+    imagelist,
+    paper,
+    links,
+    dropdowns,
+    tooltip,
+    chip,
+    cards,
+    list,
+    accordion,
+    table,
+    select
+  );
 };
+
+export default overrides;

@@ -15,9 +15,7 @@ const themeOption = (mode) => {
     palette: Palette(mode),
     breakpoints: BreakPoints(),
     typography: Typography,
-    components: {
-      ...overrides,
-    },
+    components: overrides(),
   });
 };
 
