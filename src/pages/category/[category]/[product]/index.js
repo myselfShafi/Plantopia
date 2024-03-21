@@ -41,14 +41,14 @@ export async function getStaticProps(context) {
   } = context;
 
   const dataList = await fetch(
-    `http://localhost:3000/api/category/${category}/${product}`,
+    `${process.env.NEXT_PUBLIC_DOMAIN}api/category/${category}/${product}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     }
   );
   const categories = await fetch(
-    `http://localhost:3000/api/category/${category}`,
+    `${process.env.NEXT_PUBLIC_DOMAIN}api/category/${category}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
