@@ -66,13 +66,13 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const categories = Object.keys(mockData);
-
+  // const categories = Object.keys(mockData); //instead of prerendering all data . passing below few categories//
+  const categories = ["indoor", "outdoor"];
   const paths = categories.flatMap((category) =>
     mockData[category].data.map((product) => ({
       params: { category, product: product.uuid },
     }))
   );
 
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 }
