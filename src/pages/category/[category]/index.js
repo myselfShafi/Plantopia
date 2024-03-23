@@ -1,7 +1,7 @@
 import CustomBreadcrumb, { titles } from "@/components/Breadcrumb";
 import { Viewbox } from "@/components/Viewbox";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
-import { menuItems } from "@/layouts/components/Menubar";
+import { getAllCategories, getProductsByCategory } from "@/utils/getMockData";
 import { CardGrid } from "@/views/CardsGrid";
 import { FilterBox } from "@/views/FilterBox";
 import { ExpandMore } from "@mui/icons-material";
@@ -66,26 +66,18 @@ export async function getStaticProps(context) {
     params: { category },
   } = context;
 
-  const dataList = await fetch(
-    `${process.env.DOMAIN}api/category/${category}`,
-    {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    }
-  );
-
-  const data = await dataList?.json();
+  const dataList = await getProductsByCategory(category);
   return {
     props: {
-      params: data,
+      params: dataList,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const paths = menuItems.map((menu) => ({
-    params: { category: menu.href.split("/").pop() },
+  const categories = getAllCategories();
+  const paths = categories.map((menu) => ({
+    params: { category: menu },
   }));
-
   return { paths, fallback: false };
 }

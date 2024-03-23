@@ -2,13 +2,14 @@ import CustomBreadcrumb, { titles } from "@/components/Breadcrumb";
 import { Viewbox } from "@/components/Viewbox";
 import mockData from "@/content/mockData.json";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
+import { getProductsByCategory, getProductsData } from "@/utils/getMockData";
 import { ProductWrapper } from "@/views/ProductWrapper";
 import { ReviewWrapper } from "@/views/ReviewWrapper";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 
 export default function ProductDetails({ params }) {
-  const { data, eachCategory } = params;
+  const { data, title } = params;
   const { mobView } = useMediaQueries();
   const {
     query: { category },
@@ -18,7 +19,7 @@ export default function ProductDetails({ params }) {
   const newTitle = [
     ...titles,
     ...[
-      { label: eachCategory.title, href: `/category/${category}` },
+      { label: title, href: `/category/${category}` },
       { label: data?.name, href: asPath },
     ],
   ];
@@ -40,33 +41,17 @@ export async function getStaticProps(context) {
     params: { category, product },
   } = context;
 
-  const dataList = await fetch(
-    `${process.env.DOMAIN}api/category/${category}/${product}`,
-    {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    }
-  );
-  const categories = await fetch(
-    `${process.env.DOMAIN}api/category/${category}`,
-    {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    }
-  );
-
-  const eachData = await dataList?.json();
-  const eachCategory = await categories?.json();
+  const productData = getProductsData(category, product);
+  const eachCategory = getProductsByCategory(category);
 
   return {
     props: {
-      params: { data: eachData, eachCategory },
+      params: { data: productData, title: eachCategory?.title },
     },
   };
 }
 
 export async function getStaticPaths() {
-  // const categories = Object.keys(mockData); //instead of prerendering all data . passing below few categories//
   const categories = ["indoor", "outdoor"];
   const paths = categories.flatMap((category) =>
     mockData[category].data.map((product) => ({

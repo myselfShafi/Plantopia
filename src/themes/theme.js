@@ -29,14 +29,3 @@ export const ThemeComponent = ({ children, mode }) => {
     </ThemeProvider>
   );
 };
-
-// ----------------------------------------testing purpose --------------------------------//
-
-// export const theme = createTheme({
-//   palette: Palette(),
-//   breakpoints: BreakPoints(),
-//   typography: Typography,
-//   components: {
-//     ...overrides,
-//   },
-// });

@@ -98,7 +98,6 @@ export const CustomCard = ({ data }) => {
       <CardActions>
         <Button
           fullWidth
-          disableElevation
           variant="contained"
           LinkComponent={Link}
           href={`/category/${category}/${data.uuid}`}

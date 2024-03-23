@@ -8,6 +8,7 @@ const Buttons = () => {
     MuiButton: {
       defaultProps: {
         disableRipple: true,
+        disableElevation: true,
       },
       styleOverrides: {
         root: ({ ownerState, theme }) => ({
