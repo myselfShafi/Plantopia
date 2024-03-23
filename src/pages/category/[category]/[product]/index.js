@@ -41,12 +41,12 @@ export async function getStaticProps(context) {
     params: { category, product },
   } = context;
 
-  const productData = getProductsData(category, product);
-  const eachCategory = getProductsByCategory(category);
+  const productData = await getProductsData(category, product);
+  const eachCategory = await getProductsByCategory(category);
 
   return {
     props: {
-      params: { data: productData, title: eachCategory?.title },
+      params: { data: productData && productData, title: eachCategory?.title },
     },
   };
 }
