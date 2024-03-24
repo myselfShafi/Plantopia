@@ -9,13 +9,15 @@ import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 import { useMediaQueries } from "@/hooks/useMediaQueries";
+import { useTheme } from "@mui/material";
 import Image from "next/image";
-import png2 from "../../../public/assets/png2.png";
-import png3 from "../../../public/assets/png3.png";
-import png4 from "../../../public/assets/png4.png";
+import png2 from "../../../../public/assets/png2.png";
+import png3 from "../../../../public/assets/png3.png";
+import png4 from "../../../../public/assets/png4.png";
 
 const SwiperComponent = ({ imgs, ...other }) => {
   const { tabmobView } = useMediaQueries();
+  const theme = useTheme();
 
   return (
     <Swiper
@@ -25,7 +27,12 @@ const SwiperComponent = ({ imgs, ...other }) => {
     >
       {[imgs, png2, png3, png4].map((img, idx) => {
         return (
-          <SwiperSlide key={idx}>
+          <SwiperSlide
+            key={idx}
+            style={{
+              background: theme.palette.customColors.cardBg,
+            }}
+          >
             <Image
               src={img}
               alt={`img-${img}`}

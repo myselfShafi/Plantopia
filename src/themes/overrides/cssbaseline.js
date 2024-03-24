@@ -135,10 +135,6 @@ const Cssbaseline = () => {
           },
         },
 
-        ".mySwiper2 .swiper-slide, .mySwiper1 .swiper-slide": {
-          background: theme.palette.customColors.cardBg,
-        },
-
         ".mySwiper1 .swiper-slide": {
           height: "100%",
           opacity: 0.75,

@@ -1,5 +1,5 @@
 import { useMediaQueries } from "@/hooks/useMediaQueries";
-import { Box, Chip } from "@mui/material";
+import { Box, Chip, Skeleton } from "@mui/material";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ export default function CustomBreadcrumb({ currentPath }) {
         maxItems={mobView ? 2 : undefined}
       >
         {arrayTags?.map((list, idx) => {
-          return (
+          return list.label ? (
             <Chip
               key={idx}
               label={list.label}
@@ -35,6 +35,14 @@ export default function CustomBreadcrumb({ currentPath }) {
               className={arrayTags.length - 1 == idx ? "last-chip" : ""}
               component={Link}
               href={list.href}
+            />
+          ) : (
+            <Skeleton
+              key={idx}
+              variant="rounded"
+              width={"6vw"}
+              height={"1.5rem"}
+              animation={"wave"}
             />
           );
         })}

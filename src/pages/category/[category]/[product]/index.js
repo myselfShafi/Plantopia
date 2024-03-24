@@ -4,16 +4,18 @@ import mockData from "@/content/mockData.json";
 import { useMediaQueries } from "@/hooks/useMediaQueries";
 import { getProductsByCategory, getProductsData } from "@/utils/getMockData";
 import { ProductWrapper } from "@/views/ProductWrapper";
+import { ProductSkeletonWrapper } from "@/views/ProductWrapper/skeleton";
 import { ReviewWrapper } from "@/views/ReviewWrapper";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 
-export default function ProductDetails({ params }) {
-  const { data, title } = params;
+export default function ProductDetails(props) {
+  const { data, title } = props;
   const { mobView } = useMediaQueries();
   const {
     query: { category },
     asPath,
+    isFallback,
   } = useRouter();
 
   const newTitle = [
@@ -23,14 +25,21 @@ export default function ProductDetails({ params }) {
       { label: data?.name, href: asPath },
     ],
   ];
+
   return (
     <Fragment>
       <CustomBreadcrumb currentPath={newTitle} />
       <Viewbox
         sx={{ maxWidth: mobView ? `100% !important` : `85% !important` }}
       >
-        <ProductWrapper data={data} />
-        <ReviewWrapper />
+        {isFallback ? (
+          <ProductSkeletonWrapper />
+        ) : (
+          <>
+            <ProductWrapper data={data} />
+            <ReviewWrapper />
+          </>
+        )}
       </Viewbox>
     </Fragment>
   );
@@ -44,9 +53,14 @@ export async function getStaticProps(context) {
   const productData = await getProductsData(category, product);
   const eachCategory = await getProductsByCategory(category);
 
+  if (!productData || !eachCategory) {
+    return { notFound: true };
+  }
+
   return {
     props: {
-      params: { data: productData && productData, title: eachCategory?.title },
+      data: productData ?? null,
+      title: eachCategory?.title ?? null,
     },
   };
 }

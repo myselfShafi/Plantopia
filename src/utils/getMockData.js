@@ -28,10 +28,6 @@ export function getProductsData(category, uuid) {
     return { message: "data not available" };
   } else {
     const data = JSON.parse(currentData);
-    const validUuid = data[category]?.data.some((obj) => obj.uuid === uuid);
-    if (!validUuid) {
-      return { message: "product id is invalid" };
-    }
     const product = data[category]?.data.find((obj) => obj.uuid === uuid);
 
     return product;

@@ -67,9 +67,13 @@ export async function getStaticProps(context) {
   } = context;
 
   const dataList = await getProductsByCategory(category);
+
+  if (!dataList) {
+    return { notFound: true };
+  }
   return {
     props: {
-      params: dataList,
+      params: dataList ?? null,
     },
   };
 }
