@@ -1,5 +1,6 @@
+import { useMediaQueries } from "@/hooks/useMediaQueries";
 import styled from "@emotion/styled";
-import { Button, Hidden, Stack } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import { useRouter } from "next/router";
 
 export const menuItems = [
@@ -61,6 +62,7 @@ export const Menulist = ({ onClick, ...other }) => {
 };
 
 export const Menubar = () => {
+  const { tabmobView } = useMediaQueries();
   const StyledStack = styled(Stack)(({ theme }) => ({
     padding: "1rem",
     flexDirection: "row",
@@ -73,16 +75,15 @@ export const Menubar = () => {
   }));
 
   return (
-    <Hidden mdDown>
-      <StyledStack
-        bgcolor={"customColors.monoBg"}
-        sx={{
-          backgroundImage:
-            'url("https://www.transparenttextures.com/patterns/xv.png")',
-        }}
-      >
-        <Menulist className={"hover"} />
-      </StyledStack>
-    </Hidden>
+    <StyledStack
+      bgcolor={"customColors.monoBg"}
+      sx={{
+        backgroundImage:
+          'url("https://www.transparenttextures.com/patterns/xv.png")',
+        display: tabmobView && "none",
+      }}
+    >
+      <Menulist className={"hover"} />
+    </StyledStack>
   );
 };
