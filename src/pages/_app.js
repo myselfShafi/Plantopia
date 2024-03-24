@@ -4,13 +4,15 @@ import { AdBanner } from "@/layouts/AdBanner/mainTop";
 import MainLayout from "@/layouts/index";
 import "@/styles/globals.css";
 import { ThemeComponent } from "@/themes/theme";
+import { getCurrentTitle } from "@/utils/getCurrentTitle";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
+  const targetTitle = getCurrentTitle();
   return (
     <>
       <Head>
-        <title>Plantopia</title>
+        <title>{targetTitle}</title>
         <meta
           name="description"
           content="A beutiful Plant domestic e-commerce, best suitable for all your plant needs."

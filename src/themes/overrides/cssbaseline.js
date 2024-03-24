@@ -160,6 +160,13 @@ const Cssbaseline = () => {
           width: "100%",
           height: "35rem",
         },
+
+        ".navSwiper .swiper-button-prev, .navSwiper .swiper-button-next": {
+          color: theme.palette.customColors.monoBg,
+          ":hover": {
+            color: theme.palette.customColors.main,
+          },
+        },
       }),
     },
   };
