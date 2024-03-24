@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-export const getCurrentTitle = () => {
+export const GetCurrentTitle = () => {
   const { asPath } = useRouter();
   const splitpath = asPath
     .split("/")

@@ -4,11 +4,11 @@ import { AdBanner } from "@/layouts/AdBanner/mainTop";
 import MainLayout from "@/layouts/index";
 import "@/styles/globals.css";
 import { ThemeComponent } from "@/themes/theme";
-import { getCurrentTitle } from "@/utils/getCurrentTitle";
+import { GetCurrentTitle } from "@/utils/getCurrentTitle";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
-  const targetTitle = getCurrentTitle();
+  const targetTitle = GetCurrentTitle();
   return (
     <>
       <Head>
