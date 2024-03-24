@@ -1,5 +1,6 @@
 import { ContextProvider } from "@/contexts/contextProvider";
 import { ThemeConsumer } from "@/contexts/themeContext";
+import { AdBanner } from "@/layouts/AdBanner/mainTop";
 import MainLayout from "@/layouts/index";
 import "@/styles/globals.css";
 import { ThemeComponent } from "@/themes/theme";
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }) {
           {({ lightMode }) => {
             return (
               <ThemeComponent mode={lightMode}>
+                <AdBanner />
                 <MainLayout>
                   <Component {...pageProps} />
                 </MainLayout>
