@@ -26,8 +26,8 @@ Plantopia - A digital e-commerce focused on plants powered by Next.js and Materi
 <hr />
 
 <div>
-  <img src="https://github.com/myselfShafi/Plantopia/assets/116013717/57495183-8cbc-4857-a6ca-9da8dd42af46)" width="500" alt="Plantopia-light" />
-  <img src="https://github.com/myselfShafi/Plantopia/assets/116013717/9f3923e4-4ed2-40a1-bdd3-184fc731b2f9" width="500" alt="Plantopia-light" />
+  <img src="https://github.com/myselfShafi/Plantopia/assets/116013717/57495183-8cbc-4857-a6ca-9da8dd42af46)" width="49%" alt="Plantopia-light" />
+  <img src="https://github.com/myselfShafi/Plantopia/assets/116013717/9f3923e4-4ed2-40a1-bdd3-184fc731b2f9" width="49%" alt="Plantopia-light" />
 </div>
 
 <hr />
